@@ -2419,3 +2419,604 @@ DEBUG 2019-09-07 20:25:49,733 [30   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub -
 DEBUG 2019-09-07 20:25:49,733 [30   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: Dbp9T_2r2FcpJuNnVXsn9w
 DEBUG 2019-09-07 20:26:54,380 [36   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: Dbp9T_2r2FcpJuNnVXsn9w
 INFO  2019-09-07 20:26:54,384 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 64659.7771ms 101 
+DEBUG 2019-09-07 20:41:32,395 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-07 20:41:32,511 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-09-07 20:41:32,529 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.Invoicing.Web.Startup.InvoicingWebMvcModule, JD.Invoicing.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-07 20:41:32,531 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.Invoicing.InvoicingWebCoreModule, JD.Invoicing.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-07 20:41:32,531 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.Invoicing.InvoicingApplicationModule, JD.Invoicing.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-07 20:41:32,531 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.Invoicing.InvoicingCoreModule, JD.Invoicing.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-07 20:41:32,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-07 20:41:32,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-07 20:41:32,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-07 20:41:32,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-07 20:41:32,533 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.Invoicing.EntityFrameworkCore.InvoicingEntityFrameworkModule, JD.Invoicing.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-07 20:41:32,533 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-07 20:41:32,533 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-07 20:41:32,533 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-07 20:41:32,533 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-07 20:41:32,534 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-07 20:41:32,534 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-07 20:41:32,536 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-09-07 20:41:32,612 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-09-07 20:41:32,612 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-09-07 20:41:32,612 [1    ] o.Configuration.LanguageManagementConfig - Converted Invoicing (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-09-07 20:41:32,612 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-09-07 20:41:33,010 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: JD.Invoicing.EntityFrameworkCore.InvoicingDbContext, JD.Invoicing.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-07 20:41:33,991 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-09-07 20:41:34,348 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-09-07 20:41:34,397 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-09-07 20:41:34,424 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Invoicing
+DEBUG 2019-09-07 20:41:34,455 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-09-07 20:41:34,640 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-09-07 20:41:34,764 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-09-07 20:41:34,808 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 16 classes define auto mapping attributes
+DEBUG 2019-09-07 20:41:34,808 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.Invoicing.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-09-07 20:41:34,817 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.Invoicing.Warehouse.Dto.CreateUpdateWarehouseDto
+DEBUG 2019-09-07 20:41:34,818 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.Invoicing.Warehouse.Dto.WarehouseDto
+DEBUG 2019-09-07 20:41:34,818 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.Invoicing.Users.Dto.CreateUserDto
+DEBUG 2019-09-07 20:41:34,818 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.Invoicing.Users.Dto.UserDto
+DEBUG 2019-09-07 20:41:34,818 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.Invoicing.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-09-07 20:41:34,819 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.Invoicing.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-09-07 20:41:34,819 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.Invoicing.Roles.Dto.PermissionDto
+DEBUG 2019-09-07 20:41:34,819 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.Invoicing.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-09-07 20:41:34,819 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.Invoicing.MultiTenancy.Dto.TenantDto
+DEBUG 2019-09-07 20:41:34,819 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.Invoicing.Goods.Dto.CreateUpdateGoodsDto
+DEBUG 2019-09-07 20:41:34,819 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.Invoicing.Goods.Dto.GoodsDto
+DEBUG 2019-09-07 20:41:34,819 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.Invoicing.Customer.Dto.CreateUpdateCustomerDto
+DEBUG 2019-09-07 20:41:34,819 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.Invoicing.Customer.Dto.CustomerDto
+DEBUG 2019-09-07 20:41:34,819 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.Invoicing.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-09-07 20:41:34,819 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.Invoicing.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-09-07 20:41:39,454 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-09-07 20:41:39,454 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2019-09-07 20:41:39,535 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 86.8904ms 200 
+INFO  2019-09-07 20:41:42,996 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action JD.Invoicing.Web.Controllers.HomeController.Index (JD.Invoicing.Web.Mvc)
+WARN  2019-09-07 20:41:43,379 [9    ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: 当前用户没有登录到系统！
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.Authorization.AbpAuthorizationException: 当前用户没有登录到系统！
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-09-07 20:41:43,388 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-09-07 20:41:43,401 [9    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2019-09-07 20:41:43,423 [9    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2019-09-07 20:41:43,427 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.Invoicing.Web.Controllers.HomeController.Index (JD.Invoicing.Web.Mvc) in 425.9816ms
+INFO  2019-09-07 20:41:43,445 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3999.6586ms 302 
+INFO  2019-09-07 20:41:43,451 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Account/Login?ReturnUrl=%2F  
+INFO  2019-09-07 20:41:43,482 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action JD.Invoicing.Web.Controllers.AccountController.Login (JD.Invoicing.Web.Mvc)
+INFO  2019-09-07 20:41:46,202 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.Invoicing.Web.Controllers.AccountController.Login (JD.Invoicing.Web.Mvc) with arguments (, /, ) - Validation state: Valid
+INFO  2019-09-07 20:41:46,211 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.Invoicing.Web.Controllers.AccountController.Login (JD.Invoicing.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.2709ms.
+INFO  2019-09-07 20:41:46,500 [10   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+INFO  2019-09-07 20:41:47,207 [10   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 750.4755ms.
+INFO  2019-09-07 20:41:47,218 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.Invoicing.Web.Controllers.AccountController.Login (JD.Invoicing.Web.Mvc) in 3730.1849ms
+INFO  2019-09-07 20:41:47,264 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3812.9025ms 200 text/html; charset=utf-8
+INFO  2019-09-07 20:41:47,308 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/css/bootstrap.css?v=fmMNkMcjSw3xcp9iuPnku_ryk9kaWgrEbfJfKmdZ45o  
+INFO  2019-09-07 20:41:47,309 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/css/font-awesome.css?v=NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w  
+INFO  2019-09-07 20:41:47,318 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/roboto.css?v=DWPiEyLnt8XZ68WQeudmZPGSejowhmQNUUhaX8dYF1Q  
+INFO  2019-09-07 20:41:47,319 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.css?v=W8a9WvLyUO7CXtOC4f9LoUMwkywM7JSq-Xm5kNsYW08  
+INFO  2019-09-07 20:41:47,321 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.css?v=2SsVsQpWRHM3EJ4D4MT4RRpiEXbEuK0vEjPxVr5P7Ek  
+INFO  2019-09-07 20:41:47,336 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/roboto/roboto.css was not modified
+INFO  2019-09-07 20:41:47,338 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/toastr/toastr.css was not modified
+INFO  2019-09-07 20:41:47,339 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/font-awesome/css/font-awesome.css was not modified
+INFO  2019-09-07 20:41:47,340 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/bootstrap/dist/css/bootstrap.css was not modified
+INFO  2019-09-07 20:41:47,342 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/material-icons/materialicons.css was not modified
+INFO  2019-09-07 20:41:47,346 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 39.9716ms 304 text/css
+INFO  2019-09-07 20:41:47,348 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 29.0697ms 304 text/css
+INFO  2019-09-07 20:41:47,349 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 39.9747ms 304 text/css
+INFO  2019-09-07 20:41:47,352 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 44.5523ms 304 text/css
+INFO  2019-09-07 20:41:47,367 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css?v=l7wu43l7XpKWzFn29hiH8AFe4I_CNzbCPmaAQivPYMg  
+INFO  2019-09-07 20:41:47,372 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 25.6519ms 304 text/css
+INFO  2019-09-07 20:41:47,374 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/famfamfam-flags/dist/sprite/famfamfam-flags.css was not modified
+INFO  2019-09-07 20:41:47,375 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/animate.css/animate.css?v=00w68NO3TLuHjKRHJmjrrgJBDtG_6OhbJEu1gtHcsuo  
+INFO  2019-09-07 20:41:47,377 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.css?v=0zP86LzXedNkkBjePtKrMTAPuIy6EzHfGlyYvsmGLBw  
+INFO  2019-09-07 20:41:47,379 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 27.0757ms 304 text/css
+INFO  2019-09-07 20:41:47,381 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/animate.css/animate.css was not modified
+INFO  2019-09-07 20:41:47,382 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/_Layout.css?v=vIEtxnpR3ZrYbYcueRr_mJ9XuJJzDprh4sMCwvRBcqk  
+INFO  2019-09-07 20:41:47,384 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Waves/dist/waves.css was not modified
+INFO  2019-09-07 20:41:47,385 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12.008ms 304 text/css
+INFO  2019-09-07 20:41:47,388 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.7412ms 304 text/css
+INFO  2019-09-07 20:41:47,400 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/materialize.css?v=OdWlipUYj8b9Oa4RyT45njteIcxH-4pGocqe0r0V8js  
+INFO  2019-09-07 20:41:47,405 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Account/_Layout.css was not modified
+INFO  2019-09-07 20:41:47,409 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.css?v=j_16MTiQNlUrKdjTrCjLCSGkIIjHvt8tFUyucW02Vqw  
+INFO  2019-09-07 20:41:47,412 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 25.3152ms 304 text/css
+INFO  2019-09-07 20:41:47,413 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/style.css?v=0TZNvgG2AzoGmSegrcnqV4Ke65JlJLlHLtiLNaOry20  
+INFO  2019-09-07 20:41:47,415 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/json2/json2.js?v=EZJ68U7eUi8uSP0MRRUalYten2eOlhREE9kJOIbIeYg  
+INFO  2019-09-07 20:41:47,417 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Account/Login.css was not modified
+INFO  2019-09-07 20:41:47,418 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/materialize.css was not modified
+INFO  2019-09-07 20:41:47,419 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/json2/json2.js was not modified
+INFO  2019-09-07 20:41:47,421 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 30.1301ms 304 text/css
+INFO  2019-09-07 20:41:47,426 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 46.7231ms 304 text/css
+INFO  2019-09-07 20:41:47,432 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.8259ms 304 application/javascript
+INFO  2019-09-07 20:41:47,442 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/js/bootstrap.js?v=Cr6N6zNN4bp0OwTQOZ6Z66M2r-2dpy_EwKMCyZ-SOMg  
+INFO  2019-09-07 20:41:47,444 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/moment/min/moment-with-locales.js?v=7CN4bWPV0U57HDA4YjdCBKCAynhqdWErjNn-5rrsW_I  
+INFO  2019-09-07 20:41:47,448 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/bootstrap/dist/js/bootstrap.js was not modified
+INFO  2019-09-07 20:41:47,450 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/moment/min/moment-with-locales.js was not modified
+INFO  2019-09-07 20:41:47,452 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery/dist/jquery.js?v=DZAnKJ_6XZ9si04Hgrsxu_8s717jcIzLy3oi35EouyE  
+INFO  2019-09-07 20:41:47,454 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17.0731ms 304 application/javascript
+INFO  2019-09-07 20:41:47,459 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 19.8541ms 304 application/javascript
+INFO  2019-09-07 20:41:47,469 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery/dist/jquery.js was not modified
+INFO  2019-09-07 20:41:47,476 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blockUI/jquery.blockUI.js?v=oQaw-JJuUcJQ9QVYMcFnPxICDT-hv8-kuxT2FNzTGhc  
+INFO  2019-09-07 20:41:47,477 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-validation/dist/jquery.validate.js?v=KuzD50lDGNI5jq_ipt4hwDpSJk3fhseTR1jdvaBoZLs  
+INFO  2019-09-07 20:41:47,478 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 40.3043ms 304 application/javascript
+INFO  2019-09-07 20:41:47,484 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-validation/dist/jquery.validate.js was not modified
+INFO  2019-09-07 20:41:47,492 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/blockUI/jquery.blockUI.js was not modified
+INFO  2019-09-07 20:41:47,497 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 26.792ms 304 application/javascript
+INFO  2019-09-07 20:41:47,502 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert.min.js?v=aPktydUv1rN3mouQeXoKi3ioFTIQlULuqYeoTAA2ihY  
+INFO  2019-09-07 20:41:47,504 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 35.4015ms 304 application/javascript
+INFO  2019-09-07 20:41:47,509 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.js?v=C7DJ6LzTt1Hvj9fd-yRnySs3I4T2B8XmQ3TqXQjc00g  
+INFO  2019-09-07 20:41:47,512 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/sweetalert/dist/sweetalert.min.js was not modified
+INFO  2019-09-07 20:41:47,515 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/toastr/toastr.js was not modified
+INFO  2019-09-07 20:41:47,516 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 25.641ms 304 application/javascript
+INFO  2019-09-07 20:41:47,519 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/spin.js?v=GySbz3oZXNlwoawo5PpYy0iM38B-q3jyi_HLw00uxy0  
+INFO  2019-09-07 20:41:47,530 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17.6292ms 304 application/javascript
+INFO  2019-09-07 20:41:47,535 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/spin.js/spin.js was not modified
+INFO  2019-09-07 20:41:47,536 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/jquery.spin.js?v=EG38bUU5b2M64hy9cNAzu_cQBEsiBYsDifOcoHqNd2k  
+INFO  2019-09-07 20:41:47,538 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.js?v=Lar7zQhqgdoUsaqhuwkgnWgsC-eRWIxHhJPV-QtrDog  
+INFO  2019-09-07 20:41:47,540 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/abp.js?v=FGfi3RfHf06ftjVdq2JaO16cF9CPZNPvujmuYBacXxg  
+INFO  2019-09-07 20:41:47,541 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 20.3517ms 304 application/javascript
+INFO  2019-09-07 20:41:47,543 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/spin.js/jquery.spin.js was not modified
+INFO  2019-09-07 20:41:47,545 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Waves/dist/waves.js was not modified
+INFO  2019-09-07 20:41:47,547 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13.2363ms 304 application/javascript
+INFO  2019-09-07 20:41:47,554 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/abp.js was not modified
+INFO  2019-09-07 20:41:47,563 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=lMgLZMlGsipWDxpvEPxfKVREzRedV_ygRnTj2kvADpw  
+INFO  2019-09-07 20:41:47,567 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 24.901ms 304 application/javascript
+INFO  2019-09-07 20:41:47,575 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 28.2232ms 304 application/javascript
+INFO  2019-09-07 20:41:47,579 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js was not modified
+INFO  2019-09-07 20:41:47,581 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=ImopdkB8alCil1HigOwW3CDqWKsLZXyplf7TXBbjRnE  
+INFO  2019-09-07 20:41:47,582 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=Y3zoG-hSFKmbS3BHKo_wFWRPbyzJXKoNrnF73uFdtqU  
+INFO  2019-09-07 20:41:47,584 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 29.9139ms 304 application/javascript
+INFO  2019-09-07 20:41:47,587 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js was not modified
+INFO  2019-09-07 20:41:47,591 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js was not modified
+INFO  2019-09-07 20:41:47,597 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.7438ms 304 application/javascript
+INFO  2019-09-07 20:41:47,600 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.2612ms 304 application/javascript
+INFO  2019-09-07 20:41:47,602 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=guLvtVJMvLobKpGAlQigrGWMQ1sGQo4yTL46zjGQUUY  
+INFO  2019-09-07 20:41:47,613 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=RJuGDX616JN_UziXsmKnth0alpECKCx0gtxKZVrZWxY  
+INFO  2019-09-07 20:41:47,617 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/main.js?v=xFfzBs0qL-DOUGwpxo1lrF_0eENxqKGCB6sMszHk38M  
+INFO  2019-09-07 20:41:47,618 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js was not modified
+INFO  2019-09-07 20:41:47,620 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js was not modified
+INFO  2019-09-07 20:41:47,622 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/main.js was not modified
+INFO  2019-09-07 20:41:47,627 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 24.7136ms 304 application/javascript
+INFO  2019-09-07 20:41:47,629 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 20.0798ms 304 application/javascript
+INFO  2019-09-07 20:41:47,633 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/admin.js?v=_sUixSUZcmP81slFpHh9ygZ5nNihdHlHLkpoSCncHCw  
+INFO  2019-09-07 20:41:47,644 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 23.0136ms 304 application/javascript
+INFO  2019-09-07 20:41:47,647 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-validation/src/localization/messages_zh_Hans.js?v=43895rQGsnOPb7xfOFMbaJN_v2aOQrPBt_cVRxsPWxo  
+INFO  2019-09-07 20:41:47,648 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/admin.js was not modified
+INFO  2019-09-07 20:41:47,650 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637034856947657705  
+INFO  2019-09-07 20:41:47,653 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 20.5553ms 304 application/javascript
+INFO  2019-09-07 20:41:47,653 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-validation/src/localization/messages_zh_Hans.js was not modified
+INFO  2019-09-07 20:41:47,679 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 20.2221ms 304 application/javascript
+INFO  2019-09-07 20:41:47,701 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637034856947657705  
+INFO  2019-09-07 20:41:47,710 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/Components/TenantChange/Default.js?v=637034857071874130  
+INFO  2019-09-07 20:41:47,763 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.js?v=o2PUQBkwW7VjtzD5RNxKPa3oShr3fMFHds_2dwIAV5M  
+INFO  2019-09-07 20:41:47,766 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Account/Login.js was not modified
+INFO  2019-09-07 20:41:47,775 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 59.1006ms 304 application/javascript
+INFO  2019-09-07 20:41:47,777 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-09-07 20:41:47,778 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-09-07 20:41:47,815 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
+INFO  2019-09-07 20:41:47,817 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-09-07 20:41:47,818 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 119.0156ms 200 application/javascript
+INFO  2019-09-07 20:41:47,832 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/style.css'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\css\style.css'
+INFO  2019-09-07 20:41:47,857 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 421.9207ms 200 text/css
+INFO  2019-09-07 20:41:47,883 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-09-07 20:41:47,898 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png  
+INFO  2019-09-07 20:41:47,904 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/famfamfam-flags/dist/sprite/famfamfam-flags.png was not modified
+INFO  2019-09-07 20:41:47,908 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.193ms 304 image/png
+INFO  2019-09-07 20:41:48,025 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2  
+INFO  2019-09-07 20:41:48,032 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2  
+INFO  2019-09-07 20:41:48,034 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.woff2  
+INFO  2019-09-07 20:41:48,036 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2 was not modified
+INFO  2019-09-07 20:41:48,037 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2 was not modified
+INFO  2019-09-07 20:41:48,040 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/material-icons/materialicons.woff2 was not modified
+INFO  2019-09-07 20:41:48,102 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 48.0207ms 304 font/woff2
+INFO  2019-09-07 20:41:48,104 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 43.9848ms 304 font/woff2
+INFO  2019-09-07 20:41:48,114 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 45.5694ms 304 font/woff2
+INFO  2019-09-07 20:41:48,262 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 375.9807ms.
+INFO  2019-09-07 20:41:48,269 [13   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-09-07 20:41:48,278 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 491.1654ms
+INFO  2019-09-07 20:41:48,281 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 632.6815ms 200 application/x-javascript
+INFO  2019-09-07 20:41:48,298 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 479.7183ms.
+INFO  2019-09-07 20:41:48,302 [7    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-09-07 20:41:48,314 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 527.4358ms
+INFO  2019-09-07 20:41:48,330 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 634.4539ms 200 application/x-javascript; charset=utf-8
+INFO  2019-09-07 20:42:43,065 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/Account/Login application/x-www-form-urlencoded 256
+INFO  2019-09-07 20:42:43,074 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action JD.Invoicing.Web.Controllers.AccountController.Login (JD.Invoicing.Web.Mvc)
+INFO  2019-09-07 20:42:43,186 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.Invoicing.Web.Controllers.AccountController.Login (JD.Invoicing.Web.Mvc) with arguments (JD.Invoicing.Web.Models.Account.LoginViewModel, /, ) - Validation state: Valid
+INFO  2019-09-07 20:42:44,018 [13   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application signed in.
+INFO  2019-09-07 20:42:44,023 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.Invoicing.Web.Controllers.AccountController.Login (JD.Invoicing.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.JsonResult in 836.2001ms.
+INFO  2019-09-07 20:42:44,082 [13   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-09-07 20:42:44,092 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.Invoicing.Web.Controllers.AccountController.Login (JD.Invoicing.Web.Mvc) in 1015.533ms
+INFO  2019-09-07 20:42:44,106 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1029.2619ms 200 application/json; charset=utf-8
+INFO  2019-09-07 20:42:44,137 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-09-07 20:42:44,184 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action JD.Invoicing.Web.Controllers.HomeController.Index (JD.Invoicing.Web.Mvc)
+INFO  2019-09-07 20:42:44,214 [13   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-09-07 20:42:44,238 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.Invoicing.Web.Controllers.HomeController.Index (JD.Invoicing.Web.Mvc) - Validation state: Valid
+INFO  2019-09-07 20:42:44,240 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.Invoicing.Web.Controllers.HomeController.Index (JD.Invoicing.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4861ms.
+INFO  2019-09-07 20:42:44,283 [17   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-09-07 20:42:45,089 [9    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 811.8318ms.
+INFO  2019-09-07 20:42:45,136 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.Invoicing.Web.Controllers.HomeController.Index (JD.Invoicing.Web.Mvc) in 923.7874ms
+INFO  2019-09-07 20:42:45,173 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/morris.js/morris.css?v=szHusaozbQctTn4FX-3l5E0A5zoxz7-ne4fr8NgWJlw  
+INFO  2019-09-07 20:42:45,189 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1004.0091ms 200 text/html; charset=utf-8
+INFO  2019-09-07 20:42:45,191 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/style.css?v=0TZNvgG2AzoGmSegrcnqV4Ke65JlJLlHLtiLNaOry20  
+INFO  2019-09-07 20:42:45,193 [16   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/morris.js/morris.css was not modified
+INFO  2019-09-07 20:42:45,195 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap-select/dist/css/bootstrap-select.css?v=a7N4Jki3LzSbThclvqbu4nF45twcjuc772JGFhY9qwk  
+INFO  2019-09-07 20:42:45,196 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/style.css was not modified
+INFO  2019-09-07 20:42:45,198 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 59.592ms 304 text/css
+INFO  2019-09-07 20:42:45,200 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 24.2266ms 304 text/css
+INFO  2019-09-07 20:42:45,203 [17   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/bootstrap-select/dist/css/bootstrap-select.css was not modified
+INFO  2019-09-07 20:42:45,208 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/_Layout.css?v=uq7unI_U0xZr0Pbyzeu6KfbJKHVFuv0wNJ4CrrhQknw  
+INFO  2019-09-07 20:42:45,213 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 69.3962ms 304 text/css
+INFO  2019-09-07 20:42:45,215 [19   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Shared/_Layout.css was not modified
+INFO  2019-09-07 20:42:45,216 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/images/user.png  
+INFO  2019-09-07 20:42:45,219 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/images/logo.png  
+INFO  2019-09-07 20:42:45,220 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /images/user.png was not modified
+INFO  2019-09-07 20:42:45,224 [17   ] NetCore.StaticFiles.StaticFileMiddleware - The file /images/logo.png was not modified
+INFO  2019-09-07 20:42:45,227 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.0862ms 304 image/png
+INFO  2019-09-07 20:42:45,238 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.4948ms 304 image/png
+INFO  2019-09-07 20:42:45,243 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 43.6602ms 304 text/css
+INFO  2019-09-07 20:42:45,244 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-slimscroll/jquery.slimscroll.js?v=4K6ZHzwMYR5_eU2SeDIaByus_qki9IFY8hmxl5U6D1Y  
+INFO  2019-09-07 20:42:45,251 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/themes/all-themes.css?v=XaAlkmhL9gA6mBxpcxGYAWxggxkIpRmT9qGbKejs6eA  
+INFO  2019-09-07 20:42:45,256 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-slimscroll/jquery.slimscroll.js was not modified
+INFO  2019-09-07 20:42:45,273 [23   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/themes/all-themes.css was not modified
+INFO  2019-09-07 20:42:45,277 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15.1767ms 304 application/javascript
+INFO  2019-09-07 20:42:45,278 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 93.4262ms 304 text/css
+INFO  2019-09-07 20:42:45,280 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/push.js/push.js?v=HDxbpm8oBKwe1bmX9Z1SahYYA7zEbc1dk7LfopvOvoE  
+INFO  2019-09-07 20:42:45,288 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap-select/dist/js/bootstrap-select.js?v=_KDPX2Vvqq8sySMxlLNJxt9j6Cmb8i_xp602ozhYxzI  
+INFO  2019-09-07 20:42:45,322 [22   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/push.js/push.js was not modified
+INFO  2019-09-07 20:42:45,345 [21   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/bootstrap-select/dist/js/bootstrap-select.js was not modified
+INFO  2019-09-07 20:42:45,361 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 104.8083ms 304 application/javascript
+INFO  2019-09-07 20:42:45,363 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/_Layout.js?v=jOYc7_5N1zFKt3qTihQ-9Kc0wjSMXkAeHUXNyvn8sYo  
+INFO  2019-09-07 20:42:45,366 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637034856947657705  
+INFO  2019-09-07 20:42:45,369 [18   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Shared/_Layout.js was not modified
+INFO  2019-09-07 20:42:45,394 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/signalr-client/signalr.min.js?v=DeOex_tR7FzkV208FN2wnFJvIUIKXWsVjbW0171naJo  
+INFO  2019-09-07 20:42:45,399 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 45.7611ms 304 application/javascript
+INFO  2019-09-07 20:42:45,401 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-countTo/jquery.countTo.js?v=AGGYFLOyVnIKn_2UCDl9D_5VWf8wHWCOtm9YU0P9g6I  
+INFO  2019-09-07 20:42:45,403 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-09-07 20:42:45,415 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/signalr-client/signalr.min.js was not modified
+INFO  2019-09-07 20:42:45,473 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-countTo/jquery.countTo.js was not modified
+INFO  2019-09-07 20:42:45,481 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 67.0736ms 304 application/javascript
+INFO  2019-09-07 20:42:45,482 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 79.7045ms 304 application/javascript
+INFO  2019-09-07 20:42:45,487 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-09-07 20:42:45,489 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/morris.js/morris.js?v=cQB75DEaDbn4oSiaWgdoh3TuZCHSO-kYdD_Ehka48Ro  
+INFO  2019-09-07 20:42:45,491 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 44.4938ms 304 application/javascript
+INFO  2019-09-07 20:42:45,494 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/morris.js/morris.js was not modified
+INFO  2019-09-07 20:42:45,523 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr-client.js?v=8bQpuR0dFdbi0KIM9VVSonDAxoXNRsdDAvuSZSI8Oyw  
+INFO  2019-09-07 20:42:45,556 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12.9756ms 304 application/javascript
+INFO  2019-09-07 20:42:45,564 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 58.2502ms.
+INFO  2019-09-07 20:42:45,585 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Flot/jquery.flot.js?v=t7kx8nPDixJ3ucbB9OBcTsCYhaSHvdrzJ54tfkmjjhI  
+INFO  2019-09-07 20:42:45,590 [19   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-09-07 20:42:45,614 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Flot/jquery.flot.js was not modified
+INFO  2019-09-07 20:42:45,630 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 186.8991ms
+INFO  2019-09-07 20:42:45,637 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 62.4142ms 304 application/javascript
+INFO  2019-09-07 20:42:45,640 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 272.7893ms 200 application/x-javascript; charset=utf-8
+INFO  2019-09-07 20:42:45,645 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Flot/jquery.flot.pie.js?v=RsEWYd9gdLG1bCIcU8j59Rkvf_1O7HtzoD1TRUs22cU  
+INFO  2019-09-07 20:42:45,646 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Flot/jquery.flot.resize.js?v=i59RRvMkqw-28mDu6YRzKo77gmM7k9aPZMtcw45wgu4  
+INFO  2019-09-07 20:42:45,648 [18   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Flot/jquery.flot.pie.js was not modified
+INFO  2019-09-07 20:42:45,657 [19   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Flot/jquery.flot.resize.js was not modified
+INFO  2019-09-07 20:42:45,665 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.6222ms 304 application/javascript
+INFO  2019-09-07 20:42:45,668 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17.7376ms 304 application/javascript
+INFO  2019-09-07 20:42:45,670 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Flot/jquery.flot.categories.js?v=boFmSyjqeVxzSQb0qhVhRkCnWsf705mn-5CEBAaYNRo  
+INFO  2019-09-07 20:42:45,672 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Flot/jquery.flot.time.js?v=pYLIMq3HE4prBar2HxbrrCdHAfG-Sv6nfnOaHDS5xBo  
+INFO  2019-09-07 20:42:45,674 [18   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Flot/jquery.flot.categories.js was not modified
+INFO  2019-09-07 20:42:45,688 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Flot/jquery.flot.time.js was not modified
+INFO  2019-09-07 20:42:45,695 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.9365ms 304 application/javascript
+INFO  2019-09-07 20:42:45,699 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 19.927ms 304 application/javascript
+INFO  2019-09-07 20:42:45,702 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-sparkline/dist/jquery.sparkline.js?v=k0LZZpXY4vJp6vbA5CL5bb20Ou0IO3Shz-J6U6Vq56c  
+INFO  2019-09-07 20:42:45,704 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Home/Index.js?v=tRGDdqeVjO63iaO1qvGPpKF2NuT2riEOyYovlY_otk0  
+INFO  2019-09-07 20:42:45,706 [18   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-sparkline/dist/jquery.sparkline.js was not modified
+INFO  2019-09-07 20:42:45,713 [19   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Home/Index.js was not modified
+INFO  2019-09-07 20:42:45,719 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.7059ms 304 application/javascript
+INFO  2019-09-07 20:42:45,723 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14.241ms 304 application/javascript
+INFO  2019-09-07 20:42:45,725 [22   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr-client.js was not modified
+INFO  2019-09-07 20:42:45,729 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637034856947657705  
+INFO  2019-09-07 20:42:45,739 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 233.8539ms 304 application/javascript
+INFO  2019-09-07 20:42:45,742 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/raphael/raphael.js?v=MPXjTSEImVJI1834JAHubdK7Lts1VTUPJmCQ9zKAjyA  
+INFO  2019-09-07 20:42:45,746 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/chart.js/dist/Chart.bundle.js?v=TQAtDUIU_0XtXZLNjMBV8noK8jNSngwHlgtC_PvsRAk  
+INFO  2019-09-07 20:42:45,748 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-09-07 20:42:45,751 [21   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/raphael/raphael.js was not modified
+INFO  2019-09-07 20:42:45,773 [26   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/chart.js/dist/Chart.bundle.js was not modified
+INFO  2019-09-07 20:42:45,807 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 346.7053ms 304 application/javascript
+INFO  2019-09-07 20:42:45,823 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-09-07 20:42:45,824 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 290.1751ms 304 application/javascript
+INFO  2019-09-07 20:42:45,826 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.1575ms.
+INFO  2019-09-07 20:42:45,830 [23   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-09-07 20:42:45,834 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 81.237ms
+INFO  2019-09-07 20:42:45,881 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 489.6901ms 200 application/x-javascript
+INFO  2019-09-07 20:42:45,884 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-09-07 20:42:45,960 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 69.4095ms 200 application/json
+INFO  2019-09-07 20:42:46,074 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=f8gQEF31sMOdU3c4aHY9Tg  
+INFO  2019-09-07 20:42:46,239 [22   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-09-07 20:42:46,270 [22   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"f8gQEF31sMOdU3c4aHY9Tg","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-09-07T20:42:46.2637348+08:00","Properties":{}}
+DEBUG 2019-09-07 20:42:46,318 [22   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: f8gQEF31sMOdU3c4aHY9Tg
+INFO  2019-09-07 20:42:51,927 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/About  
+INFO  2019-09-07 20:42:51,937 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "About", area = ""}. Executing action JD.Invoicing.Web.Controllers.AboutController.Index (JD.Invoicing.Web.Mvc)
+INFO  2019-09-07 20:42:51,939 [23   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-09-07 20:42:51,966 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.Invoicing.Web.Controllers.AboutController.Index (JD.Invoicing.Web.Mvc) - Validation state: Valid
+INFO  2019-09-07 20:42:51,967 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.Invoicing.Web.Controllers.AboutController.Index (JD.Invoicing.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2577ms.
+INFO  2019-09-07 20:42:52,005 [26   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-09-07 20:42:52,121 [22   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 116.6374ms.
+INFO  2019-09-07 20:42:52,144 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.Invoicing.Web.Controllers.AboutController.Index (JD.Invoicing.Web.Mvc) in 184.7667ms
+INFO  2019-09-07 20:42:52,185 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 221.3573ms 200 text/html; charset=utf-8
+DEBUG 2019-09-07 20:42:52,201 [26   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: f8gQEF31sMOdU3c4aHY9Tg
+INFO  2019-09-07 20:42:52,219 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637034856947657705  
+INFO  2019-09-07 20:42:52,222 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637034856947657705  
+INFO  2019-09-07 20:42:52,232 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-09-07 20:42:52,235 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-09-07 20:42:52,238 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6163.3785ms 101 
+INFO  2019-09-07 20:42:52,299 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-09-07 20:42:52,302 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-09-07 20:42:52,308 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.0595ms.
+INFO  2019-09-07 20:42:52,313 [26   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-09-07 20:42:52,318 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 79.0762ms
+INFO  2019-09-07 20:42:52,324 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 102.2082ms 200 application/x-javascript
+INFO  2019-09-07 20:42:52,352 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 50.6568ms.
+INFO  2019-09-07 20:42:52,353 [23   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-09-07 20:42:52,370 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 121.3991ms
+INFO  2019-09-07 20:42:52,380 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 156.5029ms 200 application/x-javascript; charset=utf-8
+INFO  2019-09-07 20:42:52,382 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-09-07 20:42:52,389 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.6567ms 200 application/json
+INFO  2019-09-07 20:42:52,404 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=3et-gyIbLTXcPjfJdq-R4A  
+INFO  2019-09-07 20:42:52,415 [21   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-09-07 20:42:52,416 [21   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"3et-gyIbLTXcPjfJdq-R4A","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-09-07T20:42:52.416224+08:00","Properties":{}}
+DEBUG 2019-09-07 20:42:52,416 [21   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 3et-gyIbLTXcPjfJdq-R4A
+INFO  2019-09-07 20:43:08,666 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/About  
+INFO  2019-09-07 20:43:08,674 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "About", area = ""}. Executing action JD.Invoicing.Web.Controllers.AboutController.Index (JD.Invoicing.Web.Mvc)
+WARN  2019-09-07 20:43:08,676 [21   ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-09-07 20:43:08,678 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-09-07 20:43:08,680 [21   ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2019-09-07 20:43:08,681 [21   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2019-09-07 20:43:08,683 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.Invoicing.Web.Controllers.AboutController.Index (JD.Invoicing.Web.Mvc) in 7.0696ms
+INFO  2019-09-07 20:43:08,687 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 18.6215ms 302 
+INFO  2019-09-07 20:43:08,702 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Account/Login?ReturnUrl=%2FAbout  
+INFO  2019-09-07 20:43:08,706 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action JD.Invoicing.Web.Controllers.AccountController.Login (JD.Invoicing.Web.Mvc)
+INFO  2019-09-07 20:43:08,733 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.Invoicing.Web.Controllers.AccountController.Login (JD.Invoicing.Web.Mvc) with arguments (, /About, ) - Validation state: Valid
+INFO  2019-09-07 20:43:08,735 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.Invoicing.Web.Controllers.AccountController.Login (JD.Invoicing.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1493ms.
+INFO  2019-09-07 20:43:08,785 [26   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+INFO  2019-09-07 20:43:08,798 [26   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 7.8869ms.
+DEBUG 2019-09-07 20:43:08,829 [29   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: 3et-gyIbLTXcPjfJdq-R4A
+INFO  2019-09-07 20:43:08,841 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.Invoicing.Web.Controllers.AccountController.Login (JD.Invoicing.Web.Mvc) in 91.9981ms
+INFO  2019-09-07 20:43:08,852 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16429.6943ms 101 
+INFO  2019-09-07 20:43:08,864 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/css/bootstrap.css?v=fmMNkMcjSw3xcp9iuPnku_ryk9kaWgrEbfJfKmdZ45o  
+INFO  2019-09-07 20:43:08,880 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.css?v=W8a9WvLyUO7CXtOC4f9LoUMwkywM7JSq-Xm5kNsYW08  
+INFO  2019-09-07 20:43:08,930 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 153.3955ms 200 text/html; charset=utf-8
+INFO  2019-09-07 20:43:08,954 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.css?v=2SsVsQpWRHM3EJ4D4MT4RRpiEXbEuK0vEjPxVr5P7Ek  
+INFO  2019-09-07 20:43:08,958 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/css/font-awesome.css?v=NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w  
+INFO  2019-09-07 20:43:08,962 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css?v=l7wu43l7XpKWzFn29hiH8AFe4I_CNzbCPmaAQivPYMg  
+INFO  2019-09-07 20:43:08,971 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/roboto.css?v=DWPiEyLnt8XZ68WQeudmZPGSejowhmQNUUhaX8dYF1Q  
+INFO  2019-09-07 20:43:08,990 [33   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.css'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\toastr\toastr.css'
+INFO  2019-09-07 20:43:09,003 [32   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.css'
+INFO  2019-09-07 20:43:09,040 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 127.2105ms 200 text/css
+INFO  2019-09-07 20:43:09,050 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.css?v=0zP86LzXedNkkBjePtKrMTAPuIy6EzHfGlyYvsmGLBw  
+INFO  2019-09-07 20:43:09,054 [30   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/roboto.css'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\fonts\roboto\roboto.css'
+INFO  2019-09-07 20:43:09,056 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 149.792ms 200 text/css
+INFO  2019-09-07 20:43:09,061 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 192.9766ms 200 text/css
+INFO  2019-09-07 20:43:09,066 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/style.css?v=0TZNvgG2AzoGmSegrcnqV4Ke65JlJLlHLtiLNaOry20  
+INFO  2019-09-07 20:43:09,077 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/_Layout.css?v=vIEtxnpR3ZrYbYcueRr_mJ9XuJJzDprh4sMCwvRBcqk  
+INFO  2019-09-07 20:43:09,093 [35   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/material-icons/materialicons.css'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\fonts\material-icons\materialicons.css'
+INFO  2019-09-07 20:43:09,118 [34   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+INFO  2019-09-07 20:43:09,120 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 230.4433ms 200 text/css
+INFO  2019-09-07 20:43:09,141 [28   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/_Layout.css'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\view-resources\Views\Account\_Layout.css'
+INFO  2019-09-07 20:43:09,153 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/animate.css/animate.css?v=00w68NO3TLuHjKRHJmjrrgJBDtG_6OhbJEu1gtHcsuo  
+INFO  2019-09-07 20:43:09,167 [21   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/style.css'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\css\style.css'
+INFO  2019-09-07 20:43:09,172 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 81.2777ms 200 text/css
+INFO  2019-09-07 20:43:09,174 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 110.7468ms 200 text/css
+INFO  2019-09-07 20:43:09,176 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery/dist/jquery.js?v=DZAnKJ_6XZ9si04Hgrsxu_8s717jcIzLy3oi35EouyE  
+INFO  2019-09-07 20:43:09,178 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/js/bootstrap.js?v=Cr6N6zNN4bp0OwTQOZ6Z66M2r-2dpy_EwKMCyZ-SOMg  
+INFO  2019-09-07 20:43:09,190 [32   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/animate.css/animate.css'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\animate.css\animate.css'
+INFO  2019-09-07 20:43:09,202 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 266.3087ms 200 text/css
+INFO  2019-09-07 20:43:09,214 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 66.1233ms 200 text/css
+INFO  2019-09-07 20:43:09,225 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/json2/json2.js?v=EZJ68U7eUi8uSP0MRRUalYten2eOlhREE9kJOIbIeYg  
+INFO  2019-09-07 20:43:09,237 [30   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+INFO  2019-09-07 20:43:09,246 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/moment/min/moment-with-locales.js?v=7CN4bWPV0U57HDA4YjdCBKCAynhqdWErjNn-5rrsW_I  
+INFO  2019-09-07 20:43:09,251 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 63.0952ms 200 application/javascript
+INFO  2019-09-07 20:43:09,265 [36   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/Waves/dist/waves.css'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\Waves\dist\waves.css'
+INFO  2019-09-07 20:43:09,270 [37   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/css/font-awesome.css'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\font-awesome\css\font-awesome.css'
+INFO  2019-09-07 20:43:09,281 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-validation/dist/jquery.validate.js?v=KuzD50lDGNI5jq_ipt4hwDpSJk3fhseTR1jdvaBoZLs  
+INFO  2019-09-07 20:43:09,287 [31   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\jquery\dist\jquery.js'
+INFO  2019-09-07 20:43:09,293 [33   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/json2/json2.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\json2\json2.js'
+INFO  2019-09-07 20:43:09,300 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 114.8271ms 200 application/javascript
+INFO  2019-09-07 20:43:09,321 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 91.5583ms 200 application/javascript
+INFO  2019-09-07 20:43:09,329 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.js?v=C7DJ6LzTt1Hvj9fd-yRnySs3I4T2B8XmQ3TqXQjc00g  
+INFO  2019-09-07 20:43:09,334 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blockUI/jquery.blockUI.js?v=oQaw-JJuUcJQ9QVYMcFnPxICDT-hv8-kuxT2FNzTGhc  
+INFO  2019-09-07 20:43:09,343 [34   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+INFO  2019-09-07 20:43:09,355 [30   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\toastr\toastr.js'
+INFO  2019-09-07 20:43:09,357 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 93.3182ms 200 application/javascript
+INFO  2019-09-07 20:43:09,359 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 55.2356ms 200 application/javascript
+INFO  2019-09-07 20:43:09,363 [32   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/blockUI/jquery.blockUI.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\blockUI\jquery.blockUI.js'
+INFO  2019-09-07 20:43:09,364 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/jquery.spin.js?v=EG38bUU5b2M64hy9cNAzu_cQBEsiBYsDifOcoHqNd2k  
+INFO  2019-09-07 20:43:09,367 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 40.7663ms 200 application/javascript
+INFO  2019-09-07 20:43:09,368 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert.min.js?v=aPktydUv1rN3mouQeXoKi3ioFTIQlULuqYeoTAA2ihY  
+INFO  2019-09-07 20:43:09,370 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.js?v=Lar7zQhqgdoUsaqhuwkgnWgsC-eRWIxHhJPV-QtrDog  
+INFO  2019-09-07 20:43:09,372 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 224.3852ms 200 text/css
+INFO  2019-09-07 20:43:09,375 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 340.0272ms 200 text/css
+INFO  2019-09-07 20:43:09,393 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.css?v=j_16MTiQNlUrKdjTrCjLCSGkIIjHvt8tFUyucW02Vqw  
+INFO  2019-09-07 20:43:09,397 [35   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/jquery.spin.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\spin.js\jquery.spin.js'
+INFO  2019-09-07 20:43:09,399 [28   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/sweetalert/dist/sweetalert.min.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\sweetalert\dist\sweetalert.min.js'
+INFO  2019-09-07 20:43:09,402 [31   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/Waves/dist/waves.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\Waves\dist\waves.js'
+INFO  2019-09-07 20:43:09,404 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 42.3085ms 200 application/javascript
+INFO  2019-09-07 20:43:09,406 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 36.6664ms 200 application/javascript
+INFO  2019-09-07 20:43:09,408 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=ImopdkB8alCil1HigOwW3CDqWKsLZXyplf7TXBbjRnE  
+INFO  2019-09-07 20:43:09,409 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=lMgLZMlGsipWDxpvEPxfKVREzRedV_ygRnTj2kvADpw  
+INFO  2019-09-07 20:43:09,412 [32   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/Login.css'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\view-resources\Views\Account\Login.css'
+INFO  2019-09-07 20:43:09,415 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 37.9356ms 200 application/javascript
+INFO  2019-09-07 20:43:09,418 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 41.416ms 200 text/css
+INFO  2019-09-07 20:43:09,420 [23   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.toastr.js'
+INFO  2019-09-07 20:43:09,425 [28   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.jquery.js'
+INFO  2019-09-07 20:43:09,427 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.5093ms 200 application/javascript
+INFO  2019-09-07 20:43:09,429 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 19.1406ms 200 application/javascript
+INFO  2019-09-07 20:43:09,432 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=Y3zoG-hSFKmbS3BHKo_wFWRPbyzJXKoNrnF73uFdtqU  
+INFO  2019-09-07 20:43:09,433 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=RJuGDX616JN_UziXsmKnth0alpECKCx0gtxKZVrZWxY  
+INFO  2019-09-07 20:43:09,436 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=guLvtVJMvLobKpGAlQigrGWMQ1sGQo4yTL46zjGQUUY  
+INFO  2019-09-07 20:43:09,443 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/abp.js?v=FGfi3RfHf06ftjVdq2JaO16cF9CPZNPvujmuYBacXxg  
+INFO  2019-09-07 20:43:09,449 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/materialize.css?v=OdWlipUYj8b9Oa4RyT45njteIcxH-4pGocqe0r0V8js  
+INFO  2019-09-07 20:43:09,458 [23   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.spin.js'
+INFO  2019-09-07 20:43:09,460 [33   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.blockUI.js'
+INFO  2019-09-07 20:43:09,464 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 29.9309ms 200 application/javascript
+INFO  2019-09-07 20:43:09,467 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 42.3605ms 200 application/javascript
+INFO  2019-09-07 20:43:09,473 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/main.js?v=xFfzBs0qL-DOUGwpxo1lrF_0eENxqKGCB6sMszHk38M  
+INFO  2019-09-07 20:43:09,478 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/admin.js?v=_sUixSUZcmP81slFpHh9ygZ5nNihdHlHLkpoSCncHCw  
+INFO  2019-09-07 20:43:09,482 [34   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/abp.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\abp.js'
+INFO  2019-09-07 20:43:09,499 [36   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.sweet-alert.js'
+INFO  2019-09-07 20:43:09,502 [23   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/main.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\js\main.js'
+INFO  2019-09-07 20:43:09,515 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 67.3385ms 200 application/javascript
+INFO  2019-09-07 20:43:09,516 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 69.9835ms 200 application/javascript
+INFO  2019-09-07 20:43:09,518 [37   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/materialize.css'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\css\materialize.css'
+INFO  2019-09-07 20:43:09,519 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 38.0111ms 200 application/javascript
+INFO  2019-09-07 20:43:09,524 [32   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/admin.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\js\admin.js'
+INFO  2019-09-07 20:43:09,526 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.js?v=o2PUQBkwW7VjtzD5RNxKPa3oShr3fMFHds_2dwIAV5M  
+INFO  2019-09-07 20:43:09,531 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 54.8041ms 200 application/javascript
+INFO  2019-09-07 20:43:09,536 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637034856947657705  
+INFO  2019-09-07 20:43:09,542 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2  
+INFO  2019-09-07 20:43:09,547 [33   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/Login.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\view-resources\Views\Account\Login.js'
+INFO  2019-09-07 20:43:09,573 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-09-07 20:43:09,580 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 27.3477ms 200 application/javascript
+INFO  2019-09-07 20:43:09,616 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637034856947657705  
+INFO  2019-09-07 20:43:09,618 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2  
+INFO  2019-09-07 20:43:09,619 [32   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\fonts\roboto\CWB0XYA8bzo0kSThX0UTuA.woff2'
+INFO  2019-09-07 20:43:09,622 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-09-07 20:43:09,624 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 87.5862ms 200 font/woff2
+INFO  2019-09-07 20:43:09,632 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 143.3408ms 200 text/css
+INFO  2019-09-07 20:43:09,635 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.woff2  
+INFO  2019-09-07 20:43:09,641 [35   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\fonts\roboto\d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2'
+INFO  2019-09-07 20:43:09,649 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-09-07 20:43:09,656 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 60.594ms 200 font/woff2
+INFO  2019-09-07 20:43:09,688 [33   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/material-icons/materialicons.woff2'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\fonts\material-icons\materialicons.woff2'
+INFO  2019-09-07 20:43:09,689 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png  
+INFO  2019-09-07 20:43:09,692 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 64.2858ms 200 font/woff2
+INFO  2019-09-07 20:43:09,709 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-09-07 20:43:09,720 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 83.0713ms.
+INFO  2019-09-07 20:43:09,729 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.0858ms.
+INFO  2019-09-07 20:43:09,736 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.png'
+INFO  2019-09-07 20:43:09,737 [34   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-09-07 20:43:09,746 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 79.9973ms 200 image/png
+INFO  2019-09-07 20:43:09,748 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 164.0245ms
+INFO  2019-09-07 20:43:09,753 [36   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-09-07 20:43:09,758 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 235.4891ms 200 application/x-javascript; charset=utf-8
+INFO  2019-09-07 20:43:09,762 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 104.6227ms
+INFO  2019-09-07 20:43:09,764 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/Components/TenantChange/Default.js?v=637034857887915798  
+INFO  2019-09-07 20:43:09,766 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 245.6711ms 200 application/x-javascript
+INFO  2019-09-07 20:43:09,768 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/moment/min/moment-with-locales.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\moment\min\moment-with-locales.js'
+INFO  2019-09-07 20:43:09,772 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
+INFO  2019-09-07 20:43:09,774 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 554.2701ms 200 application/javascript
+INFO  2019-09-07 20:43:09,774 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 139.6399ms 200 application/javascript
+INFO  2019-09-07 20:43:09,776 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/spin.js?v=GySbz3oZXNlwoawo5PpYy0iM38B-q3jyi_HLw00uxy0  
+INFO  2019-09-07 20:43:09,781 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/spin.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\spin.js\spin.js'
+INFO  2019-09-07 20:43:09,786 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.7688ms 200 application/javascript
+INFO  2019-09-07 20:43:09,846 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/favicon.ico  
+INFO  2019-09-07 20:43:09,853 [21   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\favicon.ico'
+INFO  2019-09-07 20:43:09,856 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.4849ms 200 image/x-icon
+INFO  2019-09-07 20:43:11,480 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/Account/Login application/x-www-form-urlencoded 261
+INFO  2019-09-07 20:43:11,485 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action JD.Invoicing.Web.Controllers.AccountController.Login (JD.Invoicing.Web.Mvc)
+INFO  2019-09-07 20:43:11,514 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.Invoicing.Web.Controllers.AccountController.Login (JD.Invoicing.Web.Mvc) with arguments (JD.Invoicing.Web.Models.Account.LoginViewModel, /About, ) - Validation state: Valid
+INFO  2019-09-07 20:43:11,772 [36   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application signed in.
+INFO  2019-09-07 20:43:11,774 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.Invoicing.Web.Controllers.AccountController.Login (JD.Invoicing.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.JsonResult in 258.6179ms.
+INFO  2019-09-07 20:43:11,821 [41   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-09-07 20:43:11,825 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.Invoicing.Web.Controllers.AccountController.Login (JD.Invoicing.Web.Mvc) in 336.4553ms
+INFO  2019-09-07 20:43:11,831 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 348.1326ms 200 application/json; charset=utf-8
+INFO  2019-09-07 20:43:11,839 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/About  
+INFO  2019-09-07 20:43:11,854 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "About", area = ""}. Executing action JD.Invoicing.Web.Controllers.AboutController.Index (JD.Invoicing.Web.Mvc)
+INFO  2019-09-07 20:43:11,857 [41   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-09-07 20:43:11,883 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.Invoicing.Web.Controllers.AboutController.Index (JD.Invoicing.Web.Mvc) - Validation state: Valid
+INFO  2019-09-07 20:43:11,885 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.Invoicing.Web.Controllers.AboutController.Index (JD.Invoicing.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0287ms.
+INFO  2019-09-07 20:43:11,922 [41   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-09-07 20:43:12,034 [34   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 106.5819ms.
+INFO  2019-09-07 20:43:12,062 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.Invoicing.Web.Controllers.AboutController.Index (JD.Invoicing.Web.Mvc) in 179.9093ms
+INFO  2019-09-07 20:43:12,105 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 227.0544ms 200 text/html; charset=utf-8
+INFO  2019-09-07 20:43:12,106 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/_Layout.css?v=uq7unI_U0xZr0Pbyzeu6KfbJKHVFuv0wNJ4CrrhQknw  
+INFO  2019-09-07 20:43:12,108 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/images/logo.png  
+INFO  2019-09-07 20:43:12,114 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/themes/all-themes.css?v=XaAlkmhL9gA6mBxpcxGYAWxggxkIpRmT9qGbKejs6eA  
+INFO  2019-09-07 20:43:12,116 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap-select/dist/css/bootstrap-select.css?v=a7N4Jki3LzSbThclvqbu4nF45twcjuc772JGFhY9qwk  
+INFO  2019-09-07 20:43:12,118 [36   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/_Layout.css'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\view-resources\Views\Shared\_Layout.css'
+INFO  2019-09-07 20:43:12,121 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/images/user.png  
+INFO  2019-09-07 20:43:12,123 [34   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/logo.png'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\images\logo.png'
+INFO  2019-09-07 20:43:12,127 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 28.9995ms 200 text/css
+INFO  2019-09-07 20:43:12,134 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 18.7596ms 200 image/png
+INFO  2019-09-07 20:43:12,157 [37   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/themes/all-themes.css'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\css\themes\all-themes.css'
+INFO  2019-09-07 20:43:12,183 [34   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/user.png'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\images\user.png'
+INFO  2019-09-07 20:43:12,185 [36   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap-select/dist/css/bootstrap-select.css'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\bootstrap-select\dist\css\bootstrap-select.css'
+INFO  2019-09-07 20:43:12,186 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 64.6682ms 200 image/png
+INFO  2019-09-07 20:43:12,188 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 95.4085ms 200 text/css
+INFO  2019-09-07 20:43:12,190 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637034856947657705  
+INFO  2019-09-07 20:43:12,193 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637034856947657705  
+INFO  2019-09-07 20:43:12,217 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 67.0043ms 200 text/css
+INFO  2019-09-07 20:43:12,233 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-09-07 20:43:12,253 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-09-07 20:43:12,305 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/_Layout.js?v=jOYc7_5N1zFKt3qTihQ-9Kc0wjSMXkAeHUXNyvn8sYo  
+INFO  2019-09-07 20:43:12,311 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap-select/dist/js/bootstrap-select.js?v=_KDPX2Vvqq8sySMxlLNJxt9j6Cmb8i_xp602ozhYxzI  
+INFO  2019-09-07 20:43:12,314 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-09-07 20:43:12,316 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-09-07 20:43:12,318 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.0627ms.
+INFO  2019-09-07 20:43:12,319 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-slimscroll/jquery.slimscroll.js?v=4K6ZHzwMYR5_eU2SeDIaByus_qki9IFY8hmxl5U6D1Y  
+INFO  2019-09-07 20:43:12,321 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/push.js/push.js?v=HDxbpm8oBKwe1bmX9Z1SahYYA7zEbc1dk7LfopvOvoE  
+INFO  2019-09-07 20:43:12,329 [34   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-09-07 20:43:12,333 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-slimscroll/jquery.slimscroll.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\jquery-slimscroll\jquery.slimscroll.js'
+INFO  2019-09-07 20:43:12,335 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 92.7878ms
+INFO  2019-09-07 20:43:12,337 [37   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/_Layout.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\view-resources\Views\Shared\_Layout.js'
+INFO  2019-09-07 20:43:12,339 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 148.6813ms 200 application/x-javascript
+INFO  2019-09-07 20:43:12,341 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 119.349ms 200 application/javascript
+INFO  2019-09-07 20:43:12,388 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 24.0383ms 200 application/javascript
+INFO  2019-09-07 20:43:12,393 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 54.0522ms.
+INFO  2019-09-07 20:43:12,396 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/signalr-client/signalr.min.js?v=DeOex_tR7FzkV208FN2wnFJvIUIKXWsVjbW0171naJo  
+INFO  2019-09-07 20:43:12,398 [36   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-09-07 20:43:12,399 [37   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/push.js/push.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\push.js\push.js'
+INFO  2019-09-07 20:43:12,401 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 145.0664ms
+INFO  2019-09-07 20:43:12,403 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 81.9837ms 200 application/javascript
+INFO  2019-09-07 20:43:12,405 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 213.4073ms 200 application/x-javascript; charset=utf-8
+INFO  2019-09-07 20:43:12,408 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr-client.js?v=8bQpuR0dFdbi0KIM9VVSonDAxoXNRsdDAvuSZSI8Oyw  
+INFO  2019-09-07 20:43:12,547 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap-select/dist/js/bootstrap-select.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\bootstrap-select\dist\js\bootstrap-select.js'
+INFO  2019-09-07 20:43:12,581 [34   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/signalr-client/signalr.min.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\signalr-client\signalr.min.js'
+INFO  2019-09-07 20:43:12,585 [37   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr-client.js'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.signalr-client.js'
+INFO  2019-09-07 20:43:12,587 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 192.9092ms 200 application/javascript
+INFO  2019-09-07 20:43:12,588 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-09-07 20:43:12,591 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 182.4151ms 200 application/javascript
+INFO  2019-09-07 20:43:12,593 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 393.4136ms 200 application/javascript
+INFO  2019-09-07 20:43:12,598 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15.3399ms 200 application/json
+INFO  2019-09-07 20:43:12,611 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=-toPbviW6bJeMZpDXm3yTA  
+INFO  2019-09-07 20:43:12,621 [35   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-09-07 20:43:12,621 [35   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"-toPbviW6bJeMZpDXm3yTA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-09-07T20:43:12.6216532+08:00","Properties":{}}
+DEBUG 2019-09-07 20:43:12,621 [35   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: -toPbviW6bJeMZpDXm3yTA
+INFO  2019-09-07 20:43:24,501 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/About  
+INFO  2019-09-07 20:43:24,508 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "About", area = ""}. Executing action JD.Invoicing.Web.Controllers.AboutController.Index (JD.Invoicing.Web.Mvc)
+INFO  2019-09-07 20:43:24,510 [35   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-09-07 20:43:24,540 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.Invoicing.Web.Controllers.AboutController.Index (JD.Invoicing.Web.Mvc) - Validation state: Valid
+INFO  2019-09-07 20:43:24,541 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.Invoicing.Web.Controllers.AboutController.Index (JD.Invoicing.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0253ms.
+INFO  2019-09-07 20:43:24,572 [36   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-09-07 20:43:24,673 [33   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 95.4861ms.
+DEBUG 2019-09-07 20:43:24,699 [37   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: -toPbviW6bJeMZpDXm3yTA
+INFO  2019-09-07 20:43:24,706 [33   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.Invoicing.Web.Controllers.AboutController.Index (JD.Invoicing.Web.Mvc) in 165.6164ms
+INFO  2019-09-07 20:43:24,710 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12090.0536ms 101 
+INFO  2019-09-07 20:43:24,718 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 207.7851ms 200 text/html; charset=utf-8
+INFO  2019-09-07 20:43:24,724 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/style.css?v=kR_6Ixb3SFoWtizzp6-Hq6tcr4a-ba7f3r2o_KhqDbE  
+INFO  2019-09-07 20:43:24,734 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637034856947657705  
+INFO  2019-09-07 20:43:24,747 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637034856947657705  
+INFO  2019-09-07 20:43:24,753 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-09-07 20:43:24,756 [35   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/style.css'. Physical path: 'D:\Git\JD.Invoicing\src\JD.Invoicing.Web.Mvc\wwwroot\css\style.css'
+INFO  2019-09-07 20:43:24,761 [33   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-09-07 20:43:24,810 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 34.1059ms 200 text/css
+INFO  2019-09-07 20:43:24,814 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-09-07 20:43:24,817 [33   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-09-07 20:43:24,817 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.0544ms.
+INFO  2019-09-07 20:43:24,824 [37   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-09-07 20:43:24,850 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 78.1599ms
+INFO  2019-09-07 20:43:24,853 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 118.0487ms 200 application/x-javascript
+INFO  2019-09-07 20:43:24,865 [33   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 46.6571ms.
+INFO  2019-09-07 20:43:24,867 [33   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-09-07 20:43:24,871 [33   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 106.3121ms
+INFO  2019-09-07 20:43:24,907 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 136.5857ms 200 application/x-javascript; charset=utf-8
+INFO  2019-09-07 20:43:24,909 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-09-07 20:43:24,919 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.8601ms 200 application/json
+INFO  2019-09-07 20:43:24,935 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=z4bXAuW-Jg9M6LHb83QD0g  
+INFO  2019-09-07 20:43:24,945 [21   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-09-07 20:43:24,946 [21   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"z4bXAuW-Jg9M6LHb83QD0g","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-09-07T20:43:24.9463073+08:00","Properties":{}}
+DEBUG 2019-09-07 20:43:24,946 [21   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: z4bXAuW-Jg9M6LHb83QD0g

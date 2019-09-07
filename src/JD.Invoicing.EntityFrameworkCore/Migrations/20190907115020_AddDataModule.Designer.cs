@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JD.Invoicing.Migrations
 {
     [DbContext(typeof(InvoicingDbContext))]
-    [Migration("20190907115020_Initial")]
+    [Migration("20190907115020_AddDataModule")]
     partial class AddDataModule
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
