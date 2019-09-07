@@ -3638,7 +3638,7 @@ section.content {
         .ms-container .ms-selectable li.ms-elem-selection,
         .ms-container .ms-selection li.ms-elem-selectable,
         .ms-container .ms-selection li.ms-elem-selection {
-            padding: 9px 15px 6px 15px !important;
+            padding: 9px 5px 6px 5px !important;
         }
 
     .ms-container .ms-optgroup-label {
