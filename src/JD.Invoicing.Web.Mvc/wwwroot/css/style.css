@@ -3130,7 +3130,7 @@ a {
 }
 
 section.content {
-    margin: 80px 15px 0 295px;
+    margin: 85px 0 5px 300px;
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -10091,7 +10091,7 @@ fieldset[disabled] .form-control {
         white-space: nowrap;
         position: relative;
         border-bottom: 1px solid #e9e9e9;
-        background-color: silver;
+        background-color: #fff;
         /*background: url("../images/user-img-background.jpg") no-repeat no-repeat;*/
         height: 85px;
     }
@@ -10124,7 +10124,7 @@ fieldset[disabled] .form-control {
                 overflow: hidden;
                 font-size: 14px;
                 max-width: 200px;
-                color: #fff;
+                color: #000;
             }
 
             .sidebar .user-info .info-container .email {
@@ -10147,7 +10147,7 @@ fieldset[disabled] .form-control {
                 -ms-box-shadow: none;
                 box-shadow: none;
                 cursor: pointer;
-                color: #fff;
+                color: #747474;
             }
 
     .sidebar .menu {
