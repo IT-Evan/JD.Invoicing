@@ -3,6 +3,7 @@ using Abp.Zero.EntityFrameworkCore;
 using JD.Invoicing.Authorization.Roles;
 using JD.Invoicing.Authorization.Users;
 using JD.Invoicing.MultiTenancy;
+using JD.Invoicing.Entitys;
 
 namespace JD.Invoicing.EntityFrameworkCore
 {
@@ -14,5 +15,9 @@ namespace JD.Invoicing.EntityFrameworkCore
             : base(options)
         {
         }
+
+        public DbSet<Goods> Goods { get; set; }
+        public DbSet<Customer> Customer { get; set; }
+        public DbSet<Warehouse> Warehouse { get; set; }
     }
 }

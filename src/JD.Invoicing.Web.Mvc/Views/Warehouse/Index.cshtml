@@ -1,0 +1,268 @@
+﻿@using JD.Invoicing.Web.Startup
+@model JD.Invoicing.Web.Models.Warehouse.WarehouseListViewModel
+
+@{
+    ViewBag.CurrentPageName = PageNames.Warehouse; // The menu item will be active for this page.
+}
+<div class="modal fade" id="WarehouseCreateModal" tabindex="-1" role="dialog"
+     aria-labelledby="WarehouseCreateModalLabel" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    <span>@L("CreateNewWarehouse")</span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form name="WarehouseCreateForm" role="form" class="form-validation">
+                    <div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <label asp-for="@Model.Warehouse.Code" class="form-label"></label>
+                                        <input type="text" name="Code" class="form-control" required maxlength="50" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <label asp-for="@Model.Warehouse.Name" class="form-label"></label>
+                                        <input type="text" name="Name" class="form-control" required maxlength="150" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <label asp-for="@Model.Warehouse.Address" class="form-label"></label>
+                                        <input type="text" name="Address" class="form-control" required maxlength="200" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <label asp-for="@Model.Warehouse.Sizes" class="form-label"></label>
+                                        <input type="text" name="Sizes" class="form-control" required maxlength="50" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <label asp-for="@Model.Warehouse.Purpose" class="form-label"></label>
+                                        <input type="text" name="Purpose" class="form-control" required maxlength="500" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label asp-for="@Model.Warehouse.Remarks"></label>
+                                    <input name="Remarks" type="text" class="form-control" required maxlength="200" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label asp-for="@Model.Warehouse.Status"></label>
+                                    <input name="Status" type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label asp-for="@Model.Warehouse.CreateDate"></label>
+                                    <input name="CreateDate" type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label asp-for="@Model.Warehouse.CreateName"></label>
+                                    <input name="CreateName" type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label asp-for="@Model.Warehouse.UpdateDate"></label>
+                                    <input name="UpdateDate" type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label asp-for="@Model.Warehouse.UpdateName"></label>
+                                    <input name="UpdateName" type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">@L("Cancel")</button>
+                        <button type="submit" class="btn btn-primary waves-effect">@L("Save")</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+        <div class="card">
+            <div class="header">
+                <h2>
+                    @L("Warehouse")
+
+                </h2>
+
+                <button type="button" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal"
+                        data-target="#WarehouseCreateModal">
+
+                    <i class="material-icons">add</i>
+
+                </button>
+                <ul class="header-dropdown m-r--5">
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">
+
+                            <i class="material-icons">more_vert</i>
+
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+
+                            <li>
+                                <a id="RefreshButton" href="javascript:void(0);" class="waves-effect waves-block">
+                                    <i class="material-icons">refresh</i>@L("Refresh")
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="body table-responsive">
+
+                <table class="table">
+
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Warehouse.Code)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Warehouse.Name)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Warehouse.Address)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Warehouse.Sizes)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Warehouse.Purpose)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Warehouse.Remarks)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Warehouse.Status)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Warehouse.CreateDate)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Warehouse.CreateName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Warehouse.UpdateDate)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Warehouse.UpdateName)
+                            </th>
+                            <th></th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        @foreach (var item in Model.Warehouses)
+                        {
+
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Code)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Name)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Address)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Sizes)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Purpose)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Remarks)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Status)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CreateDate)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CreateName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.UpdateDate)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.UpdateName)
+                                </td>
+
+                                <td class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">menu</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="#" class="waves-effect waves-block edit-Warehouse" data-Warehouse-id="@item.Id" data-toggle="modal" data-target="#WarehouseEditModal"><i class="material-icons">edit</i>@L("Edit")</a></li>
+                                        <li><a href="#" class="waves-effect waves-block delete-Warehouse" data-Warehouse-id="@item.Id" data-Warehouse-name="@item.Name"><i class="material-icons">delete_sweep</i>@L("Delete")</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                        }
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="WarehouseEditModal" tabindex="-1" role="dialog" aria-labelledby="WarehouseEditModalLabel" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+@section scripts    {
+
+    <script src="~/view-resources/Views/Warehouse/Index.js" asp-append-version="true"></script>   }

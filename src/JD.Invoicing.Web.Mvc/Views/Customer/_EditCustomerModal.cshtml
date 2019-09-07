@@ -1,0 +1,143 @@
+﻿@using JD.Invoicing.Web.Models.Common.Modals
+@model JD.Invoicing.Web.Models.Customer.EditCustomerModalViewModel
+
+@{
+
+    Layout = null;
+
+}
+
+@Html.Partial("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("EditCustomer")))
+
+<div class="modal-body">
+    <form name="CustomerEditForm" role="form" novalidate class="form-validation">
+        <input type="hidden" name="Id" value="@Model.Customer.Id" />
+        <div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label asp-for="@Model.Customer.Code" class="form-label"></label>
+                            <input type="text" name="Code" class="form-control" required maxlength="50" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label asp-for="@Model.Customer.Name" class="form-label"></label>
+                            <input type="text" name="Name" class="form-control" required maxlength="150" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label asp-for="@Model.Customer.PinyinCode" class="form-label"></label>
+                            <input type="text" name="PinyinCode" class="form-control" required maxlength="150" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label asp-for="@Model.Customer.Address" class="form-label"></label>
+                            <input type="text" name="Address" class="form-control" required maxlength="200" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label asp-for="@Model.Customer.Contact" class="form-label"></label>
+                            <input type="text" name="Contact" class="form-control" required maxlength="50" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label asp-for="@Model.Customer.Phone" class="form-label"></label>
+                            <input type="text" name="Phone" class="form-control" required maxlength="50" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Customer.Wechat"></label>
+                        <input type="text" name="Wechat" class="form-control" required maxlength="50" />
+
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Customer.Area"></label>
+                        <input name="Area" type="text" class="form-control" required maxlength="50" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Customer.Type"></label>
+                        <input name="Type" type="text" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Customer.Remarks"></label>
+                        <input name="Remarks" type="text" class="form-control" required maxlength="200" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Customer.Status"></label>
+                        <input name="Status" type="text" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Customer.CreateDate"></label>
+                        <input name="CreateDate" type="text" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Customer.CreateName"></label>
+                        <input name="CreateName" type="text" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Customer.UpdateDate"></label>
+                        <input name="UpdateDate" type="text" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Customer.UpdateName"></label>
+                        <input name="UpdateName" type="text" class="form-control" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+@Html.Partial("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+
+<script src="~/view-resources/Views/Customer/_EditCustomerModal.js" asp-append-version="true"></script>

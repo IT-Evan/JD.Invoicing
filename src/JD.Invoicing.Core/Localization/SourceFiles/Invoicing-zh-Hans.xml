@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <localizationDictionary culture="zh-Hans">
   <texts>
+    <text name="Invoicing" value="进销存系统" />
     <text name="HomePage" value="主页" />
     <text name="About" value="关于我们" />
-    <text name="WelcomeMessage" value="欢迎使用 Invoicing!" />
+    <text name="WelcomeMessage" value="欢迎使用JD进销存系统!" />
     <text name="FormIsNotValidMessage" value="部分输入信息不符合要求，请检查并改正.." />
     <text name="TenantNameCanNotBeEmpty" value="租户名不能为空" />
     <text name="InvalidUserNameOrPassword" value="用户名或密码无效" />
@@ -17,6 +18,8 @@
     <text name="RememberMe" value="记住我" />
     <text name="ForgetPassword" value="忘记密码"/>
     <text name="NotSelected" value="未选"/>
+    <text name="CurrentTenant">当前租户</text>
+    <text name="Change">更改</text>
     <text name="ChangeTenant" value="更改租户"/>
     <text name="LeaveEmptyToSwitchToHost" value="留空以切换到Host"/>
     <text name="LogIn" value="登录" />
@@ -26,7 +29,7 @@
     <text name="PasswordPlaceholder" >请输入密码</text>
     <text name="CopyRight" >© 2018 Invoicing</text>
     <text name="LoginPrompt" >正在登陆，请稍候！</text>
-    <text name="UserProfile" >用户资料</text>
+    <text name="UsInvoicingrofile" >用户资料</text>
     <text name="Users" >用户</text>
     <text name="Roles" >角色</text>
     <text name="Tenants" >租户</text>
@@ -69,10 +72,10 @@
     <text name="All">全部</text>
     <text name="Actived">启用</text>
     <text name="NoActive">未启用</text>
-    
+
     <text name="Yes">是</text>
     <text name="No">否</text>
-    
+
     <text name="Cancel">取消</text>
     <text name="OK">确定</text>
     <text name="CreateNewRole">创建新角色</text>
@@ -96,8 +99,38 @@
     <text name="DefaultPasswordIs">默认密码为：{0}</text>
     <text name="DeleteTenantConfirm">确认删除该租户？</text>
     <text name="EditTenant">编辑租户</text>
-    
-    
+    <text name="Data">数据管理</text>
+    <text name="Operation">运营管理</text>
+    <text name="Report">报表</text>
+    <text name="Setting">系统设置</text>
+    <text name="Goods">商品信息</text>
+    <text name="Customer">客商信息</text>
+    <text name="Warehouse">仓库信息</text>
+    <text name="Purchase">采购管理</text>
+    <text name="PurchaseOrder">采购订单</text>
+    <text name="PurchaseWarehousing">采购入库</text>
+    <text name="PurchaseReturn">采购退货</text>
+    <text name="Sales">销售管理</text>
+    <text name="SalesOrder">销售开单</text>
+    <text name="SalesReturn">销售退回</text>
+    <text name="Inventory">库存管理</text>
+    <text name="Loss">报损单</text>
+    <text name="Profit">报益单</text>
+    <text name="InventoryInfo">库存信息</text>
+    <text name="InventoryCheck">库存盘点</text>
+    <text name="InventoryTransfer">仓库调拨</text>
+    <text name="ProfitLossReport">损益报表</text>
+    <text name="ProcurementStatisticsReport">采购统计报表</text>
+    <text name="ProcurementAnalysisReport">采购分析报表</text>
+    <text name="ProcurementDetailReport">采购明细报表</text>
+    <text name="SalesStatisticsReport">销售统计报表</text>
+    <text name="SalesAnalysisReport">销售分析报表</text>
+    <text name="SalesDetailReport">销售明细报表</text>
+    <text name="GrossStatisticsReport">毛利统计报表</text>
+    <text name="GrossAnalysisReport">毛利分析报表</text>
+    <text name="GrossDetailReport">毛利明细报表</text>
+
+
   </texts>
 </localizationDictionary>
 

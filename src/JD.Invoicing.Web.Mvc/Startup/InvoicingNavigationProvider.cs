@@ -20,29 +20,201 @@ namespace JD.Invoicing.Web.Startup
                         icon: "home",
                         requiresAuthentication: true
                     )
-                ).AddItem(
+                )
+                .AddItem( // Menu items below is just for demonstration!
                     new MenuItemDefinition(
-                        PageNames.Tenants,
-                        L("Tenants"),
-                        url: "Tenants",
-                        icon: "business",
-                        requiredPermissionName: PermissionNames.Pages_Tenants
+                        "Data",
+                        L("Data"),
+                        icon: "storage"
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Goods,
+                            L("Goods"),
+                            url: "Goods"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Customer,
+                            L("Customer"),
+                            url: "Customer"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Warehouse,
+                            L("Warehouse"),
+                            url: "Warehouse"
+                        )
                     )
-                ).AddItem(
+                )
+                .AddItem( // Menu items below is just for demonstration!
                     new MenuItemDefinition(
-                        PageNames.Users,
-                        L("Users"),
-                        url: "Users",
-                        icon: "people",
-                        requiredPermissionName: PermissionNames.Pages_Users
+                        "Operation",
+                        L("Operation"),
+                        icon: "business"
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            "Purchase",
+                            L("Purchase"),
+                            url: "Purchase"
+                        ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.PurchaseOrder,
+                            L("PurchaseOrder"),
+                            url: "PurchaseOrder"
+                        )).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.PurchaseWarehousing,
+                            L("PurchaseWarehousing"),
+                            url: "PurchaseWarehousing"
+                        )).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.PurchaseReturn,
+                            L("PurchaseReturn"),
+                            url: "PurchaseReturn"
+                        ))
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            "Sales",
+                            L("Sales"),
+                            url: "Sales"
+                        ).AddItem(
+                            new MenuItemDefinition(
+                                PageNames.SalesOrder,
+                                L("SalesOrder"),
+                                url: "SalesOrder"
+                            )).AddItem(
+                            new MenuItemDefinition(
+                                PageNames.SalesReturn,
+                                L("SalesReturn"),
+                                url: "SalesReturn"
+                            ))
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            "Inventory",
+                            L("Inventory"),
+                            url: "Inventory"
+                        ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Loss,
+                            L("Loss"),
+                            url: "Loss"
+                        )).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Profit,
+                            L("Profit"),
+                            url: "Profit"
+                        )).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.InventoryInfo,
+                            L("InventoryInfo"),
+                            url: "InventoryInfo"
+                        )).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.InventoryCheck,
+                            L("InventoryCheck"),
+                            url: "InventoryCheck"
+                        )).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.InventoryTransfer,
+                            L("InventoryTransfer"),
+                            url: "InventoryTransfer"
+                        )).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.ProfitLossReport,
+                            L("ProfitLossReport"),
+                            url: "ProfitLossReport"
+                        ))
+                ))
+                .AddItem( // Menu items below is just for demonstration!
+                    new MenuItemDefinition(
+                        "Report",
+                        L("Report"),
+                        icon: "poll"
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.ProcurementStatisticsReport,
+                            L("ProcurementStatisticsReport"),
+                            url: "ProcurementStatisticsReport"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.ProcurementAnalysisReport,
+                            L("ProcurementAnalysisReport"),
+                            url: "ProcurementAnalysisReport"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.ProcurementDetailReport,
+                            L("ProcurementDetailReport"),
+                            url: "ProcurementDetailReport"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.SalesStatisticsReport,
+                            L("SalesStatisticsReport"),
+                            url: "SalesStatisticsReport"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.SalesAnalysisReport,
+                            L("SalesAnalysisReport"),
+                            url: "SalesAnalysisReport"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.SalesDetailReport,
+                            L("SalesDetailReport"),
+                            url: "SalesDetailReport"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.GrossStatisticsReport,
+                            L("GrossStatisticsReport"),
+                            url: "GrossStatisticsReport"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.GrossAnalysisReport,
+                            L("GrossAnalysisReport"),
+                            url: "GrossAnalysisReport"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.GrossDetailReport,
+                            L("GrossDetailReport"),
+                            url: "GrossDetailReport"
+                        )
                     )
-                ).AddItem(
+                )
+                .AddItem( // Menu items below is just for demonstration!
                     new MenuItemDefinition(
-                        PageNames.Roles,
-                        L("Roles"),
-                        url: "Roles",
-                        icon: "local_offer",
-                        requiredPermissionName: PermissionNames.Pages_Roles
+                        "Setting",
+                        L("Setting"),
+                        icon: "settings"
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Tenants,
+                            L("Tenants"),
+                            url: "Tenants",
+                            //icon: "business",
+                            requiredPermissionName: PermissionNames.Pages_Tenants
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Users,
+                            L("Users"),
+                            url: "Users",
+                            //icon: "people",
+                            requiredPermissionName: PermissionNames.Pages_Users
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Roles,
+                            L("Roles"),
+                            url: "Roles",
+                            //icon: "local_offer",
+                            requiredPermissionName: PermissionNames.Pages_Roles
+                        )
                     )
                 )
                 .AddItem(
@@ -51,82 +223,6 @@ namespace JD.Invoicing.Web.Startup
                         L("About"),
                         url: "About",
                         icon: "info"
-                    )
-                ).AddItem( // Menu items below is just for demonstration!
-                    new MenuItemDefinition(
-                        "MultiLevelMenu",
-                        L("MultiLevelMenu"),
-                        icon: "menu"
-                    ).AddItem(
-                        new MenuItemDefinition(
-                            "AspNetBoilerplate",
-                            new FixedLocalizableString("ASP.NET Boilerplate")
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetBoilerplateHome",
-                                new FixedLocalizableString("Home"),
-                                url: "https://aspnetboilerplate.com?ref=abptmpl"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetBoilerplateTemplates",
-                                new FixedLocalizableString("Templates"),
-                                url: "https://aspnetboilerplate.com/Templates?ref=abptmpl"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetBoilerplateSamples",
-                                new FixedLocalizableString("Samples"),
-                                url: "https://aspnetboilerplate.com/Samples?ref=abptmpl"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetBoilerplateDocuments",
-                                new FixedLocalizableString("Documents"),
-                                url: "https://aspnetboilerplate.com/Pages/Documents?ref=abptmpl"
-                            )
-                        )
-                    ).AddItem(
-                        new MenuItemDefinition(
-                            "AspNetZero",
-                            new FixedLocalizableString("ASP.NET Zero")
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroHome",
-                                new FixedLocalizableString("Home"),
-                                url: "https://aspnetzero.com?ref=abptmpl"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroDescription",
-                                new FixedLocalizableString("Description"),
-                                url: "https://aspnetzero.com/?ref=abptmpl#description"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroFeatures",
-                                new FixedLocalizableString("Features"),
-                                url: "https://aspnetzero.com/?ref=abptmpl#features"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroPricing",
-                                new FixedLocalizableString("Pricing"),
-                                url: "https://aspnetzero.com/?ref=abptmpl#pricing"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroFaq",
-                                new FixedLocalizableString("Faq"),
-                                url: "https://aspnetzero.com/Faq?ref=abptmpl"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroDocuments",
-                                new FixedLocalizableString("Documents"),
-                                url: "https://aspnetzero.com/Documents?ref=abptmpl"
-                            )
-                        )
                     )
                 );
         }

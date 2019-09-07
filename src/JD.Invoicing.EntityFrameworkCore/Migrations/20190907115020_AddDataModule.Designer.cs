@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JD.Invoicing.Migrations
 {
     [DbContext(typeof(InvoicingDbContext))]
-    [Migration("20190907095126_Initial")]
-    partial class Initial
+    [Migration("20190907115020_Initial")]
+    partial class AddDataModule
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -1034,6 +1034,172 @@ namespace JD.Invoicing.Migrations
                     b.HasIndex("TenantId", "NormalizedUserName");
 
                     b.ToTable("AbpUsers");
+                });
+
+            modelBuilder.Entity("JD.Invoicing.Entitys.Customer", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address")
+                        .HasMaxLength(200);
+
+                    b.Property<string>("Area")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Code")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Contact")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime?>("CreateDate");
+
+                    b.Property<string>("CreateName")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(150);
+
+                    b.Property<string>("Phone")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("PinyinCode")
+                        .HasMaxLength(150);
+
+                    b.Property<string>("Remarks")
+                        .HasMaxLength(200);
+
+                    b.Property<int?>("Status");
+
+                    b.Property<int?>("Type");
+
+                    b.Property<DateTime?>("UpdateDate");
+
+                    b.Property<string>("UpdateName")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Wechat")
+                        .HasMaxLength(50);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Customer");
+                });
+
+            modelBuilder.Entity("JD.Invoicing.Entitys.Goods", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Barcode")
+                        .HasMaxLength(100);
+
+                    b.Property<string>("Class")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime?>("CreateDate");
+
+                    b.Property<string>("CreateName")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<string>("GenericName")
+                        .HasMaxLength(150);
+
+                    b.Property<string>("License")
+                        .HasMaxLength(150);
+
+                    b.Property<string>("Manufacturer")
+                        .HasMaxLength(150);
+
+                    b.Property<string>("Model")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(150);
+
+                    b.Property<string>("PinyinCode")
+                        .HasMaxLength(150);
+
+                    b.Property<string>("Remarks")
+                        .HasMaxLength(200);
+
+                    b.Property<decimal>("RetailPrice");
+
+                    b.Property<string>("Specs")
+                        .HasMaxLength(50);
+
+                    b.Property<int?>("Status");
+
+                    b.Property<string>("Type")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Unit")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime?>("UpdateDate");
+
+                    b.Property<string>("UpdateName")
+                        .HasMaxLength(50);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Goods");
+                });
+
+            modelBuilder.Entity("JD.Invoicing.Entitys.Warehouse", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address")
+                        .HasMaxLength(200);
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime?>("CreateDate");
+
+                    b.Property<string>("CreateName")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(150);
+
+                    b.Property<string>("Purpose")
+                        .HasMaxLength(500);
+
+                    b.Property<string>("Remarks")
+                        .HasMaxLength(200);
+
+                    b.Property<string>("Sizes")
+                        .HasMaxLength(50);
+
+                    b.Property<int?>("Status");
+
+                    b.Property<DateTime?>("UpdateDate");
+
+                    b.Property<string>("UpdateName")
+                        .HasMaxLength(50);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Warehouse");
                 });
 
             modelBuilder.Entity("JD.Invoicing.MultiTenancy.Tenant", b =>

@@ -1,0 +1,167 @@
+﻿@using JD.Invoicing.Web.Models.Common.Modals
+@model JD.Invoicing.Web.Models.Goods.EditGoodsModalViewModel
+@{
+    Layout = null;
+}
+@Html.Partial("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("EditGoods")))
+
+<div class="modal-body">
+    <form name="GoodsEditForm" role="form" novalidate class="form-validation">
+        <input type="hidden" name="Id" value="@Model.Goods.Id" />
+        <div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label asp-for="@Model.Goods.Code" class="form-label"></label>
+                            <input type="text" name="Code" class="form-control" required maxlength="50" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label asp-for="@Model.Goods.Name" class="form-label"></label>
+                            <input type="text" name="Name" class="form-control" required maxlength="150" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-12">
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label asp-for="@Model.Goods.GenericName" class="form-label"></label>
+                            <input type="text" name="GenericName" class="form-control" required maxlength="150" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label asp-for="@Model.Goods.PinyinCode" class="form-label"></label>
+                            <input type="text" name="PinyinCode" class="form-control" required maxlength="150" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label asp-for="@Model.Goods.Barcode" class="form-label"></label>
+                            <input type="text" name="Barcode" class="form-control" required maxlength="100" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label asp-for="@Model.Goods.Unit" class="form-label"></label>
+                            <input type="text" name="Unit" class="form-control" required maxlength="50" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label asp-for="@Model.Goods.Specs" class="form-label"></label>
+                            <input type="text" name="Specs" class="form-control" required maxlength="50" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Goods.Model"></label>
+                        <input type="text" name="Model" class="form-control" required maxlength="50" />
+
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Goods.Manufacturer"></label>
+                        <input name="Manufacturer" type="text" class="form-control" required maxlength="150" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Goods.License"></label>
+                        <input name="License" type="text" class="form-control" required maxlength="150" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Goods.Class"></label>
+                        <input name="Class" type="text" class="form-control" required maxlength="50" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Goods.Type"></label>
+                        <input name="Type" type="text" class="form-control" required maxlength="50" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Goods.RetailPrice"></label>
+                        <input name="RetailPrice" type="text" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Goods.Remarks"></label>
+                        <input name="Remarks" type="text" class="form-control" required maxlength="200" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Goods.Status"></label>
+                        <input name="Status" type="text" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Goods.CreateDate"></label>
+                        <input name="CreateDate" type="text" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Goods.CreateName"></label>
+                        <input name="CreateName" type="text" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Goods.UpdateDate"></label>
+                        <input name="UpdateDate" type="text" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label asp-for="@Model.Goods.UpdateName"></label>
+                        <input name="UpdateName" type="text" class="form-control" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+@Html.Partial("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+
+<script src="~/view-resources/Views/Goods/_EditGoodsModal.js" asp-append-version="true"></script>

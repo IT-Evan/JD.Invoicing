@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace JD.Invoicing.Migrations
 {
-    public partial class Initial : Migration
+    public partial class AddDataModule : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -389,6 +389,90 @@ namespace JD.Invoicing.Migrations
                         principalTable: "AbpUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Customer",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Code = table.Column<string>(maxLength: 50, nullable: true),
+                    Name = table.Column<string>(maxLength: 150, nullable: true),
+                    PinyinCode = table.Column<string>(maxLength: 150, nullable: true),
+                    Address = table.Column<string>(maxLength: 200, nullable: true),
+                    Contact = table.Column<string>(maxLength: 50, nullable: true),
+                    Phone = table.Column<string>(maxLength: 50, nullable: true),
+                    Wechat = table.Column<string>(maxLength: 50, nullable: true),
+                    Area = table.Column<string>(maxLength: 50, nullable: true),
+                    Type = table.Column<int>(nullable: true),
+                    Remarks = table.Column<string>(maxLength: 200, nullable: true),
+                    Status = table.Column<int>(nullable: true),
+                    CreateDate = table.Column<DateTime>(nullable: true),
+                    CreateName = table.Column<string>(maxLength: 50, nullable: true),
+                    UpdateDate = table.Column<DateTime>(nullable: true),
+                    UpdateName = table.Column<string>(maxLength: 50, nullable: true),
+                    CreationTime = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Customer", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Goods",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Code = table.Column<string>(maxLength: 50, nullable: false),
+                    Name = table.Column<string>(maxLength: 150, nullable: false),
+                    GenericName = table.Column<string>(maxLength: 150, nullable: true),
+                    PinyinCode = table.Column<string>(maxLength: 150, nullable: true),
+                    Barcode = table.Column<string>(maxLength: 100, nullable: true),
+                    Unit = table.Column<string>(maxLength: 50, nullable: true),
+                    Specs = table.Column<string>(maxLength: 50, nullable: true),
+                    Model = table.Column<string>(maxLength: 50, nullable: true),
+                    Manufacturer = table.Column<string>(maxLength: 150, nullable: true),
+                    License = table.Column<string>(maxLength: 150, nullable: true),
+                    Class = table.Column<string>(maxLength: 50, nullable: true),
+                    Type = table.Column<string>(maxLength: 50, nullable: true),
+                    RetailPrice = table.Column<decimal>(nullable: false),
+                    Remarks = table.Column<string>(maxLength: 200, nullable: true),
+                    Status = table.Column<int>(nullable: true),
+                    CreateDate = table.Column<DateTime>(nullable: true),
+                    CreateName = table.Column<string>(maxLength: 50, nullable: true),
+                    UpdateDate = table.Column<DateTime>(nullable: true),
+                    UpdateName = table.Column<string>(maxLength: 50, nullable: true),
+                    CreationTime = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Goods", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Warehouse",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Code = table.Column<string>(maxLength: 50, nullable: false),
+                    Name = table.Column<string>(maxLength: 150, nullable: true),
+                    Address = table.Column<string>(maxLength: 200, nullable: true),
+                    Sizes = table.Column<string>(maxLength: 50, nullable: true),
+                    Purpose = table.Column<string>(maxLength: 500, nullable: true),
+                    Remarks = table.Column<string>(maxLength: 200, nullable: true),
+                    Status = table.Column<int>(nullable: true),
+                    CreateDate = table.Column<DateTime>(nullable: true),
+                    CreateName = table.Column<string>(maxLength: 50, nullable: true),
+                    UpdateDate = table.Column<DateTime>(nullable: true),
+                    UpdateName = table.Column<string>(maxLength: 50, nullable: true),
+                    CreationTime = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Warehouse", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -1114,6 +1198,15 @@ namespace JD.Invoicing.Migrations
 
             migrationBuilder.DropTable(
                 name: "AbpUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "Customer");
+
+            migrationBuilder.DropTable(
+                name: "Goods");
+
+            migrationBuilder.DropTable(
+                name: "Warehouse");
 
             migrationBuilder.DropTable(
                 name: "AbpEntityChanges");
