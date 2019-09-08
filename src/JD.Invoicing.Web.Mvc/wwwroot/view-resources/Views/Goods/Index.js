@@ -69,7 +69,7 @@
 
         function deleteGoods(goodsId, goodsName) {
             abp.message.confirm(
-                abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'JD'), goodsName),
+                abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'Invoicing'), goodsName),
 
                 function (isConfirmed) {
                     if (isConfirmed) {
