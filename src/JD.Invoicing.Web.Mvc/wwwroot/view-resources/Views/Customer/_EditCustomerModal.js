@@ -1,6 +1,6 @@
 ﻿(function ($) {
     var _CustomerService = abp.services.app.Customer;
-    var _$modal = $('#CustomerEditForm');
+    var _$modal = $('#CustomerEditModal');
     var _$form = $('form[name=CustomerEditForm]');
 
 

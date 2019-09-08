@@ -1,6 +1,6 @@
 ﻿(function ($) {
     var _WarehouseService = abp.services.app.Warehouse;
-    var _$modal = $('#WarehouseEditForm');
+    var _$modal = $('#WarehouseEditModal');
     var _$form = $('form[name=WarehouseEditForm]');
 
 

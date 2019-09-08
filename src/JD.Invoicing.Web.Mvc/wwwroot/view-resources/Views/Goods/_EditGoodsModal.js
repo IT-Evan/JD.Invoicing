@@ -1,6 +1,6 @@
 ﻿(function ($) {
     var _goodsService = abp.services.app.goods;
-    var _$modal = $('#GoodsEditForm');
+    var _$modal = $('#GoodsEditModal');
     var _$form = $('form[name=GoodsEditForm]');
 
 
