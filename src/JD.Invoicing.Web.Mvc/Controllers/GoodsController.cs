@@ -1,5 +1,6 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AspNetCore.Mvc.Authorization;
+using JD.Invoicing.Authorization;
 using JD.Invoicing.Controllers;
 using JD.Invoicing.Goods;
 using JD.Invoicing.Goods.Dto;
@@ -10,39 +11,39 @@ using System.Threading.Tasks;
 
 namespace JD.Invoicing.Web.Controllers
 {
-    [AbpMvcAuthorize]
+    [AbpMvcAuthorize(PermissionNames.Pages_Goods)]
     public class GoodsController : InvoicingControllerBase
     {
-        const int MaxNum = 10;
-        // GET: /<controller>/
-        public async Task<IActionResult> Index()
-        {
-
-            var module = (await _goodsAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
-            // Paging not implemented yet
-            GoodsDto cuModule = module.FirstOrDefault();
-            var model = new GoodsListViewModel
-            {
-
-                Goods = cuModule,
-                Goodses = module
-
-            };
-            return View(model);
-        }
-
         private readonly IGoodsAppService _goodsAppService;
+        const int MaxNum = 10;
 
         public GoodsController(IGoodsAppService goodsAppService)
         {
             _goodsAppService = goodsAppService;
 
         }
-        public async Task<ActionResult> EditGoodsModal(int moduleId)
+        // GET: /<controller>/
+        public async Task<ActionResult> Index()
+        {
+
+            var goods = (await _goodsAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
+            // Paging not implemented yet
+            GoodsDto cuGoods = goods.FirstOrDefault();
+            var model = new GoodsListViewModel
+            {
+
+                Goods = cuGoods,
+                Goodses = goods
+
+            };
+            return View(model);
+        }
+
+        public async Task<ActionResult> EditGoodsModal(int goodsId)
 
         {
-            var module = await _goodsAppService.Get(new EntityDto<int>(moduleId));
-            GoodsDto cuGoods = AutoMapper.Mapper.Map<GoodsDto>(module);
+            var goods = await _goodsAppService.Get(new EntityDto<int>(goodsId));
+            GoodsDto cuGoods = AutoMapper.Mapper.Map<GoodsDto>(goods);
             var model = new EditGoodsModalViewModel
             {
                 Goods = cuGoods

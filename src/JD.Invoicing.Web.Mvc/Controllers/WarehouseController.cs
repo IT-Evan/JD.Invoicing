@@ -1,5 +1,6 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AspNetCore.Mvc.Authorization;
+using JD.Invoicing.Authorization;
 using JD.Invoicing.Controllers;
 using JD.Invoicing.Warehouse;
 using JD.Invoicing.Warehouse.Dto;
@@ -12,7 +13,7 @@ using System.Threading.Tasks;
 namespace JD.Invoicing.Web.Controllers
 {
 
-    [AbpMvcAuthorize]
+    [AbpMvcAuthorize(PermissionNames.Pages_Warehouse)]
     public class WarehouseController : InvoicingControllerBase
     {
         const int MaxNum = 10;

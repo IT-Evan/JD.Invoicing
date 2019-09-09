@@ -1,5 +1,6 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AspNetCore.Mvc.Authorization;
+using JD.Invoicing.Authorization;
 using JD.Invoicing.Controllers;
 using JD.Invoicing.Customer;
 using JD.Invoicing.Customer.Dto;
@@ -12,7 +13,7 @@ using System.Threading.Tasks;
 namespace JD.Invoicing.Web.Controllers
 {
 
-    [AbpMvcAuthorize]
+    [AbpMvcAuthorize(PermissionNames.Pages_Customer)]
     public class CustomerController : InvoicingControllerBase
     {
         const int MaxNum = 10;

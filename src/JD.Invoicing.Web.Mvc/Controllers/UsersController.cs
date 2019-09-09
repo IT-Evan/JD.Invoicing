@@ -14,6 +14,7 @@ namespace JD.Invoicing.Web.Controllers
     public class UsersController : InvoicingControllerBase
     {
         private readonly IUserAppService _userAppService;
+        const int MaxNum = 10;
 
         public UsersController(IUserAppService userAppService)
         {
@@ -22,7 +23,7 @@ namespace JD.Invoicing.Web.Controllers
 
         public async Task<ActionResult> Index()
         {
-            var users = (await _userAppService.GetAll(new PagedUserResultRequestDto {MaxResultCount = int.MaxValue})).Items; // Paging not implemented yet
+            var users = (await _userAppService.GetAll(new PagedUserResultRequestDto {MaxResultCount = MaxNum })).Items; // Paging not implemented yet
             var roles = (await _userAppService.GetRoles()).Items;
             var model = new UserListViewModel
             {
