@@ -126,5 +126,6 @@
     <text name="GrossStatisticsReport">Gross Statistics Report</text>
     <text name="GrossAnalysisReport">Gross Analysis Report</text>
     <text name="GrossDetailReport">Gross Detail Report</text>
+    <text name="RolePermissions">Role Permissions</text>
   </texts>
 </localizationDictionary>

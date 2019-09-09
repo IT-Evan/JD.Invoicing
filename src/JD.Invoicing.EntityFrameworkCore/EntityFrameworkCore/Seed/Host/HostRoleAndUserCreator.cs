@@ -76,7 +76,7 @@ namespace JD.Invoicing.EntityFrameworkCore.Seed.Host
                     UserName = AbpUserBase.AdminUserName,
                     Name = "admin",
                     Surname = "admin",
-                    EmailAddress = "admin@aspnetboilerplate.com",
+                    EmailAddress = "admin@163.com",
                     IsEmailConfirmed = true,
                     IsActive = true
                 };

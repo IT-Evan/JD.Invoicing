@@ -3,7 +3,7 @@
   <texts>
     <text name="Invoicing" value="进销存系统" />
     <text name="HomePage" value="主页" />
-    <text name="About" value="关于我们" />
+    <text name="About" value="关于" />
     <text name="WelcomeMessage" value="欢迎使用JD进销存系统!" />
     <text name="FormIsNotValidMessage" value="部分输入信息不符合要求，请检查并改正.." />
     <text name="TenantNameCanNotBeEmpty" value="租户名不能为空" />
@@ -76,6 +76,7 @@
     <text name="Yes">是</text>
     <text name="No">否</text>
 
+    <text name="Save" value="保存" />
     <text name="Cancel">取消</text>
     <text name="OK">确定</text>
     <text name="CreateNewRole">创建新角色</text>
@@ -129,8 +130,8 @@
     <text name="GrossStatisticsReport">毛利统计报表</text>
     <text name="GrossAnalysisReport">毛利分析报表</text>
     <text name="GrossDetailReport">毛利明细报表</text>
-
-
+    <text name="RoleDescription">角色描述</text>
+    <text name="RolePermissions">角色权限</text>
   </texts>
 </localizationDictionary>
 
