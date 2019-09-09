@@ -30,19 +30,22 @@ namespace JD.Invoicing.Web.Startup
                         new MenuItemDefinition(
                             PageNames.Goods,
                             L("Goods"),
-                            url: "Goods"
+                            url: "Goods",
+                            requiredPermissionName: PermissionNames.Pages_Goods
                         )
                     ).AddItem(
                         new MenuItemDefinition(
                             PageNames.Customer,
                             L("Customer"),
-                            url: "Customer"
+                            url: "Customer",
+                            requiredPermissionName: PermissionNames.Pages_Customer
                         )
                     ).AddItem(
                         new MenuItemDefinition(
                             PageNames.Warehouse,
                             L("Warehouse"),
-                            url: "Warehouse"
+                            url: "Warehouse",
+                            requiredPermissionName: PermissionNames.Pages_Warehouse
                         )
                     )
                 )
@@ -60,17 +63,20 @@ namespace JD.Invoicing.Web.Startup
                         new MenuItemDefinition(
                             PageNames.PurchaseOrder,
                             L("PurchaseOrder"),
-                            url: "PurchaseOrder"
+                            url: "PurchaseOrder",
+                            requiredPermissionName: PermissionNames.Pages_PurchaseOrder
                         )).AddItem(
                         new MenuItemDefinition(
                             PageNames.PurchaseWarehousing,
                             L("PurchaseWarehousing"),
-                            url: "PurchaseWarehousing"
+                            url: "PurchaseWarehousing",
+                            requiredPermissionName: PermissionNames.Pages_PurchaseWarehousing
                         )).AddItem(
                         new MenuItemDefinition(
                             PageNames.PurchaseReturn,
                             L("PurchaseReturn"),
-                            url: "PurchaseReturn"
+                            url: "PurchaseReturn",
+                            requiredPermissionName: PermissionNames.Pages_PurchaseReturn
                         ))
                     ).AddItem(
                         new MenuItemDefinition(
@@ -81,12 +87,14 @@ namespace JD.Invoicing.Web.Startup
                             new MenuItemDefinition(
                                 PageNames.SalesOrder,
                                 L("SalesOrder"),
-                                url: "SalesOrder"
+                                url: "SalesOrder",
+                            requiredPermissionName: PermissionNames.Pages_SalesOrder
                             )).AddItem(
                             new MenuItemDefinition(
                                 PageNames.SalesReturn,
                                 L("SalesReturn"),
-                                url: "SalesReturn"
+                                url: "SalesReturn",
+                            requiredPermissionName: PermissionNames.Pages_SalesReturn
                             ))
                     ).AddItem(
                         new MenuItemDefinition(
@@ -97,32 +105,38 @@ namespace JD.Invoicing.Web.Startup
                         new MenuItemDefinition(
                             PageNames.Loss,
                             L("Loss"),
-                            url: "Loss"
+                            url: "Loss",
+                            requiredPermissionName: PermissionNames.Pages_Loss
                         )).AddItem(
                         new MenuItemDefinition(
                             PageNames.Profit,
                             L("Profit"),
-                            url: "Profit"
+                            url: "Profit",
+                            requiredPermissionName: PermissionNames.Pages_Profit
                         )).AddItem(
                         new MenuItemDefinition(
                             PageNames.InventoryInfo,
                             L("InventoryInfo"),
-                            url: "InventoryInfo"
+                            url: "InventoryInfo",
+                            requiredPermissionName: PermissionNames.Pages_InventoryInfo
                         )).AddItem(
                         new MenuItemDefinition(
                             PageNames.InventoryCheck,
                             L("InventoryCheck"),
-                            url: "InventoryCheck"
+                            url: "InventoryCheck",
+                            requiredPermissionName: PermissionNames.Pages_InventoryCheck
                         )).AddItem(
                         new MenuItemDefinition(
                             PageNames.InventoryTransfer,
                             L("InventoryTransfer"),
-                            url: "InventoryTransfer"
+                            url: "InventoryTransfer",
+                            requiredPermissionName: PermissionNames.Pages_InventoryTransfer
                         )).AddItem(
                         new MenuItemDefinition(
                             PageNames.ProfitLossReport,
                             L("ProfitLossReport"),
-                            url: "ProfitLossReport"
+                            url: "ProfitLossReport",
+                            requiredPermissionName: PermissionNames.Pages_ProfitLossReport
                         ))
                 ))
                 .AddItem( // Menu items below is just for demonstration!
@@ -134,55 +148,64 @@ namespace JD.Invoicing.Web.Startup
                         new MenuItemDefinition(
                             PageNames.ProcurementStatisticsReport,
                             L("ProcurementStatisticsReport"),
-                            url: "ProcurementStatisticsReport"
+                            url: "ProcurementStatisticsReport",
+                            requiredPermissionName: PermissionNames.Pages_ProcurementStatisticsReport
                         )
                     ).AddItem(
                         new MenuItemDefinition(
                             PageNames.ProcurementAnalysisReport,
                             L("ProcurementAnalysisReport"),
-                            url: "ProcurementAnalysisReport"
+                            url: "ProcurementAnalysisReport",
+                            requiredPermissionName: PermissionNames.Pages_ProcurementAnalysisReport
                         )
                     ).AddItem(
                         new MenuItemDefinition(
                             PageNames.ProcurementDetailReport,
                             L("ProcurementDetailReport"),
-                            url: "ProcurementDetailReport"
+                            url: "ProcurementDetailReport",
+                            requiredPermissionName: PermissionNames.Pages_ProcurementDetailReport
                         )
                     ).AddItem(
                         new MenuItemDefinition(
                             PageNames.SalesStatisticsReport,
                             L("SalesStatisticsReport"),
-                            url: "SalesStatisticsReport"
+                            url: "SalesStatisticsReport",
+                            requiredPermissionName: PermissionNames.Pages_SalesStatisticsReport
                         )
                     ).AddItem(
                         new MenuItemDefinition(
                             PageNames.SalesAnalysisReport,
                             L("SalesAnalysisReport"),
-                            url: "SalesAnalysisReport"
+                            url: "SalesAnalysisReport",
+                            requiredPermissionName: PermissionNames.Pages_SalesAnalysisReport
                         )
                     ).AddItem(
                         new MenuItemDefinition(
                             PageNames.SalesDetailReport,
                             L("SalesDetailReport"),
-                            url: "SalesDetailReport"
+                            url: "SalesDetailReport",
+                            requiredPermissionName: PermissionNames.Pages_SalesDetailReport
                         )
                     ).AddItem(
                         new MenuItemDefinition(
                             PageNames.GrossStatisticsReport,
                             L("GrossStatisticsReport"),
-                            url: "GrossStatisticsReport"
+                            url: "GrossStatisticsReport",
+                            requiredPermissionName: PermissionNames.Pages_GrossStatisticsReport
                         )
                     ).AddItem(
                         new MenuItemDefinition(
                             PageNames.GrossAnalysisReport,
                             L("GrossAnalysisReport"),
-                            url: "GrossAnalysisReport"
+                            url: "GrossAnalysisReport",
+                            requiredPermissionName: PermissionNames.Pages_GrossAnalysisReport
                         )
                     ).AddItem(
                         new MenuItemDefinition(
                             PageNames.GrossDetailReport,
                             L("GrossDetailReport"),
-                            url: "GrossDetailReport"
+                            url: "GrossDetailReport",
+                            requiredPermissionName: PermissionNames.Pages_GrossDetailReport
                         )
                     )
                 )
@@ -196,7 +219,6 @@ namespace JD.Invoicing.Web.Startup
                             PageNames.Tenants,
                             L("Tenants"),
                             url: "Tenants",
-                            //icon: "business",
                             requiredPermissionName: PermissionNames.Pages_Tenants
                         )
                     ).AddItem(
@@ -204,7 +226,6 @@ namespace JD.Invoicing.Web.Startup
                             PageNames.Users,
                             L("Users"),
                             url: "Users",
-                            //icon: "people",
                             requiredPermissionName: PermissionNames.Pages_Users
                         )
                     ).AddItem(
@@ -212,7 +233,6 @@ namespace JD.Invoicing.Web.Startup
                             PageNames.Roles,
                             L("Roles"),
                             url: "Roles",
-                            //icon: "local_offer",
                             requiredPermissionName: PermissionNames.Pages_Roles
                         )
                     )
@@ -222,7 +242,8 @@ namespace JD.Invoicing.Web.Startup
                         PageNames.About,
                         L("About"),
                         url: "About",
-                        icon: "info"
+                        icon: "info",
+                        requiresAuthentication: true
                     )
                 );
         }

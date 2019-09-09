@@ -10,6 +10,12 @@
     <RootNamespace>JD.Invoicing.Web</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Views\新文件夹1\**" />
+    <Content Remove="Views\新文件夹1\**" />
+    <EmbeddedResource Remove="Views\新文件夹1\**" />
+    <None Remove="Views\新文件夹1\**" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="app.config" />
     <None Update="Dockerfile">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
