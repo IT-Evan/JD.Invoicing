@@ -11,7 +11,7 @@ namespace JD.Invoicing.Authorization
             return new LocalizableString(name, InvoicingConsts.LocalizationSourceName);
         }
         public override void SetPermissions(IPermissionDefinitionContext context)
-        {
+        {  
             //Level 1
             context.CreatePermission(PermissionNames.Pages_Home, L("HomePage"));
             context.CreatePermission(PermissionNames.Pages_Data, L("Data"));
@@ -55,38 +55,6 @@ namespace JD.Invoicing.Authorization
             context.GetPermissionOrNull(PermissionNames.Pages_Operation).Children[2].CreateChildPermission(PermissionNames.Pages_InventoryCheck, L("InventoryCheck"));
             context.GetPermissionOrNull(PermissionNames.Pages_Operation).Children[2].CreateChildPermission(PermissionNames.Pages_InventoryTransfer, L("InventoryTransfer"));
             context.GetPermissionOrNull(PermissionNames.Pages_Operation).Children[2].CreateChildPermission(PermissionNames.Pages_ProfitLossReport, L("ProfitLossReport"));
-
-
-
-            /*
-            item1.CreateChildPermission(PermissionNames.Pages_Home, L("Home"));
-            context.CreatePermission(PermissionNames.Pages_Tenants, L("Tenants"), multiTenancySides: MultiTenancySides.Host);
-            context.CreatePermission(PermissionNames.Pages_Users, L("Users"));
-            context.CreatePermission(PermissionNames.Pages_Roles, L("Roles"));
-            context.CreatePermission(PermissionNames.Pages_Goods, L("Goods"));
-            context.CreatePermission(PermissionNames.Pages_Customer, L("Customer"));
-            context.CreatePermission(PermissionNames.Pages_Warehouse, L("Warehouse"));
-            context.CreatePermission(PermissionNames.Pages_PurchaseOrder, L("PurchaseOrder"));
-            context.CreatePermission(PermissionNames.Pages_PurchaseWarehousing, L("PurchaseWarehousing"));
-            context.CreatePermission(PermissionNames.Pages_PurchaseReturn, L("PurchaseReturn"));
-            context.CreatePermission(PermissionNames.Pages_SalesOrder, L("SalesOrder"));
-            context.CreatePermission(PermissionNames.Pages_SalesReturn, L("SalesReturn"));
-            context.CreatePermission(PermissionNames.Pages_Loss, L("Loss"));
-            context.CreatePermission(PermissionNames.Pages_Profit, L("Profit"));
-            context.CreatePermission(PermissionNames.Pages_InventoryInfo, L("InventoryInfo"));
-            context.CreatePermission(PermissionNames.Pages_InventoryCheck, L("InventoryCheck"));
-            context.CreatePermission(PermissionNames.Pages_InventoryTransfer, L("InventoryTransfer"));
-            context.CreatePermission(PermissionNames.Pages_ProfitLossReport, L("ProfitLossReport"));
-            context.CreatePermission(PermissionNames.Pages_ProcurementStatisticsReport, L("ProcurementStatisticsReport"));
-            context.CreatePermission(PermissionNames.Pages_ProcurementAnalysisReport, L("ProcurementAnalysisReport"));
-            context.CreatePermission(PermissionNames.Pages_ProcurementDetailReport, L("ProcurementDetailReport"));
-            context.CreatePermission(PermissionNames.Pages_SalesStatisticsReport, L("SalesStatisticsReport"));
-            context.CreatePermission(PermissionNames.Pages_SalesAnalysisReport, L("SalesAnalysisReport"));
-            context.CreatePermission(PermissionNames.Pages_SalesDetailReport, L("SalesDetailReport"));
-            context.CreatePermission(PermissionNames.Pages_GrossStatisticsReport, L("GrossStatisticsReport"));
-            context.CreatePermission(PermissionNames.Pages_GrossAnalysisReport, L("GrossAnalysisReport"));
-            context.CreatePermission(PermissionNames.Pages_GrossDetailReport, L("GrossDetailReport"));
-            */
         }
     }
 }
