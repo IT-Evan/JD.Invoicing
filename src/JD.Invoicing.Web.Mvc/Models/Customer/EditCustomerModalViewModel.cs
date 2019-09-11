@@ -5,6 +5,6 @@ namespace JD.Invoicing.Web.Models.Customer
 
     public class EditCustomerModalViewModel
     {
-        public CreateUpdateCustomerDto Customer { get; set; }
+        public CustomerDto Customer { get; set; }
     }
 }

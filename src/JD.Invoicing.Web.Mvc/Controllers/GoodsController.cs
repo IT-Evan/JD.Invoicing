@@ -25,7 +25,6 @@ namespace JD.Invoicing.Web.Controllers
         // GET: /<controller>/
         public async Task<ActionResult> Index()
         {
-
             var goodses = (await _goodsAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
             //Paging not implemented yet
             //GoodsDto cuGoods = goods.FirstOrDefault();
@@ -33,7 +32,6 @@ namespace JD.Invoicing.Web.Controllers
             {
                 //Goods = cuGoods,
                 Goodses = goodses
-
             };
             return View(model);
         }

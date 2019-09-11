@@ -85,5 +85,6 @@ namespace JD.Invoicing.Customer.Dto
         /// </summary>
         [StringLength(50)]
         public string UpdateName { get; set; }
+        public DateTime CreationTime { get; set; }
     }
 }

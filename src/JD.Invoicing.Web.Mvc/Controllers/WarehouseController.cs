@@ -16,39 +16,36 @@ namespace JD.Invoicing.Web.Controllers
     [AbpMvcAuthorize(PermissionNames.Pages_Warehouse)]
     public class WarehouseController : InvoicingControllerBase
     {
+        private readonly IWarehouseAppService _warehouseAppService;
         const int MaxNum = 10;
+        public WarehouseController(IWarehouseAppService warehouseAppService)
+        {
+            _warehouseAppService = warehouseAppService;
+
+        }
         // GET: /<controller>/
         public async Task<IActionResult> Index()
         {
 
-            var module = (await _WarehouseAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
+            var warehouses = (await _warehouseAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
             // Paging not implemented yet
-            WarehouseDto cuModule = module.FirstOrDefault();
+            //WarehouseDto cuModule = warehouses.FirstOrDefault();
             var model = new WarehouseListViewModel
             {
-
-                Warehouse = cuModule,
-                Warehouses = module
-
+                //Warehouse = cuModule,
+                Warehouses = warehouses
             };
             return View(model);
         }
 
-        private readonly IWarehouseAppService _WarehouseAppService;
-
-        public WarehouseController(IWarehouseAppService WarehouseAppService)
-        {
-            _WarehouseAppService = WarehouseAppService;
-
-        }
-        public async Task<ActionResult> EditWarehouseModal(int moduleId)
+        public async Task<ActionResult> EditWarehouseModal(int warehouseId)
 
         {
-            var module = await _WarehouseAppService.Get(new EntityDto<int>(moduleId));
-            CreateUpdateWarehouseDto cuWarehouse = AutoMapper.Mapper.Map<CreateUpdateWarehouseDto>(module);
+            var warehouse = await _warehouseAppService.Get(new EntityDto<int>(warehouseId));
+            //CreateUpdateWarehouseDto cuWarehouse = AutoMapper.Mapper.Map<CreateUpdateWarehouseDto>(module);
             var model = new EditWarehouseModalViewModel
             {
-                Warehouse = cuWarehouse
+                Warehouse = warehouse
 
             };
             return View("_EditWarehouseModal", model);

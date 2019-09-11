@@ -9,7 +9,7 @@
         });
 
         $('#RefreshButton').click(function () {
-            refreshModuleList();
+            refreshCustomerList();
         });
 
         $('.delete-Customer').click(function () {
@@ -69,7 +69,7 @@
 
         function deleteCustomer(CustomerId, CustomerName) {
             abp.message.confirm(
-                abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'JD'), CustomerName),
+                abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'Invoicing'), CustomerName),
 
                 function (isConfirmed) {
                     if (isConfirmed) {

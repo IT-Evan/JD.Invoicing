@@ -26,5 +26,6 @@ namespace JD.Invoicing.Customer.Dto
         public string CreateName { get; set; }
         public DateTime? UpdateDate { get; set; }
         public string UpdateName { get; set; }
+        public DateTime CreationTime { get; set; }
     }
 }

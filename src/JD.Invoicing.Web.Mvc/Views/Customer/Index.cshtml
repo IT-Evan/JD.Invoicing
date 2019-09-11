@@ -4,167 +4,22 @@
 @{
     ViewBag.CurrentPageName = PageNames.Customer; // The menu item will be active for this page.
 }
-<div class="modal fade" id="CustomerCreateModal" tabindex="-1" role="dialog"
-     aria-labelledby="CustomerCreateModalLabel" data-backdrop="static">
-    <div class="modal-dialog" role="document">
-
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">
-                    <span>@L("CreateNewCustomer")</span>
-                </h4>
-            </div>
-            <div class="modal-body">
-                <form name="CustomerCreateForm" role="form" class="form-validation">
-                    <div>
-                        <div class="row clearfix">
-                            <div class="col-sm-6">
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <label asp-for="@Model.Customer.Code" class="form-label"></label>
-                                        <input type="text" name="Code" class="form-control" required maxlength="50" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <label asp-for="@Model.Customer.Name" class="form-label"></label>
-                                        <input type="text" name="Name" class="form-control" required maxlength="150" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row clearfix">
-                            <div class="col-sm-6">
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <label asp-for="@Model.Customer.PinyinCode" class="form-label"></label>
-                                        <input type="text" name="PinyinCode" class="form-control" required maxlength="150" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row clearfix">
-                            <div class="col-sm-6">
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <label asp-for="@Model.Customer.Address" class="form-label"></label>
-                                        <input type="text" name="Address" class="form-control" required maxlength="200" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <label asp-for="@Model.Customer.Contact" class="form-label"></label>
-                                        <input type="text" name="Contact" class="form-control" required maxlength="50" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row clearfix">
-                            <div class="col-sm-6">
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <label asp-for="@Model.Customer.Phone" class="form-label"></label>
-                                        <input type="text" name="Phone" class="form-control" required maxlength="50" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-line">
-                                    <label asp-for="@Model.Customer.Wechat"></label>
-                                    <input type="text" name="Wechat" class="form-control" required maxlength="50" />
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row clearfix">
-                            <div class="col-sm-6">
-                                <div class="form-line">
-                                    <label asp-for="@Model.Customer.Area"></label>
-                                    <input name="Area" type="text" class="form-control" required maxlength="50" />
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-line">
-                                    <label asp-for="@Model.Customer.Type"></label>
-                                    <input name="Type" type="text" class="form-control" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row clearfix">
-                            <div class="col-sm-6">
-                                <div class="form-line">
-                                    <label asp-for="@Model.Customer.Remarks"></label>
-                                    <input name="Remarks" type="text" class="form-control" required maxlength="200" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row clearfix">
-                            <div class="col-sm-6">
-                                <div class="form-line">
-                                    <label asp-for="@Model.Customer.Status"></label>
-                                    <input name="Status" type="text" class="form-control" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row clearfix">
-                            <div class="col-sm-6">
-                                <div class="form-line">
-                                    <label asp-for="@Model.Customer.CreateDate"></label>
-                                    <input name="CreateDate" type="text" class="form-control" />
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-line">
-                                    <label asp-for="@Model.Customer.CreateName"></label>
-                                    <input name="CreateName" type="text" class="form-control" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row clearfix">
-                            <div class="col-sm-6">
-                                <div class="form-line">
-                                    <label asp-for="@Model.Customer.UpdateDate"></label>
-                                    <input name="UpdateDate" type="text" class="form-control" />
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-line">
-                                    <label asp-for="@Model.Customer.UpdateName"></label>
-                                    <input name="UpdateName" type="text" class="form-control" />
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">@L("Cancel")</button>
-                        <button type="submit" class="btn btn-primary waves-effect">@L("Save")</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+@section scripts
+    {
+    <environment names="Development">
+        <script src="~/view-resources/Views/Customer/Index.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/view-resources/Views/Customer/Index.js" asp-append-version="true"></script>
+    </environment>
+}
 <div class="row clearfix">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
         <div class="card">
             <div class="header">
                 <h2>
                     @L("Customer")
-
                 </h2>
-
-                <button type="button" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal"
-                        data-target="#CustomerCreateModal">
-
-                    <i class="material-icons">add</i>
-
-                </button>
                 <ul class="header-dropdown m-r--5">
                     <li class="dropdown">
                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -176,77 +31,37 @@
                         <ul class="dropdown-menu pull-right">
 
                             <li>
-                                <a id="RefreshButton" href="javascript:void(0);" class="waves-effect waves-block">
-                                    <i class="material-icons">refresh</i>@L("Refresh")
-                                </a>
+                                <a id="RefreshButton" href="javascript:void(0);" class="waves-effect waves-block"><i class="material-icons">refresh</i>@L("Refresh")</a>
                             </li>
-
                         </ul>
                     </li>
                 </ul>
             </div>
-
             <div class="body table-responsive">
-
                 <table class="table">
-
                     <thead>
                         <tr>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Customer.Code)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Customer.Name)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Customer.PinyinCode)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Customer.Address)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Customer.Contact)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Customer.Phone)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Customer.Wechat)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Customer.Area)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Customer.Type)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Customer.Remarks)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Customer.Status)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Customer.CreateDate)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Customer.CreateName)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Customer.UpdateDate)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Customer.UpdateName)
-                            </th>
-                            <th></th>
-
+                            <th>@L("Code")</th>
+                            <th>@L("Name")</th>
+                            <th>@L("PinyinCode")</th>
+                            <th>@L("Address")</th>
+                            <th>@L("Contact")</th>
+                            <th>@L("Phone")</th>
+                            <th>@L("Wechat")</th>
+                            <th>@L("Area")</th>
+                            <th>@L("Type")</th>
+                            <th>@L("Remarks")</th>
+                            <th>@L("Status")</th>
+                            <th>@L("CreateDate")</th>
+                            <th>@L("CreateName")</th>
+                            <th>@L("UpdateDate")</th>
+                            <th>@L("UpdateName")</th>
+                            <th>@L("Actions")</th>
                         </tr>
                     </thead>
-
                     <tbody>
-
                         @foreach (var item in Model.Customers)
                         {
-
                             <tr>
                                 <td>
                                     @Html.DisplayFor(modelItem => item.Code)
@@ -309,7 +124,137 @@
 
                     </tbody>
                 </table>
+                <button type="button" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal" data-target="#CustomerCreateModal">
+                    <i class="material-icons">add</i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="CustomerCreateModal" tabindex="-1" role="dialog" aria-labelledby="CustomerCreateModalLabel" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    <span>@L("CreateCustomer")</span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form name="customerCreateForm" role="form" class="form-validation">
+                    <div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Code")</label>
+                                    <input type="text" name="Code" class="form-control" required maxlength="50" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Name")</label>
+                                    <input type="text" name="Name" class="form-control" required maxlength="150" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("PinyinCode")</label>
+                                    <input type="text" name="PinyinCode" class="form-control" required maxlength="150" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Address")</label>
+                                    <input type="text" name="Address" class="form-control" required maxlength="200" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Contact")</label>
+                                    <input type="text" name="Contact" class="form-control" required maxlength="50" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Phone")</label>
+                                    <input type="text" name="Phone" class="form-control" required maxlength="50" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Wechat")</label>
+                                    <input type="text" name="Wechat" class="form-control" required maxlength="50" />
 
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Area")</label>
+                                    <input name="Area" type="text" class="form-control" required maxlength="50" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Type")</label>
+                                    <input name="Type" type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Status")</label>
+                                    <input name="Status" type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Remarks")</label>
+                                    <input name="Remarks" type="text" class="form-control" required maxlength="200" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("CreateDate")</label>
+                                    <input name="CreateDate" type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("CreateName")</label>
+                                    <input name="CreateName" type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("UpdateDate")</label>
+                                    <input name="UpdateDate" type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("UpdateName")</label>
+                                    <input name="UpdateName" type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">@L("Cancel")</button>
+                        <button type="submit" class="btn btn-primary waves-effect">@L("Save")</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -320,6 +265,3 @@
         </div>
     </div>
 </div>
-@section scripts    {
-
-    <script src="~/view-resources/Views/Customer/Index.js" asp-append-version="true"></script>   }

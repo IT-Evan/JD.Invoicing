@@ -5,6 +5,6 @@ namespace JD.Invoicing.Web.Models.Warehouse
 
     public class EditWarehouseModalViewModel
     {
-        public CreateUpdateWarehouseDto Warehouse { get; set; }
+        public WarehouseDto Warehouse { get; set; }
     }
 }

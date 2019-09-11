@@ -16,40 +16,36 @@ namespace JD.Invoicing.Web.Controllers
     [AbpMvcAuthorize(PermissionNames.Pages_Customer)]
     public class CustomerController : InvoicingControllerBase
     {
+        private readonly ICustomerAppService _customerAppService;
         const int MaxNum = 10;
-        // GET: /<controller>/
-        public async Task<IActionResult> Index()
+        public CustomerController(ICustomerAppService customerAppService)
         {
+            _customerAppService = customerAppService;
 
-            var module = (await _CustomerAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
+        }
+        // GET: /<controller>/
+        public async Task<ActionResult> Index()
+        {
+            var customers = (await _customerAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
             // Paging not implemented yet
-            CustomerDto cuModule = module.FirstOrDefault();
+            //CustomerDto cuModule = customers.FirstOrDefault();
             var model = new CustomerListViewModel
             {
-
-                Customer = cuModule,
-                Customers = module
-
+                //Customer = cuModule,
+                Customers = customers
             };
             return View(model);
         }
 
-        private readonly ICustomerAppService _CustomerAppService;
-
-        public CustomerController(ICustomerAppService CustomerAppService)
-        {
-            _CustomerAppService = CustomerAppService;
-
-        }
-        public async Task<ActionResult> EditCustomerModal(int moduleId)
+        
+        public async Task<ActionResult> EditCustomerModal(int customerId)
 
         {
-            var module = await _CustomerAppService.Get(new EntityDto<int>(moduleId));
-            CreateUpdateCustomerDto cuCustomer = AutoMapper.Mapper.Map<CreateUpdateCustomerDto>(module);
+            var customer = await _customerAppService.Get(new EntityDto<int>(customerId));
+            //CreateUpdateCustomerDto cuCustomer = AutoMapper.Mapper.Map<CreateUpdateCustomerDto>(customer);
             var model = new EditCustomerModalViewModel
             {
-                Customer = cuCustomer
-
+                Customer = customer
             };
             return View("_EditCustomerModal", model);
         }

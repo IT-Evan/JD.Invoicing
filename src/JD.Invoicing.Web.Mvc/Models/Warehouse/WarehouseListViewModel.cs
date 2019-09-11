@@ -6,7 +6,7 @@ namespace JD.Invoicing.Web.Models.Warehouse
 
     public class WarehouseListViewModel
     {
-        public WarehouseDto Warehouse { get; set; }
+        //public WarehouseDto Warehouse { get; set; }
         public IReadOnlyList<WarehouseDto> Warehouses { get; set; }
     }
 }

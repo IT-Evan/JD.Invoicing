@@ -9,7 +9,7 @@
         });
 
         $('#RefreshButton').click(function () {
-            refreshModuleList();
+            refreshWarehouseList();
         });
 
         $('.delete-Warehouse').click(function () {
@@ -69,7 +69,7 @@
 
         function deleteWarehouse(WarehouseId, WarehouseName) {
             abp.message.confirm(
-                abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'JD'), WarehouseName),
+                abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'Invoicing'), WarehouseName),
 
                 function (isConfirmed) {
                     if (isConfirmed) {

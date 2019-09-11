@@ -1,6 +1,5 @@
 ﻿@using JD.Invoicing.Web.Startup
 @model JD.Invoicing.Web.Models.Goods.GoodsListViewModel
-
 @{
     ViewBag.CurrentPageName = PageNames.Goods; // The menu item will be active for this page.
 }
@@ -38,63 +37,25 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>
-                                @L("Code")
-                            </th>
-                            <th>
-                                @L("Name")
-                            </th>
-                            <th>
-                                @L("GenericName")
-                            </th>
-                            <th>
-                                @L("PinyinCode")
-                            </th>
-                            <th>
-                                @L("Barcode")
-                            </th>
-                            <th>
-                                @L("Unit")
-                            </th>
-                            <th>
-                                @L("Specs")
-                            </th>
-                            <th>
-                                @L("Model")
-                            </th>
-                            <th>
-                                @L("Manufacturer")
-                            </th>
-                            <th>
-                                @L("License")
-                            </th>
-                            <th>
-                                @L("Class")
-                            </th>
-                            <th>
-                                @L("Type")
-                            </th>
-                            <th>
-                                @L("RetailPrice")
-                            </th>
-                            <th>
-                                @L("Remarks")
-                            </th>
-                            <th>
-                                @L("Status")
-                            </th>
-                            <th>
-                                @L("CreateDate")
-                            </th>
-                            <th>
-                                @L("CreateName")
-                            </th>
-                            <th>
-                                @L("UpdateDate")
-                            </th>
-                            <th>
-                                @L("UpdateName")
-                            </th>
+                            <th>@L("Code")</th>
+                            <th>@L("Name")</th>
+                            <th>@L("GenericName")</th>
+                            <th>@L("PinyinCode")</th>
+                            <th>@L("Barcode")</th>
+                            <th>@L("Unit")</th>
+                            <th>@L("Specs")</th>
+                            <th>@L("Model")</th>
+                            <th>@L("Manufacturer")</th>
+                            <th>@L("License")</th>
+                            <th>@L("Class")</th>
+                            <th>@L("Type")</th>
+                            <th>@L("RetailPrice")</th>
+                            <th>@L("Remarks")</th>
+                            <th>@L("Status")</th>
+                            <th>@L("CreateDate")</th>
+                            <th>@L("CreateName")</th>
+                            <th>@L("UpdateDate")</th>
+                            <th>@L("UpdateName")</th>
                             <th>@L("Actions")</th>
                         </tr>
                     </thead>
@@ -327,7 +288,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">@L("Cancel")</button>
@@ -341,7 +301,6 @@
 <div class="modal fade" id="GoodsEditModal" tabindex="-1" role="dialog" aria-labelledby="GoodsEditModalLabel" data-backdrop="static">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-
         </div>
     </div>
 </div>

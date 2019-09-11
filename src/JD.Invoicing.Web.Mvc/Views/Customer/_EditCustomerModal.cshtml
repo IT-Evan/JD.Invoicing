@@ -15,18 +15,24 @@
         <div>
             <div class="row clearfix">
                 <div class="col-sm-6">
-                    <div class="form-group form-float">
-                        <div class="form-line">
-                            <label asp-for="@Model.Customer.Code" class="form-label"></label>
-                            <input type="text" name="Code" class="form-control" required maxlength="50" />
-                        </div>
+                    <div class="form-line">
+                        <label class="form-label">@L("Code")</label>
+                        <input type="text" name="Code" value="@Model.Customer.Code" class="form-control" required maxlength="50" />
                     </div>
                 </div>
                 <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("Name")</label>
+                        <input type="text" name="Name" value="@Model.Customer.Name" class="form-control" required maxlength="150" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
                     <div class="form-group form-float">
                         <div class="form-line">
-                            <label asp-for="@Model.Customer.Name" class="form-label"></label>
-                            <input type="text" name="Name" class="form-control" required maxlength="150" />
+                            <label class="form-label">@L("PinyinCode")</label>
+                            <input type="text" name="PinyinCode" value="@Model.Customer.PinyinCode" class="form-control" required maxlength="150" />
                         </div>
                     </div>
                 </div>
@@ -35,8 +41,16 @@
                 <div class="col-sm-6">
                     <div class="form-group form-float">
                         <div class="form-line">
-                            <label asp-for="@Model.Customer.PinyinCode" class="form-label"></label>
-                            <input type="text" name="PinyinCode" class="form-control" required maxlength="150" />
+                            <label class="form-label">@L("Address")</label>
+                            <input type="text" name="Address" value="@Model.Customer.Address" class="form-control" required maxlength="200" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label class="form-label">@L("Contact")</label>
+                            <input type="text" name="Contact" value="@Model.Customer.Contact" class="form-control" required maxlength="50" />
                         </div>
                     </div>
                 </div>
@@ -45,33 +59,15 @@
                 <div class="col-sm-6">
                     <div class="form-group form-float">
                         <div class="form-line">
-                            <label asp-for="@Model.Customer.Address" class="form-label"></label>
-                            <input type="text" name="Address" class="form-control" required maxlength="200" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group form-float">
-                        <div class="form-line">
-                            <label asp-for="@Model.Customer.Contact" class="form-label"></label>
-                            <input type="text" name="Contact" class="form-control" required maxlength="50" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row clearfix">
-                <div class="col-sm-6">
-                    <div class="form-group form-float">
-                        <div class="form-line">
-                            <label asp-for="@Model.Customer.Phone" class="form-label"></label>
-                            <input type="text" name="Phone" class="form-control" required maxlength="50" />
+                            <label class="form-label">@L("Phone")</label>
+                            <input type="text" name="Phone" value="@Model.Customer.Phone" class="form-control" required maxlength="50" />
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-line">
-                        <label asp-for="@Model.Customer.Wechat"></label>
-                        <input type="text" name="Wechat" class="form-control" required maxlength="50" />
+                        <label class="form-label">@L("Wechat")</label>
+                        <input type="text" name="Wechat" value="@Model.Customer.Wechat" class="form-control" required maxlength="50" />
 
                     </div>
                 </div>
@@ -79,63 +75,62 @@
             <div class="row clearfix">
                 <div class="col-sm-6">
                     <div class="form-line">
-                        <label asp-for="@Model.Customer.Area"></label>
-                        <input name="Area" type="text" class="form-control" required maxlength="50" />
+                        <label class="form-label">@L("Area")</label>
+                        <input name="Area" type="text" value="@Model.Customer.Area" class="form-control" required maxlength="50" />
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-line">
-                        <label asp-for="@Model.Customer.Type"></label>
-                        <input name="Type" type="text" class="form-control" />
+                        <label class="form-label">@L("Type")</label>
+                        <input name="Type" type="text" value="@Model.Customer.Type" class="form-control" />
                     </div>
                 </div>
             </div>
-            <div class="row clearfix">
-                <div class="col-sm-6">
-                    <div class="form-line">
-                        <label asp-for="@Model.Customer.Remarks"></label>
-                        <input name="Remarks" type="text" class="form-control" required maxlength="200" />
-                    </div>
+            <div class="col-sm-6">
+                <div class="form-line">
+                    <label class="form-label">@L("Status")</label>
+                    <input name="Status" type="text" value="@Model.Customer.Status" class="form-control" />
                 </div>
             </div>
-            <div class="row clearfix">
-                <div class="col-sm-6">
-                    <div class="form-line">
-                        <label asp-for="@Model.Customer.Status"></label>
-                        <input name="Status" type="text" class="form-control" />
-                    </div>
-                </div>
-            </div>
-            <div class="row clearfix">
-                <div class="col-sm-6">
-                    <div class="form-line">
-                        <label asp-for="@Model.Customer.CreateDate"></label>
-                        <input name="CreateDate" type="text" class="form-control" />
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-line">
-                        <label asp-for="@Model.Customer.CreateName"></label>
-                        <input name="CreateName" type="text" class="form-control" />
-                    </div>
-                </div>
-            </div>
-            <div class="row clearfix">
-                <div class="col-sm-6">
-                    <div class="form-line">
-                        <label asp-for="@Model.Customer.UpdateDate"></label>
-                        <input name="UpdateDate" type="text" class="form-control" />
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-line">
-                        <label asp-for="@Model.Customer.UpdateName"></label>
-                        <input name="UpdateName" type="text" class="form-control" />
-                    </div>
-                </div>
-            </div>
-
         </div>
+        <div class="row clearfix">
+            <div class="col-sm-12">
+                <div class="form-line">
+                    <label class="form-label">@L("Remarks")</label>
+                    <input name="Remarks" type="text" value="@Model.Customer.Remarks" class="form-control" required maxlength="200" />
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-sm-6">
+                <div class="form-line">
+                    <label class="form-label">@L("CreateDate")</label>
+                    <input name="CreateDate" type="text" value="@Model.Customer.CreateDate" class="form-control" />
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-line">
+                    <label class="form-label">@L("CreateName")</label>
+                    <input name="CreateName" type="text" value="@Model.Customer.CreateName" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-sm-6">
+                <div class="form-line">
+                    <label class="form-label">@L("UpdateDate")</label>
+                    <input name="UpdateDate" type="text" value="@Model.Customer.UpdateDate" class="form-control" />
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-line">
+                    <label class="form-label">@L("UpdateName")</label>
+                    <input name="UpdateName" type="text" value="@Model.Customer.UpdateName" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+</div>
     </form>
 </div>
 @Html.Partial("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
