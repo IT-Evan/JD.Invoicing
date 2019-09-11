@@ -26,28 +26,25 @@ namespace JD.Invoicing.Web.Controllers
         public async Task<ActionResult> Index()
         {
 
-            var goods = (await _goodsAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
-            // Paging not implemented yet
-            GoodsDto cuGoods = goods.FirstOrDefault();
+            var goodses = (await _goodsAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
+            //Paging not implemented yet
+            //GoodsDto cuGoods = goods.FirstOrDefault();
             var model = new GoodsListViewModel
             {
-
-                Goods = cuGoods,
-                Goodses = goods
+                //Goods = cuGoods,
+                Goodses = goodses
 
             };
             return View(model);
         }
 
         public async Task<ActionResult> EditGoodsModal(int goodsId)
-
         {
             var goods = await _goodsAppService.Get(new EntityDto<int>(goodsId));
-            GoodsDto cuGoods = AutoMapper.Mapper.Map<GoodsDto>(goods);
+            //GoodsDto cuGoods = AutoMapper.Mapper.Map<GoodsDto>(goods);
             var model = new EditGoodsModalViewModel
             {
-                Goods = cuGoods
-
+                Goods = goods
             };
             return View("_EditGoodsModal", model);
         }

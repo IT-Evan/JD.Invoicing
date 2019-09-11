@@ -11,72 +11,57 @@
         <div>
             <div class="row clearfix">
                 <div class="col-sm-6">
-                    <div class="form-group form-float">
                         <div class="form-line">
                             <label asp-for="@Model.Goods.Code" class="form-label"></label>
-                            <input type="text" name="Code" class="form-control" required maxlength="50" />
+                            <input type="text" name="Code" value="@Model.Goods.Code" class="form-control" required maxlength="50" />
                         </div>
-                    </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="form-group form-float">
                         <div class="form-line">
                             <label asp-for="@Model.Goods.Name" class="form-label"></label>
-                            <input type="text" name="Name" class="form-control" required maxlength="150" />
+                            <input type="text" name="Name" value="@Model.Goods.Name" class="form-control" required maxlength="150" />
                         </div>
-                    </div>
                 </div>
             </div>
             <div class="row clearfix">
-                <div class="col-sm-12">
-                    <div class="form-group form-float">
+                <div class="col-sm-6">
                         <div class="form-line">
                             <label asp-for="@Model.Goods.GenericName" class="form-label"></label>
-                            <input type="text" name="GenericName" class="form-control" required maxlength="150" />
+                            <input type="text" name="GenericName" value="@Model.Goods.GenericName" class="form-control" required maxlength="150" />
                         </div>
-                    </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="form-group form-float">
                         <div class="form-line">
                             <label asp-for="@Model.Goods.PinyinCode" class="form-label"></label>
-                            <input type="text" name="PinyinCode" class="form-control" required maxlength="150" />
+                            <input type="text" name="PinyinCode" value="@Model.Goods.PinyinCode" class="form-control" required maxlength="150" />
                         </div>
-                    </div>
                 </div>
             </div>
             <div class="row clearfix">
                 <div class="col-sm-6">
-                    <div class="form-group form-float">
                         <div class="form-line">
                             <label asp-for="@Model.Goods.Barcode" class="form-label"></label>
-                            <input type="text" name="Barcode" class="form-control" required maxlength="100" />
+                            <input type="text" name="Barcode" value="@Model.Goods.Barcode" class="form-control" required maxlength="100" />
                         </div>
-                    </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="form-group form-float">
                         <div class="form-line">
                             <label asp-for="@Model.Goods.Unit" class="form-label"></label>
-                            <input type="text" name="Unit" class="form-control" required maxlength="50" />
+                            <input type="text" name="Unit" value="@Model.Goods.Unit" class="form-control" required maxlength="50" />
                         </div>
-                    </div>
                 </div>
             </div>
             <div class="row clearfix">
                 <div class="col-sm-6">
-                    <div class="form-group form-float">
                         <div class="form-line">
                             <label asp-for="@Model.Goods.Specs" class="form-label"></label>
-                            <input type="text" name="Specs" class="form-control" required maxlength="50" />
+                            <input type="text" name="Specs" value="@Model.Goods.Specs" class="form-control" required maxlength="50" />
                         </div>
-                    </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-line">
                         <label asp-for="@Model.Goods.Model"></label>
-                        <input type="text" name="Model" class="form-control" required maxlength="50" />
-
+                        <input type="text" name="Model" value="@Model.Goods.Model" class="form-control" required maxlength="50" />
                     </div>
                 </div>
             </div>
@@ -84,13 +69,13 @@
                 <div class="col-sm-6">
                     <div class="form-line">
                         <label asp-for="@Model.Goods.Manufacturer"></label>
-                        <input name="Manufacturer" type="text" class="form-control" required maxlength="150" />
+                        <input type="text" name="Manufacturer" value="@Model.Goods.Manufacturer" class="form-control" required maxlength="150" />
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-line">
                         <label asp-for="@Model.Goods.License"></label>
-                        <input name="License" type="text" class="form-control" required maxlength="150" />
+                        <input type="text" name="License" value="@Model.Goods.License" class="form-control" required maxlength="150" />
                     </div>
                 </div>
             </div>
@@ -98,13 +83,13 @@
                 <div class="col-sm-6">
                     <div class="form-line">
                         <label asp-for="@Model.Goods.Class"></label>
-                        <input name="Class" type="text" class="form-control" required maxlength="50" />
+                        <input type="text" name="Class" value="@Model.Goods.Class" class="form-control" required maxlength="50" />
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-line">
                         <label asp-for="@Model.Goods.Type"></label>
-                        <input name="Type" type="text" class="form-control" required maxlength="50" />
+                        <input type="text" name="Type" value="@Model.Goods.Type" class="form-control" required maxlength="50" />
                     </div>
                 </div>
             </div>
@@ -112,21 +97,21 @@
                 <div class="col-sm-6">
                     <div class="form-line">
                         <label asp-for="@Model.Goods.RetailPrice"></label>
-                        <input name="RetailPrice" type="text" class="form-control" />
+                        <input name="RetailPrice" type="text" value="@Model.Goods.RetailPrice" class="form-control" />
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-line">
-                        <label asp-for="@Model.Goods.Remarks"></label>
-                        <input name="Remarks" type="text" class="form-control" required maxlength="200" />
+                        <label asp-for="@Model.Goods.Status"></label>
+                        <input name="Status" type="text" value="@Model.Goods.Status" class="form-control" />
                     </div>
                 </div>
             </div>
             <div class="row clearfix">
-                <div class="col-sm-6">
+                <div class="col-sm-12">
                     <div class="form-line">
-                        <label asp-for="@Model.Goods.Status"></label>
-                        <input name="Status" type="text" class="form-control" />
+                        <label asp-for="@Model.Goods.Remarks"></label>
+                        <input name="Remarks" type="text" value="@Model.Goods.Remarks" class="form-control" required maxlength="200" />
                     </div>
                 </div>
             </div>
@@ -134,13 +119,13 @@
                 <div class="col-sm-6">
                     <div class="form-line">
                         <label asp-for="@Model.Goods.CreateDate"></label>
-                        <input name="CreateDate" type="text" class="form-control" />
+                        <input name="CreateDate" type="text" value="@Model.Goods.CreateDate" class="form-control" />
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-line">
                         <label asp-for="@Model.Goods.CreateName"></label>
-                        <input name="CreateName" type="text" class="form-control" />
+                        <input name="CreateName" type="text" value="@Model.Goods.CreateName" class="form-control" />
                     </div>
                 </div>
             </div>
@@ -148,13 +133,13 @@
                 <div class="col-sm-6">
                     <div class="form-line">
                         <label asp-for="@Model.Goods.UpdateDate"></label>
-                        <input name="UpdateDate" type="text" class="form-control" />
+                        <input name="UpdateDate" type="text" value="@Model.Goods.UpdateDate" class="form-control" />
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-line">
                         <label asp-for="@Model.Goods.UpdateName"></label>
-                        <input name="UpdateName" type="text" class="form-control" />
+                        <input name="UpdateName" type="text" value="@Model.Goods.UpdateName" class="form-control" />
                     </div>
                 </div>
             </div>
