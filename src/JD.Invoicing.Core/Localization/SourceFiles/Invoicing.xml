@@ -24,7 +24,6 @@
     <text name="LoginFailed" value="Login failed!" />
     <text name="NameSurname" value="Name surname" />
     <text name="UserName" value="User name" />
-    <text name="Name" value="Name" />
     <text name="Surname" value="Surname" />
     <text name="EmailAddress" value="Email address" />
     <text name="Tenants" value="Tenants" />
@@ -127,5 +126,26 @@
     <text name="GrossAnalysisReport">Gross Analysis Report</text>
     <text name="GrossDetailReport">Gross Detail Report</text>
     <text name="RolePermissions">Role Permissions</text>
+    <text name="CreateGoods">Create Goods</text>
+    <text name="EditGoods">Edit Goods</text>
+    <text name="Code">Code</text>
+    <text name="Name">Name</text>
+    <text name="GenericName">Generic Name</text>
+    <text name="PinyinCode">Pinyin Code</text>
+    <text name="Barcode">Barcode</text>
+    <text name="Unit">Unit</text>
+    <text name="Specs">Specs</text>
+    <text name="Model">Model</text>
+    <text name="Manufacturer">Manufacturer</text>
+    <text name="License">License</text>
+    <text name="Class">Class</text>
+    <text name="Type">Type</text>
+    <text name="RetailPrice">Retail Price</text>
+    <text name="Remarks">Remarks</text>
+    <text name="Status">Status</text>
+    <text name="CreateDate">Create Date</text>
+    <text name="CreateName">Create Name</text>
+    <text name="UpdateDate">Update Date</text>
+    <text name="UpdateName">Update Name</text>
   </texts>
 </localizationDictionary>

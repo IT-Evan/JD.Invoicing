@@ -9,7 +9,7 @@
         });
 
         $('#RefreshButton').click(function () {
-            refreshModuleList();
+            refreshGoodsList();
         });
 
         $('.delete-goods').click(function () {

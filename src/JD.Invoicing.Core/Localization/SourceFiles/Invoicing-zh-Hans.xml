@@ -61,7 +61,6 @@
     <text name="PasswordRequireUppercase">密码至少需要一位是A到Z的大写字母.</text>
     <text name="PasswordTooShort">密码长度太短</text>
     <text name="UserName">用户名</text>
-    <text name="Name">名称</text>
     <text name="IsActive">是否启用</text>
     <text name="LastLoginTime">最近登陆时间</text>
     <text name="RoleName">角色名</text>
@@ -132,6 +131,28 @@
     <text name="GrossDetailReport">毛利明细报表</text>
     <text name="RoleDescription">角色描述</text>
     <text name="RolePermissions">角色权限</text>
+    <text name="Refresh">刷新</text>
+    <text name="CreateGoods">创建商品</text>
+    <text name="EditGoods">编辑商品</text>
+    <text name="Code">编号</text>
+    <text name="Name">名称</text>
+    <text name="GenericName">通用名</text>
+    <text name="PinyinCode">拼音码</text>
+    <text name="Barcode">条形码</text>
+    <text name="Unit">单位</text>
+    <text name="Specs">规格</text>
+    <text name="Model">型号</text>
+    <text name="Manufacturer">生产厂家</text>
+    <text name="License">许可证</text>
+    <text name="Class">大纲类别</text>
+    <text name="Type">所属分类</text>
+    <text name="RetailPrice">零售价</text>
+    <text name="Remarks">备注</text>
+    <text name="Status">状态</text>
+    <text name="CreateDate">创建日期</text>
+    <text name="CreateName">创建人</text>
+    <text name="UpdateDate">修改日期</text>
+    <text name="UpdateName">修改人</text>
   </texts>
 </localizationDictionary>
 

@@ -15,11 +15,14 @@ namespace JD.Invoicing.Goods.Dto
     {
 
         /// <summary>
-        /// 商品编号
+        /// 编号
         /// </summary>
         [Required]
         [StringLength(50)]
         public string Code { get; set; }
+        /// <summary>
+        /// 名称
+        /// </summary>
         [Required]
         [StringLength(150)]
         public string Name { get; set; }
