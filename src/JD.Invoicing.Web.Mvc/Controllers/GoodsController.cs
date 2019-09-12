@@ -16,7 +16,6 @@ namespace JD.Invoicing.Web.Controllers
     {
         private readonly IGoodsAppService _goodsAppService;
         const int MaxNum = 10;
-
         public GoodsController(IGoodsAppService goodsAppService)
         {
             _goodsAppService = goodsAppService;

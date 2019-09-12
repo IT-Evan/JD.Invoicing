@@ -9,10 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
 
-
 namespace JD.Invoicing.Web.Controllers
 {
-
     [AbpMvcAuthorize(PermissionNames.Pages_Customer)]
     public class CustomerController : InvoicingControllerBase
     {
@@ -36,10 +34,8 @@ namespace JD.Invoicing.Web.Controllers
             };
             return View(model);
         }
-
         
         public async Task<ActionResult> EditCustomerModal(int customerId)
-
         {
             var customer = await _customerAppService.Get(new EntityDto<int>(customerId));
             //CreateUpdateCustomerDto cuCustomer = AutoMapper.Mapper.Map<CreateUpdateCustomerDto>(customer);
