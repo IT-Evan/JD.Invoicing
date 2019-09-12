@@ -1,7 +1,7 @@
 ﻿(function () {
     $(function () {
 
-        var _CustomerService = abp.services.app.Customer;
+        var _customerService = abp.services.app.customer;
         var _$modal = $('#CustomerCreateModal');
         var _$form = _$modal.find('form');
 
@@ -12,19 +12,19 @@
             refreshCustomerList();
         });
 
-        $('.delete-Customer').click(function () {
-            var CustomerId = $(this).attr("data-Customer-id");
-            var CustomerName = $(this).attr('data-Customer-name');
-            deleteCustomer(CustomerId, CustomerName);
+        $('.delete-customer').click(function () {
+            var customerId = $(this).attr("data-customer-id");
+            var customerName = $(this).attr('data-customer-name');
+            deleteCustomer(customerId, customerName);
         });
 
 
-        $('.edit-Customer').click(function (e) {
-            var CustomerId = $(this).attr("data-Customer-id");
+        $('.edit-customer').click(function (e) {
+            var customerId = $(this).attr("data-customer-id");
 
             e.preventDefault();
             $.ajax({
-                url: abp.appPath + 'Customer/EditCustomerModal?CustomerId=' + CustomerId,
+                url: abp.appPath + 'Customer/EditCustomerModal?customerId=' + customerId,
 
                 type: 'POST',
                 contentType: 'application/html',
@@ -43,10 +43,10 @@
                 return;
             }
 
-            var Customer = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js         
+            var customer = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js         
 
             abp.ui.setBusy(_$modal);
-            _CustomerService.create(Customer).done(function () {
+            _customerService.create(customer).done(function () {
                 _$modal.modal('hide');
                 location.reload(true); //reload page to see new user!
 
@@ -67,14 +67,14 @@
 
         }
 
-        function deleteCustomer(CustomerId, CustomerName) {
+        function deleteCustomer(customerId, customerName) {
             abp.message.confirm(
-                abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'Invoicing'), CustomerName),
+                abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'Invoicing'), customerName),
 
                 function (isConfirmed) {
                     if (isConfirmed) {
-                        _CustomerService.delete({
-                            id: CustomerId
+                        _customerService.delete({
+                            id: customerId
 
                         }).done(function () {
                             refreshCustomerList();

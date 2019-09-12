@@ -1,5 +1,5 @@
 ﻿(function ($) {
-    var _CustomerService = abp.services.app.Customer;
+    var _customerService = abp.services.app.customer;
     var _$modal = $('#CustomerEditModal');
     var _$form = $('form[name=CustomerEditForm]');
 
@@ -10,11 +10,11 @@
             return;
         }
 
-        var Customer = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js   
+        var customer = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js   
 
 
         abp.ui.setBusy(_$form);
-        _CustomerService.update(Customer).done(function () {
+        _customerService.update(customer).done(function () {
 
             _$modal.modal('hide');
 

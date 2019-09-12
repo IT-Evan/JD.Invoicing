@@ -4,7 +4,6 @@
     Layout = null;
 }
 @Html.Partial("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("EditGoods")))
-
 <div class="modal-body">
     <form name="GoodsEditForm" role="form" novalidate class="form-validation">
         <input type="hidden" name="Id" value="@Model.Goods.Id" />
@@ -143,7 +142,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </form>
 </div>

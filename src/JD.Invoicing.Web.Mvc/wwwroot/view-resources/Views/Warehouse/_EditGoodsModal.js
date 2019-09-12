@@ -1,5 +1,5 @@
 ﻿(function ($) {
-    var _WarehouseService = abp.services.app.Warehouse;
+    var _warehouseService = abp.services.app.warehouse;
     var _$modal = $('#WarehouseEditModal');
     var _$form = $('form[name=WarehouseEditForm]');
 
@@ -10,11 +10,11 @@
             return;
         }
 
-        var Warehouse = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js   
+        var warehouse = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js   
 
 
         abp.ui.setBusy(_$form);
-        _WarehouseService.update(Warehouse).done(function () {
+        _warehouseService.update(warehouse).done(function () {
 
             _$modal.modal('hide');
 

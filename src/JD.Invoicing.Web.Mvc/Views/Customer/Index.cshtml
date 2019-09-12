@@ -1,6 +1,5 @@
 ﻿@using JD.Invoicing.Web.Startup
 @model JD.Invoicing.Web.Models.Customer.CustomerListViewModel
-
 @{
     ViewBag.CurrentPageName = PageNames.Customer; // The menu item will be active for this page.
 }
@@ -22,14 +21,10 @@
                 </h2>
                 <ul class="header-dropdown m-r--5">
                     <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">
-
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             <i class="material-icons">more_vert</i>
-
                         </a>
                         <ul class="dropdown-menu pull-right">
-
                             <li>
                                 <a id="RefreshButton" href="javascript:void(0);" class="waves-effect waves-block"><i class="material-icons">refresh</i>@L("Refresh")</a>
                             </li>
@@ -119,9 +114,7 @@
                                     </ul>
                                 </td>
                             </tr>
-
                         }
-
                     </tbody>
                 </table>
                 <button type="button" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal" data-target="#CustomerCreateModal">

@@ -1,7 +1,7 @@
 ﻿(function () {
     $(function () {
 
-        var _WarehouseService = abp.services.app.Warehouse;
+        var _warehouseService = abp.services.app.warehouse;
         var _$modal = $('#WarehouseCreateModal');
         var _$form = _$modal.find('form');
 
@@ -12,19 +12,19 @@
             refreshWarehouseList();
         });
 
-        $('.delete-Warehouse').click(function () {
-            var WarehouseId = $(this).attr("data-Warehouse-id");
-            var WarehouseName = $(this).attr('data-Warehouse-name');
-            deleteWarehouse(WarehouseId, WarehouseName);
+        $('.delete-warehouse').click(function () {
+            var warehouseId = $(this).attr("data-warehouse-id");
+            var warehouseName = $(this).attr('data-warehouse-name');
+            deleteWarehouse(warehouseId, warehouseName);
         });
 
 
-        $('.edit-Warehouse').click(function (e) {
-            var WarehouseId = $(this).attr("data-Warehouse-id");
+        $('.edit-warehouse').click(function (e) {
+            var warehouseId = $(this).attr("data-warehouse-id");
 
             e.preventDefault();
             $.ajax({
-                url: abp.appPath + 'Warehouse/EditWarehouseModal?WarehouseId=' + WarehouseId,
+                url: abp.appPath + 'Warehouse/EditWarehouseModal?warehouseId=' + warehouseId,
 
                 type: 'POST',
                 contentType: 'application/html',
@@ -43,10 +43,10 @@
                 return;
             }
 
-            var Warehouse = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js         
+            var warehouse = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js         
 
             abp.ui.setBusy(_$modal);
-            _WarehouseService.create(Warehouse).done(function () {
+            _warehouseService.create(warehouse).done(function () {
                 _$modal.modal('hide');
                 location.reload(true); //reload page to see new user!
 
@@ -67,14 +67,14 @@
 
         }
 
-        function deleteWarehouse(WarehouseId, WarehouseName) {
+        function deleteWarehouse(warehouseId, warehouseName) {
             abp.message.confirm(
-                abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'Invoicing'), WarehouseName),
+                abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'Invoicing'), warehouseName),
 
                 function (isConfirmed) {
                     if (isConfirmed) {
-                        _WarehouseService.delete({
-                            id: WarehouseId
+                        _warehouseService.delete({
+                            id: warehouseId
 
                         }).done(function () {
                             refreshWarehouseList();
