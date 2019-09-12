@@ -20,7 +20,7 @@ namespace JD.Invoicing.Entitys
             this.Phone = string.Empty;
             this.Wechat = string.Empty;
             this.Area = string.Empty;
-            this.Type = null;
+            this.CustomerType = null;
             this.Remarks = string.Empty;
             this.Status = null;
             this.CreateDate = null;
@@ -71,9 +71,9 @@ namespace JD.Invoicing.Entitys
         [StringLength(50)]
         public string Area { get; set; }
         /// <summary>
-        /// 客商类别
+        /// 客商类别(1:客户, 2:厂商)
         /// </summary>
-        public int? Type { get; set; }
+        public int? CustomerType { get; set; }
         /// <summary>
         /// 备注
         /// </summary>

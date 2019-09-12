@@ -57,7 +57,7 @@ namespace JD.Invoicing.Customer.Dto
         /// <summary>
         /// 客商类别
         /// </summary>
-        public int? Type { get; set; }
+        public int? CustomerType { get; set; }
         /// <summary>
         /// 备注
         /// </summary>

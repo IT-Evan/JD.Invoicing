@@ -106,6 +106,7 @@
     <text name="Goods">商品信息</text>
     <text name="Customer">客商信息</text>
     <text name="Warehouse">仓库信息</text>
+    <text name="Gross">毛利信息</text>
     <text name="Purchase">采购管理</text>
     <text name="PurchaseOrder">采购订单</text>
     <text name="PurchaseWarehousing">采购入库</text>
@@ -134,6 +135,10 @@
     <text name="Refresh">刷新</text>
     <text name="CreateGoods">创建商品</text>
     <text name="EditGoods">编辑商品</text>
+    <text name="CreateCustomer">创建客商</text>
+    <text name="EditCustomer">编辑客商</text>
+    <text name="CreateWarehouse">创建仓库</text>
+    <text name="EditWarehouse">编辑仓库</text>
     <text name="Code">编号</text>
     <text name="Name">名称</text>
     <text name="GenericName">通用名</text>
@@ -153,6 +158,19 @@
     <text name="CreateName">创建人</text>
     <text name="UpdateDate">修改日期</text>
     <text name="UpdateName">修改人</text>
+    <text name="CustomerType">客商类别</text>
+    <text name="Address">地址</text>
+    <text name="Contact">联系人</text>
+    <text name="Phone">电话</text>
+    <text name="Wechat">微信</text>
+    <text name="Area">区域</text>
+    <text name="Sizes">面积</text>
+    <text name="Purpose">用途</text>
+    <text name="Dashboard">工作台</text>
+    <text name="TransactionFlow">交易流水</text>
+    <text name="Realtime">实时</text>
+    <text name="ON">开</text>
+    <text name="OFF">关</text>
   </texts>
 </localizationDictionary>
 

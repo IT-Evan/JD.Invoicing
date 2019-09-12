@@ -128,6 +128,10 @@
     <text name="RolePermissions">Role Permissions</text>
     <text name="CreateGoods">Create Goods</text>
     <text name="EditGoods">Edit Goods</text>
+    <text name="CreateCustomer">Create Customer</text>
+    <text name="EditCustomer">Edit Customer</text>
+    <text name="CreateWarehouse">Create Warehouse</text>
+    <text name="EditWarehouse">Edit Warehouse</text>
     <text name="Code">Code</text>
     <text name="Name">Name</text>
     <text name="GenericName">Generic Name</text>
@@ -147,5 +151,19 @@
     <text name="CreateName">Create Name</text>
     <text name="UpdateDate">Update Date</text>
     <text name="UpdateName">Update Name</text>
+    <text name="CustomerType">Customer Type</text>
+    <text name="Address">Address</text>
+    <text name="Contact">Contact</text>
+    <text name="Phone">Phone</text>
+    <text name="Wechat">Wechat</text>
+    <text name="Area">Area</text>
+    <text name="Sizes">Sizes</text>
+    <text name="Purpose">Purpose</text>    
+    <text name="Gross">Gross</text>
+    <text name="Dashboard">Dashboard</text>
+    <text name="TransactionFlow">Transaction Flow</text>
+    <text name="Realtime">Realtime</text>
+    <text name="ON">ON</text>
+    <text name="OFF">OFF</text>
   </texts>
 </localizationDictionary>

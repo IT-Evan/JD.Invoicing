@@ -44,7 +44,7 @@
                             <th>@L("Phone")</th>
                             <th>@L("Wechat")</th>
                             <th>@L("Area")</th>
-                            <th>@L("Type")</th>
+                            <th>@L("CustomerType")</th>
                             <th>@L("Remarks")</th>
                             <th>@L("Status")</th>
                             <th>@L("CreateDate")</th>
@@ -83,7 +83,7 @@
                                 @Html.DisplayFor(modelItem => item.Area)
                             </td>
                             <td>
-                                @Html.DisplayFor(modelItem => item.Type)
+                                @Html.DisplayFor(modelItem => item.CustomerType)
                             </td>
                             <td>
                                 @Html.DisplayFor(modelItem => item.Remarks)
@@ -194,8 +194,8 @@
                         <div class="row clearfix">
                             <div class="col-sm-6">
                                 <div class="form-line">
-                                    <label class="form-label">@L("Type")</label>
-                                    <input name="Type" type="text" class="form-control" />
+                                    <label class="form-label">@L("CustomerType")</label>
+                                    <input name="CustomerType" type="text" class="form-control" />
                                 </div>
                             </div>
                             <div class="col-sm-6">

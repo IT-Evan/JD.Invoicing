@@ -19,7 +19,7 @@ namespace JD.Invoicing.Customer.Dto
         public string Phone { get; set; }
         public string Wechat { get; set; }
         public string Area { get; set; }
-        public int? Type { get; set; }
+        public int? CustomerType { get; set; }
         public string Remarks { get; set; }
         public int? Status { get; set; }
         public DateTime? CreateDate { get; set; }

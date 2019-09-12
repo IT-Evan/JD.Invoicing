@@ -6,7 +6,7 @@
     <link href="~/lib/morris.js/morris.css" rel="stylesheet" asp-append-version="true" />
 }
 @section scripts
-{
+    {
     <environment names="Development">
         <script src="~/lib/jquery-countTo/jquery.countTo.js" asp-append-version="true"></script>
         <script src="~/lib/raphael/raphael.js" asp-append-version="true"></script>
@@ -26,7 +26,7 @@
     </environment>
 }
 <div class="block-header">
-    <h2>SAMPLE DASHBOARD</h2>
+    <h2>@L("Dashboard")</h2>
 </div>
 
 <!-- Widgets -->
@@ -34,62 +34,62 @@
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <div class="info-box bg-pink hover-expand-effect">
             <div class="icon">
-                <i class="material-icons">playlist_add_check</i>
+                <i class="material-icons">shopping_cart</i>
             </div>
             <div class="content">
-                <div class="text">NEW TASKS</div>
-                <div class="number count-to" data-from="0" data-to="125" data-speed="1000" data-fresh-interval="20"></div>
+                <div class="text">@L("Goods")</div>
+                <div class="number count-to" data-from="0" data-to="5874" data-speed="1000" data-fresh-interval="143"></div>
             </div>
         </div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <div class="info-box bg-cyan hover-expand-effect">
             <div class="icon">
-                <i class="material-icons">help</i>
+                <i class="material-icons">group</i>
             </div>
             <div class="content">
-                <div class="text">NEW TICKETS</div>
-                <div class="number count-to" data-from="0" data-to="257" data-speed="1000" data-fresh-interval="20"></div>
+                <div class="text">@L("Customer")</div>
+                <div class="number count-to" data-from="0" data-to="256" data-speed="1000" data-fresh-interval="17"></div>
             </div>
         </div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <div class="info-box bg-light-green hover-expand-effect">
             <div class="icon">
-                <i class="material-icons">forum</i>
+                <i class="material-icons">store</i>
             </div>
             <div class="content">
-                <div class="text">NEW COMMENTS</div>
-                <div class="number count-to" data-from="0" data-to="243" data-speed="1000" data-fresh-interval="20"></div>
+                <div class="text">@L("Warehouse")</div>
+                <div class="number count-to" data-from="0" data-to="17" data-speed="1000" data-fresh-interval="1"></div>
             </div>
         </div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <div class="info-box bg-orange hover-expand-effect">
             <div class="icon">
-                <i class="material-icons">person_add</i>
+                <i class="material-icons">attach_money</i>
             </div>
             <div class="content">
-                <div class="text">NEW VISITORS</div>
-                <div class="number count-to" data-from="0" data-to="1225" data-speed="1000" data-fresh-interval="20"></div>
+                <div class="text">@L("Gross")</div>
+                <div class="number count-to" data-from="0" data-to="596437" data-speed="1000" data-fresh-interval="256"></div>
             </div>
         </div>
     </div>
 </div>
 <!-- #END# Widgets -->
-<!-- CPU Usage -->
+<!-- Transaction Flow -->
 <div class="row clearfix">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="card">
             <div class="header">
                 <div class="row clearfix">
                     <div class="col-xs-12 col-sm-6">
-                        <h2>CPU USAGE (%)</h2>
+                        <h2>@L("TransactionFlow")</h2>
                     </div>
                     <div class="col-xs-12 col-sm-6 align-right">
                         <div class="switch panel-switch-btn">
-                            <span class="m-r-10 font-12">REAL TIME</span>
-                            <label>OFF<input type="checkbox" id="realtime" checked><span class="lever switch-col-cyan"></span>ON</label>
+                            <span class="m-r-10 font-12">@L("Realtime")</span>
+                            <label>@L("OFF")<input type="checkbox" id="realtime" checked><span class="lever switch-col-cyan"></span>@L("ON")</label>
                         </div>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
         </div>
     </div>
 </div>
-<!-- #END# CPU Usage -->
+<!-- #END# Transaction Flow -->
 <div class="row clearfix">
     <!-- Visitors -->
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
