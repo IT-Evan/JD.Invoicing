@@ -57,63 +57,62 @@
                     <tbody>
                         @foreach (var item in Model.Customers)
                         {
-                            <tr>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Code)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Name)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.PinyinCode)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Address)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Contact)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Phone)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Wechat)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Area)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Type)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Remarks)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Status)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.CreateDate)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.CreateName)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.UpdateDate)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.UpdateName)
-                                </td>
-
-                                <td class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">menu</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="#" class="waves-effect waves-block edit-Customer" data-Customer-id="@item.Id" data-toggle="modal" data-target="#CustomerEditModal"><i class="material-icons">edit</i>@L("Edit")</a></li>
-                                        <li><a href="#" class="waves-effect waves-block delete-Customer" data-Customer-id="@item.Id" data-Customer-name="@item.Name"><i class="material-icons">delete_sweep</i>@L("Delete")</a></li>
-                                    </ul>
-                                </td>
-                            </tr>
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Code)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PinyinCode)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Address)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Contact)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Phone)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Wechat)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Area)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Type)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Remarks)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Status)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CreateDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CreateName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.UpdateDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.UpdateName)
+                            </td>
+                            <td class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">menu</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="#" class="waves-effect waves-block edit-customer" data-customer-id="@item.Id" data-toggle="modal" data-target="#CustomerEditModal"><i class="material-icons">edit</i>@L("Edit")</a></li>
+                                    <li><a href="#" class="waves-effect waves-block delete-customer" data-customer-id="@item.Id" data-customer-name="@item.Name"><i class="material-icons">delete_sweep</i>@L("Delete")</a></li>
+                                </ul>
+                            </td>
+                        </tr>
                         }
                     </tbody>
                 </table>

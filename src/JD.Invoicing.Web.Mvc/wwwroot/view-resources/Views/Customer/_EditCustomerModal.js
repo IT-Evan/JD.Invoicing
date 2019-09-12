@@ -18,7 +18,7 @@
 
             _$modal.modal('hide');
 
-            location.reload(true); //reload page to see edited Customer!
+            location.reload(true); //reload page to see edited customer!
         }).always(function () {
             abp.ui.clearBusy(_$modal);
         });

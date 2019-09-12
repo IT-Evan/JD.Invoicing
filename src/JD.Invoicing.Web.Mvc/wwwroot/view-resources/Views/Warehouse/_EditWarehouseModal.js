@@ -18,7 +18,7 @@
 
             _$modal.modal('hide');
 
-            location.reload(true); //reload page to see edited Warehouse!
+            location.reload(true); //reload page to see edited warehouse!
         }).always(function () {
             abp.ui.clearBusy(_$modal);
         });
