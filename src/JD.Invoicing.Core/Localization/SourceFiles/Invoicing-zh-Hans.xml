@@ -171,6 +171,9 @@
     <text name="Realtime">实时</text>
     <text name="ON">开</text>
     <text name="OFF">关</text>
+    <text name="Today">今天</text>
+    <text name="Yesterday">昨天</text>
+    <text name="LastWeek">上周</text>
   </texts>
 </localizationDictionary>
 

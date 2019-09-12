@@ -165,5 +165,8 @@
     <text name="Realtime">Realtime</text>
     <text name="ON">ON</text>
     <text name="OFF">OFF</text>
+    <text name="Today">Today</text>
+    <text name="Yesterday">Yesterday</text>
+    <text name="LastWeek">Last Week</text>
   </texts>
 </localizationDictionary>
