@@ -101,7 +101,7 @@ namespace JD.Invoicing.Roles
         {
             var permissions = PermissionManager.GetAllPermissions();
             return Task.FromResult(new ListResultDto<PermissionDto>(
-                ObjectMapper.Map<List<PermissionDto>>(permissions).OrderBy(p => p.ParentID).ToList()
+                ObjectMapper.Map<List<PermissionDto>>(permissions).OrderBy(p => p.Parent).ToList()
             ));
         }
 

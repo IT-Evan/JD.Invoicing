@@ -8,6 +8,6 @@
         
         public string Description { get; set; }
 
-        public int ParentID { get; set; }
+        public string Parent { get; set; }
     }
 }
