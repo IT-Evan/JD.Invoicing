@@ -113,8 +113,6 @@ namespace JD.Invoicing.Roles
                     permissionItem.Name = permissions[i].Name;
                     permissionItem.DisplayName = (permissions[i].DisplayName != null) ? ((LocalizableString)permissions[i].DisplayName).Name : null;
                     permissionItem.Description = (permissions[i].Description !=null) ? ((LocalizableString)permissions[i].Description).Name : null;
-                    //permissionItem.DisplayName = permissions[i].DisplayName;
-                    //permissionItem.Description = permissions[i].Description;
                     permissionList.Add(permissionItem);
                 }
                 else
@@ -133,6 +131,7 @@ namespace JD.Invoicing.Roles
                     }
                 }
             }
+            //Add permission tree--20190916
             return Task.FromResult(new ListResultDto<PermissionDto>(
                ObjectMapper.Map<List<PermissionDto>>(permissionList).OrderBy(p => p.ParentID).ToList()
            ));
@@ -163,15 +162,45 @@ namespace JD.Invoicing.Roles
 
         public async Task<GetRoleForEditOutput> GetRoleForEdit(EntityDto input)
         {
-            var permissions = PermissionManager.GetAllPermissions();
             var role = await _roleManager.GetRoleByIdAsync(input.Id);
             var grantedPermissions = (await _roleManager.GetGrantedPermissionsAsync(role)).ToArray();
             var roleEditDto = ObjectMapper.Map<RoleEditDto>(role);
-
+            var permissions = PermissionManager.GetAllPermissions();
+            //Add permission tree--20190916
+            var permissionList = new List<PermissionDto> { };
+            for (var i = 0; i < permissions.Count; i++)
+            {
+                var permissionItem = new PermissionDto();
+                if (permissions[i].Parent == null)
+                {
+                    permissionItem.ParentID = 0;
+                    permissionItem.Id = i + 1;
+                    permissionItem.Name = permissions[i].Name;
+                    permissionItem.DisplayName = (permissions[i].DisplayName != null) ? ((LocalizableString)permissions[i].DisplayName).Name : null;
+                    permissionItem.Description = (permissions[i].Description != null) ? ((LocalizableString)permissions[i].Description).Name : null;
+                    permissionList.Add(permissionItem);
+                }
+                else
+                {
+                    for (var j = 0; j < permissionList.Count; j++)
+                    {
+                        if (permissions[i].Parent.Name == permissionList[j].Name)
+                        {
+                            permissionItem.ParentID = permissionList[j].Id;
+                            permissionItem.Id = i + 1;
+                            permissionItem.Name = permissions[i].Name;
+                            permissionItem.DisplayName = (permissions[i].DisplayName != null) ? ((LocalizableString)permissions[i].DisplayName).Name : null;
+                            permissionItem.Description = (permissions[i].Description != null) ? ((LocalizableString)permissions[i].Description).Name : null;
+                            permissionList.Add(permissionItem);
+                        }
+                    }
+                }
+            }
+            //Add permission tree--20190916
             return new GetRoleForEditOutput
             {
                 Role = roleEditDto,
-                Permissions = ObjectMapper.Map<List<FlatPermissionDto>>(permissions).OrderBy(p => p.DisplayName).ToList(),
+                Permissions = ObjectMapper.Map<List<PermissionDto>>(permissionList).OrderBy(p => p.ParentID).ToList(),
                 GrantedPermissionNames = grantedPermissions.Select(p => p.Name).ToList()
             };
         }

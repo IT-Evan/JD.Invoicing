@@ -12,7 +12,7 @@ namespace JD.Invoicing.Web.Models.Roles
             output.MapTo(this);
         }
 
-        public bool HasPermission(FlatPermissionDto permission)
+        public bool HasPermission(PermissionDto permission)
         {
             return GrantedPermissionNames.Contains(permission.Name);
         }
