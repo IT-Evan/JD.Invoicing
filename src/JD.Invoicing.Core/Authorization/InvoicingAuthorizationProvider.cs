@@ -11,7 +11,7 @@ namespace JD.Invoicing.Authorization
             return new LocalizableString(name, InvoicingConsts.LocalizationSourceName);
         }
         public override void SetPermissions(IPermissionDefinitionContext context)
-        {  
+        {
             //Level 1
             context.CreatePermission(PermissionNames.Pages_Home, L("HomePage"));
             context.CreatePermission(PermissionNames.Pages_Data, L("Data"));

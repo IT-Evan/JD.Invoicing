@@ -100,9 +100,42 @@ namespace JD.Invoicing.Roles
         public Task<ListResultDto<PermissionDto>> GetAllPermissions()
         {
             var permissions = PermissionManager.GetAllPermissions();
+            // Add permission tree --20190916
+            var permissionList = new List<PermissionDto> { };
+            for (var i=0; i<permissions.Count; i++)
+            {
+                var permissionItem = new PermissionDto();
+                if (permissions[i].Parent==null)
+                {
+                    permissionItem.ParentID = 0;
+                    permissionItem.Id = i + 1;
+                    permissionItem.Name = permissions[i].Name;
+                    permissionItem.DisplayName = permissions[i].DisplayName;
+                    permissionItem.Description = permissions[i].Description;
+                    permissionList.Add(permissionItem);
+                }
+                else
+                {
+                    for (var j = 0; j < permissionList.Count; j++)
+                    {
+                        if (permissions[i].Parent.Name == permissionList[j].Name)
+                        {
+                            permissionItem.ParentID = permissionList[j].Id;
+                            permissionItem.Id = i + 1;
+                            permissionItem.Name = permissions[i].Name;
+                            permissionItem.DisplayName = permissions[i].DisplayName;
+                            permissionItem.Description = permissions[i].Description;
+                            permissionList.Add(permissionItem);
+                        }
+                    }
+                }
+            }
             return Task.FromResult(new ListResultDto<PermissionDto>(
-                ObjectMapper.Map<List<PermissionDto>>(permissions).OrderBy(p => p.Parent).ToList()
-            ));
+               ObjectMapper.Map<List<PermissionDto>>(permissionList).OrderBy(p => p.ParentID).ToList()
+           ));
+            //return Task.FromResult(new ListResultDto<PermissionDto>(
+            //    ObjectMapper.Map<List<PermissionDto>>(permissions).OrderBy(p => p.ParentID).ToList()
+            //));
         }
 
         protected override IQueryable<Role> CreateFilteredQuery(PagedRoleResultRequestDto input)

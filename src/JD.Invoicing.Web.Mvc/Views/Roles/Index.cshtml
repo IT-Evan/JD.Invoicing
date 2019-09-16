@@ -118,9 +118,9 @@
                                 <div class="col-sm-12">
                                     @foreach (var permission in Model.Permissions)
                                     {
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-12">
                                             <input type="checkbox" name="permission" value="@permission.Name" class="filled-in" id="permission-@permission.Name" />
-                                            <label for="permission-@permission.Name">@permission.DisplayName</label>
+                                            <label for="permission-@L(permission.Name.ToString())">@L(permission.DisplayName.ToString())</label>
                                         </div>
                                     }
                                 </div>
