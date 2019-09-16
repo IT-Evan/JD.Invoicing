@@ -50,24 +50,34 @@
 
                 <div class="row clearfix">
                     <div class="col-sm-12">
-                        @foreach (var permission in Model.Permissions)
+                        @foreach (var permission1 in Model.Permissions)
                         {
-                            if (permission.ParentID == 0)
+                            if (permission1.ParentID == 0)
                             {
                                 <div class="col-sm-12">
                                     <hr />
-                                    <input type="checkbox" name="permission" value="@permission.Name" class="filled-in" id="permission-@permission.Name" checked="checked" disabled="disabled" hidden="hidden" />
-                                    <label for="permission-@permission.Name">@L(permission.DisplayName)</label>
+                                    <input type="checkbox" name="permission" value="@permission1.Name" class="filled-in" id="permission-@permission1.Name" checked="checked" disabled="disabled" hidden="hidden" />
+                                    <label for="permission-@permission1.Name">@L(permission1.DisplayName)</label>
                                     <hr />
                                 </div>
-                                @foreach (var permissionChild in Model.Permissions)
+                                @foreach (var permission2 in Model.Permissions)
                                 {
-                                    if (permissionChild.ParentID == permission.Id)
+                                    if (permission2.ParentID == permission1.Id)
                                     {
                                         <div class="col-sm-12">
-                                            <input type="checkbox" name="permission" value="@permissionChild.Name" class="filled-in" id="@string.Format("permission{0}",permissionChild.Name)" @(Model.HasPermission(permissionChild) ? "checked" : "") @(Model.Role.IsStatic ? "disabled" : "") />
-                                            <label for="@string.Format("permission{0}",permissionChild.Name)">@L(permissionChild.DisplayName)</label>
+                                            <input type="checkbox" name="permission" value="@permission2.Name" class="filled-in" id="@string.Format("permission{0}",permission2.Name)" @(Model.HasPermission(permission2) ? "checked" : "") @(Model.Role.IsStatic ? "disabled" : "") />
+                                            <label for="@string.Format("permission{0}",permission2.Name)">@L(permission2.DisplayName)</label>
                                         </div>
+                                        @foreach (var permission3 in Model.Permissions)
+                                        {
+                                            if (permission3.ParentID == permission2.Id)
+                                            {
+                                        <div class="col-sm-12">
+                                            <input type="checkbox" name="permission" value="@permission3.Name" class="filled-in" id="@string.Format("permission{0}",permission3.Name)" @(Model.HasPermission(permission3) ? "checked" : "") @(Model.Role.IsStatic ? "disabled" : "") />
+                                            <label for="@string.Format("permission{0}",permission3.Name)">@L(permission3.DisplayName)</label>
+                                        </div>
+                                            }
+                                        }
                                     }
                                 }
                             }
