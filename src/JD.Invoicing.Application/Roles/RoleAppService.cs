@@ -8,6 +8,7 @@ using Abp.Domain.Repositories;
 using Abp.Extensions;
 using Abp.IdentityFramework;
 using Abp.Linq.Extensions;
+using Abp.Localization;
 using JD.Invoicing.Authorization;
 using JD.Invoicing.Authorization.Roles;
 using JD.Invoicing.Authorization.Users;
@@ -100,18 +101,20 @@ namespace JD.Invoicing.Roles
         public Task<ListResultDto<PermissionDto>> GetAllPermissions()
         {
             var permissions = PermissionManager.GetAllPermissions();
-            // Add permission tree --20190916
+            //Add permission tree--20190916
             var permissionList = new List<PermissionDto> { };
-            for (var i=0; i<permissions.Count; i++)
+            for (var i = 0; i < permissions.Count; i++)
             {
                 var permissionItem = new PermissionDto();
-                if (permissions[i].Parent==null)
+                if (permissions[i].Parent == null)
                 {
                     permissionItem.ParentID = 0;
                     permissionItem.Id = i + 1;
                     permissionItem.Name = permissions[i].Name;
-                    permissionItem.DisplayName = permissions[i].DisplayName;
-                    permissionItem.Description = permissions[i].Description;
+                    permissionItem.DisplayName = (permissions[i].DisplayName != null) ? ((LocalizableString)permissions[i].DisplayName).Name : null;
+                    permissionItem.Description = (permissions[i].Description !=null) ? ((LocalizableString)permissions[i].Description).Name : null;
+                    //permissionItem.DisplayName = permissions[i].DisplayName;
+                    //permissionItem.Description = permissions[i].Description;
                     permissionList.Add(permissionItem);
                 }
                 else
@@ -123,8 +126,8 @@ namespace JD.Invoicing.Roles
                             permissionItem.ParentID = permissionList[j].Id;
                             permissionItem.Id = i + 1;
                             permissionItem.Name = permissions[i].Name;
-                            permissionItem.DisplayName = permissions[i].DisplayName;
-                            permissionItem.Description = permissions[i].Description;
+                            permissionItem.DisplayName = (permissions[i].DisplayName != null) ? ((LocalizableString)permissions[i].DisplayName).Name : null; 
+                            permissionItem.Description = (permissions[i].Description != null) ? ((LocalizableString)permissions[i].Description).Name : null;
                             permissionList.Add(permissionItem);
                         }
                     }
@@ -133,9 +136,6 @@ namespace JD.Invoicing.Roles
             return Task.FromResult(new ListResultDto<PermissionDto>(
                ObjectMapper.Map<List<PermissionDto>>(permissionList).OrderBy(p => p.ParentID).ToList()
            ));
-            //return Task.FromResult(new ListResultDto<PermissionDto>(
-            //    ObjectMapper.Map<List<PermissionDto>>(permissions).OrderBy(p => p.ParentID).ToList()
-            //));
         }
 
         protected override IQueryable<Role> CreateFilteredQuery(PagedRoleResultRequestDto input)

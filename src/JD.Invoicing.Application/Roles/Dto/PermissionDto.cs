@@ -10,7 +10,7 @@ namespace JD.Invoicing.Roles.Dto
     {
         public long ParentID { get; set; }
         public string Name { get; set; }
-        public ILocalizableString DisplayName { get; set; }
-        public ILocalizableString Description { get; set; }
+        public string DisplayName { get; set; }
+        public string Description { get; set; }
     }
 }

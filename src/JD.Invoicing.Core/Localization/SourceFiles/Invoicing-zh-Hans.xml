@@ -30,9 +30,9 @@
     <text name="CopyRight" >© 2018 Invoicing</text>
     <text name="LoginPrompt" >正在登陆，请稍候！</text>
     <text name="UsInvoicingrofile" >用户资料</text>
-    <text name="Users" >用户</text>
-    <text name="Roles" >角色</text>
-    <text name="Tenants" >租户</text>
+    <text name="Users" >用户信息</text>
+    <text name="Roles" >角色信息</text>
+    <text name="Tenants" >租户信息</text>
     <text name="Logout" >注销</text>
     <text name="ManageMenu" >菜单</text>
     <text name="LabelOptions" >页签操作</text>

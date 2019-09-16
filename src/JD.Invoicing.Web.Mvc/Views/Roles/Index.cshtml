@@ -118,10 +118,25 @@
                                 <div class="col-sm-12">
                                     @foreach (var permission in Model.Permissions)
                                     {
-                                        <div class="col-sm-12">
-                                            <input type="checkbox" name="permission" value="@permission.Name" class="filled-in" id="permission-@permission.Name" />
-                                            <label for="permission-@L(permission.Name.ToString())">@L(permission.DisplayName.ToString())</label>
-                                        </div>
+                                        if (permission.ParentID == 0)
+                                        {
+                                            <div class="col-sm-12">
+                                                <hr />
+                                                <input type="checkbox" name="permission" value="@permission.Name" class="filled-in" id="permission-@permission.Name" checked="checked" disabled="disabled" hidden="hidden"/>
+                                                <label for="permission-@permission.Name">@L(permission.DisplayName)</label>
+                                                <hr />
+                                            </div>
+                                            @foreach (var permissionChild in Model.Permissions)
+                                            {
+                                                if (permissionChild.ParentID == permission.Id)
+                                                {
+                                                    <div class="col-sm-12">
+                                                        <input type="checkbox" name="permission" value="@permissionChild.Name" class="filled-in" id="permission-@permissionChild.Name" />
+                                                        <label for="permission-@permissionChild.Name">@L(permissionChild.DisplayName)</label>
+                                                    </div>
+                                                }
+                                            }
+                                        }
                                     }
                                 </div>
                             </div>
