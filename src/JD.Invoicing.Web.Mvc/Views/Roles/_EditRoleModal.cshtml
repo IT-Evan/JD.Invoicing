@@ -72,10 +72,10 @@
                                         {
                                             if (permission3.ParentID == permission2.Id)
                                             {
-                                        <div class="col-sm-12">
-                                            <input type="checkbox" name="permission" value="@permission3.Name" class="filled-in" id="@string.Format("permission{0}",permission3.Name)" @(Model.HasPermission(permission3) ? "checked" : "") @(Model.Role.IsStatic ? "disabled" : "") />
-                                            <label for="@string.Format("permission{0}",permission3.Name)">@L(permission3.DisplayName)</label>
-                                        </div>
+                                            <div class="col-sm-12">
+                                                <input type="checkbox" name="permission" value="@permission3.Name" class="filled-in" id="@string.Format("permission{0}",permission3.Name)" @(Model.HasPermission(permission3) ? "checked" : "") @(Model.Role.IsStatic ? "disabled" : "") />
+                                                <label for="@string.Format("permission{0}",permission3.Name)">@L(permission3.DisplayName)</label>
+                                            </div>
                                             }
                                         }
                                     }

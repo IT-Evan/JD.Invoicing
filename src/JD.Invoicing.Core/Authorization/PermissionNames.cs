@@ -3,22 +3,22 @@
     public static class PermissionNames
     {
         public const string Pages_Home = "Pages.Home";
-        public const string Pages_Data = "Pages.Data";
-        public const string Pages_Operation = "Pages.Operation";
-        public const string Pages_Report = "Pages.Report";
-        public const string Pages_Setting = "Pages.Setting";
+        public const string Pages_Data = "Menu.Data";
+        public const string Pages_Operation = "Menu.Operation";
+        public const string Pages_Report = "Menu.Report";
+        public const string Pages_Setting = "Menu.Setting";
         public const string Pages_About = "Pages.About";
         public const string Pages_Goods = "Pages.Goods";
         public const string Pages_Customer = "Pages.Customer";
         public const string Pages_Warehouse = "Pages.Warehouse";
-        public const string Pages_Purchase = "Pages.Purchase";
+        public const string Pages_Purchase = "Menu.Purchase";
         public const string Pages_PurchaseOrder = "Pages.PurchaseOrder";
         public const string Pages_PurchaseWarehousing = "Pages.PurchaseWarehousing";
         public const string Pages_PurchaseReturn = "Pages.PurchaseReturn";
-        public const string Pages_Sales = "Pages.Sales";
+        public const string Pages_Sales = "Menu.Sales";
         public const string Pages_SalesOrder = "Pages.SalesOrder";
         public const string Pages_SalesReturn = "Pages.SalesReturn";
-        public const string Pages_Inventory = "Pages.Inventory";
+        public const string Pages_Inventory = "Menu.Inventory";
         public const string Pages_Loss = "Pages.Loss";
         public const string Pages_Profit = "Pages.Profit";
         public const string Pages_InventoryInfo = "Pages.InventoryInfo";
