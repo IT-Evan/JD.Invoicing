@@ -22,4 +22,7 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="2.2.0" />
     <PackageReference Include="Castle.Windsor.MsDependencyInjection" Version="3.3.1" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entitys\Report\" />
+  </ItemGroup>
 </Project>
