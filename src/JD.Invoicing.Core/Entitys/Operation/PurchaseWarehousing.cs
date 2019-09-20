@@ -4,9 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Abp.Domain.Entities;
+using Abp.Domain.Entities.Auditing;
+
 namespace JD.Invoicing.Entitys
 {
-    public class PurchaseWarehousing
+    public class PurchaseWarehousing : Entity<int>, IHasCreationTime
     {
         /// <summary>
         /// 入库订单编号
@@ -97,5 +100,7 @@ namespace JD.Invoicing.Entitys
         public string OrderOrderID { get; set; }
 
         public virtual List<PurchaseWarehousingMX> PurchaseWarehousingMX { get; set; }
+
+        public DateTime CreationTime { get; set; }
     }
 }

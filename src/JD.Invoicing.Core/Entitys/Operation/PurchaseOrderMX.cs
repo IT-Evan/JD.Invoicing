@@ -6,10 +6,12 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.Serialization;
 using Newtonsoft.Json;
+using Abp.Domain.Entities;
+using Abp.Domain.Entities.Auditing;
 
 namespace JD.Invoicing.Entitys
 {
-    public class PurchaseOrderMX
+    public class PurchaseOrderMX : Entity<int>, IHasCreationTime
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -82,6 +84,8 @@ namespace JD.Invoicing.Entitys
         [IgnoreDataMember]
         [ForeignKey("Order_id")]
         public virtual PurchaseOrder PurchaseOrder { get; set; }
+
+        public DateTime CreationTime { get; set; }
 
     }
 }
