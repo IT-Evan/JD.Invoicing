@@ -1,0 +1,143 @@
+﻿@using JD.Invoicing.Web.Models.Common.Modals
+@model JD.Invoicing.Web.Models.Purchase.EditStoreModalViewModel
+@{
+    Layout = null;
+}
+@Html.Partial("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("EditStore")))
+<div class="modal-body">
+    <form name="StoreEditForm" role="form" novalidate class="form-validation">
+        <input type="hidden" name="Id" value="@Model.Store.Id" />
+        <div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("OrderID")</label>
+                        <input type="text" name="OrderID" value="@Model.Store.OrderID" class="form-control" required maxlength="50" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("OrderDate")</label>
+                        <input type="text" name="OrderDate" value="@Model.Store.OrderDate" class="form-control" required maxlength="150" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("OrderType")</label>
+                        <input type="text" name="OrderType" value="@Model.Store.OrderType" class="form-control" required maxlength="150" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("CreateDate")</label>
+                        <input type="text" name="CreateDate" value="@Model.Store.CreateDate" class="form-control" required maxlength="200" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("CreateName")</label>
+                        <input type="text" name="CreateName" value="@Model.Store.CreateName" class="form-control" required maxlength="50" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("YSNameID")</label>
+                        <input type="text" name="YSNameID" value="@Model.Store.YSNameID" class="form-control" required maxlength="50" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("YSName")</label>
+                        <input type="text" name="YSName" value="@Model.Store.YSName" class="form-control" required maxlength="50" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("Sup_id")</label>
+                        <input name="Sup_id" type="text" value="@Model.Store.Sup_id" class="form-control" required maxlength="50" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("SupName")</label>
+                        <input name="SupName" type="text" value="@Model.Store.SupName" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("StroeInfo_id")</label>
+                        <input name="StroeInfo_id" type="text" value="@Model.Store.StroeInfo_id" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-12">
+                    <div class="form-line">
+                        <label class="form-label">@L("StoreName")</label>
+                        <input name="StoreName" type="text" value="@Model.Store.StoreName" class="form-control" required maxlength="200" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("Sum")</label>
+                        <input name="Sum" type="text" value="@Model.Store.Sum" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("BZ")</label>
+                        <input name="BZ" type="text" value="@Model.Store.BZ" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("SHStatus")</label>
+                        <input name="SHStatus" type="text" value="@Model.Store.SHStatus" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("SHDate")</label>
+                        <input name="SHDate" type="text" value="@Model.Store.SHDate" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("SHName")</label>
+                        <input name="SHName" type="text" value="@Model.Store.SHName" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("OrderOrder_id")</label>
+                        <input name="OrderOrder_id" type="text" value="@Model.Store.OrderOrder_id" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-12">
+                    <div class="form-line">
+                        <label class="form-label">@L("OrderOrderID")</label>
+                        <input name="OrderOrderID" type="text" value="@Model.Store.OrderOrderID" class="form-control" />
+                    </div>
+                </div>
+            </div>
+</form>
+</div>
+@Html.Partial("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+
+<script src="~/view-resources/Views/Store/_EditStoreModal.js" asp-append-version="true"></script>
