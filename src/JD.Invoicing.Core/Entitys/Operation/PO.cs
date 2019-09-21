@@ -11,13 +11,7 @@ namespace JD.Invoicing.Entitys
 {
     public class PO : Entity<int>, IHasCreationTime
     {
-        /// <summary>
-        /// 采购订单编号
-        /// </summary>
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id { get; set; }
-        /// <summary>
+        //// <summary>
         /// 单据编号
         /// </summary>
         [StringLength(45)]

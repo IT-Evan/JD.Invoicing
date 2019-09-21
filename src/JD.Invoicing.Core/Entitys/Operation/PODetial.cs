@@ -13,9 +13,6 @@ namespace JD.Invoicing.Entitys
 {
     public class PODetial : Entity<int>, IHasCreationTime
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id { get; set; }
         /// <summary>
         /// 主表主键
         /// </summary>

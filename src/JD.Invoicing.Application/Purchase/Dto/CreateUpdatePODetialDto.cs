@@ -14,9 +14,6 @@ namespace JD.Invoicing.Purchase.Dto
     [AutoMapTo(typeof(Entitys.PODetial))]
     public class CreateUpdatePODetialDto : EntityDto<int>
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id { get; set; }
         /// <summary>
         /// 主表主键
         /// </summary>

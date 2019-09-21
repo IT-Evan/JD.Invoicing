@@ -15,9 +15,6 @@ namespace JD.Invoicing.Purchase.Dto
     [AutoMapFrom(typeof(Entitys.StoreDetial))]
     public class StoreDetialDto : EntityDto<int>
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id { get; set; }
         /// <summary>
         /// 主表主键
         /// </summary>

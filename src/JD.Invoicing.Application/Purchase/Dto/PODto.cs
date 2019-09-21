@@ -14,12 +14,6 @@ namespace JD.Invoicing.Purchase.Dto
     public class PODto : EntityDto<int>
     {
         /// <summary>
-        /// 采购订单编号
-        /// </summary>
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id { get; set; }
-        /// <summary>
         /// 单据编号
         /// </summary>
         [StringLength(45)]

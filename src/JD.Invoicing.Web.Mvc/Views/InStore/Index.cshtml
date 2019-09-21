@@ -1,0 +1,270 @@
+﻿@using JD.Invoicing.Web.Startup
+@model JD.Invoicing.Web.Models.Purchase.StoreListViewModel
+@{
+    ViewBag.CurrentPageName = PageNames.InStore; // The menu item will be active for this page.
+}
+@section scripts
+    {
+    <environment names="Development">
+        <script src="~/view-resources/Views/InStore/Index.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/view-resources/Views/InStore/Index.js" asp-append-version="true"></script>
+    </environment>
+}
+<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="header">
+                <h2>
+                    @L("InStore")
+                </h2>
+                <ul class="header-dropdown m-r--5">
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">more_vert</i>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li>
+                                <a id="RefreshButton" href="javascript:void(0);" class="waves-effect waves-block"><i class="material-icons">refresh</i>@L("Refresh")</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="body table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>@L("OrderID")</th>
+                            <th>@L("OrderDate")</th>
+                            <th>@L("OrderType")</th>
+                            <th>@L("CreateDate")</th>
+                            <th>@L("CreateName")</th>
+                            <th>@L("YSNameID")</th>
+                            <th>@L("YSName")</th>
+                            <th>@L("Sup_id")</th>
+                            <th>@L("SupName")</th>
+                            <th>@L("StroeInfo_id")</th>
+                            <th>@L("StoreName")</th>
+                            <th>@L("Sum")</th>
+                            <th>@L("BZ")</th>
+                            <th>@L("SHStatus")</th>
+                            <th>@L("SHDate")</th>
+                            <th>@L("SHName")</th>
+                            <th>@L("OrderOrder_id")</th>
+                            <th>@L("OrderOrderID")</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Stores)
+                        {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OrderID)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OrderDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OrderType)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CreateDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CreateName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.YSNameID)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.YSName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Sup_id)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SupName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.StroeInfo_id)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.StoreName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Sum)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.BZ)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SHStatus)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SHDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SHName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OrderOrder_id)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OrderOrderID)
+                            </td>
+                            <td class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">menu</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="#" class="waves-effect waves-block edit-Store" data-Store-id="@item.Id" data-toggle="modal" data-target="#StoreEditModal"><i class="material-icons">edit</i>@L("Edit")</a></li>
+                                    <li><a href="#" class="waves-effect waves-block delete-Store" data-Store-id="@item.Id" data-Store-name="@item.OrderID"><i class="material-icons">delete_sweep</i>@L("Delete")</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+                <button type="button" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal" data-target="#StoreCreateModal">
+                    <i class="material-icons">add</i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="StoreCreateModal" tabindex="-1" role="dialog" aria-labelledby="StoreCreateModalLabel" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    <span>@L("CreateStore")</span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form name="StoreCreateForm" role="form" class="form-validation">
+                    <div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Code")</label>
+                                    <input type="text" name="Code" class="form-control" required maxlength="50" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Name")</label>
+                                    <input type="text" name="Name" class="form-control" required maxlength="150" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("PinyinCode")</label>
+                                    <input type="text" name="PinyinCode" class="form-control" required maxlength="150" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Address")</label>
+                                    <input type="text" name="Address" class="form-control" required maxlength="200" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Contact")</label>
+                                    <input type="text" name="Contact" class="form-control" required maxlength="50" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Phone")</label>
+                                    <input type="text" name="Phone" class="form-control" required maxlength="50" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Wechat")</label>
+                                    <input type="text" name="Wechat" class="form-control" required maxlength="50" />
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Area")</label>
+                                    <input name="Area" type="text" class="form-control" required maxlength="50" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("StoreType")</label>
+                                    <input name="StoreType" type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Status")</label>
+                                    <input name="Status" type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Remarks")</label>
+                                    <input name="Remarks" type="text" class="form-control" required maxlength="200" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("CreateDate")</label>
+                                    <input name="CreateDate" type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("CreateName")</label>
+                                    <input name="CreateName" type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("UpdateDate")</label>
+                                    <input name="UpdateDate" type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("UpdateName")</label>
+                                    <input name="UpdateName" type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">@L("Cancel")</button>
+                        <button type="submit" class="btn btn-primary waves-effect">@L("Save")</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="StoreEditModal" tabindex="-1" role="dialog" aria-labelledby="StoreEditModalLabel" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>

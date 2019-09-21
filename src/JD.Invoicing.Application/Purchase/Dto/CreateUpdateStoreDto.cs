@@ -13,12 +13,6 @@ namespace JD.Invoicing.Purchase.Dto
     public class CreateUpdateStoreDto : EntityDto<int>
     {
         /// <summary>
-        /// 入库订单编号
-        /// </summary>
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id { get; set; }
-        /// <summary>
         /// 单据编号
         /// </summary>
         [StringLength(45)]

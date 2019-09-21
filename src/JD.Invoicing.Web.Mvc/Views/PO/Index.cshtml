@@ -1,0 +1,251 @@
+﻿@using JD.Invoicing.Web.Startup
+@model JD.Invoicing.Web.Models.Purchase.POListViewModel
+@{
+    ViewBag.CurrentPageName = PageNames.PO; // The menu item will be active for this page.
+}
+@section scripts
+    {
+    <environment names="Development">
+        <script src="~/view-resources/Views/PO/Index.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/view-resources/Views/PO/Index.js" asp-append-version="true"></script>
+    </environment>
+}
+<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="header">
+                <h2>
+                    @L("PO")
+                </h2>
+                <ul class="header-dropdown m-r--5">
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">more_vert</i>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li>
+                                <a id="RefreshButton" href="javascript:void(0);" class="waves-effect waves-block"><i class="material-icons">refresh</i>@L("Refresh")</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="body table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>@L("OrderID")</th>
+                            <th>@L("OrderDate")</th>
+                            <th>@L("CreateDate")</th>
+                            <th>@L("CreateName")</th>
+                            <th>@L("CGNameID")</th>
+                            <th>@L("CGName")</th>
+                            <th>@L("Sup_id")</th>
+                            <th>@L("SupName")</th>
+                            <th>@L("Remarks")</th>
+                            <th>@L("Status")</th>
+                            <th>@L("SHStatus")</th>
+                            <th>@L("SHDate")</th>
+                            <th>@L("SHName")</th>
+                            <th>@L("PODetials")</th>
+                            <th>@L("Actions")</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.POs)
+                        {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OrderID)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OrderDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CreateName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CreateDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CGNameID)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CGName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Sup_id)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SupName)
+                            </td>
+                            <td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.BZ)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Status)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SHStatus)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SHDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SHName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PODetials)
+                            </td>
+                            <td class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">menu</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="#" class="waves-effect waves-block edit-PO" data-PO-id="@item.Id" data-toggle="modal" data-target="#POEditModal"><i class="material-icons">edit</i>@L("Edit")</a></li>
+                                    <li><a href="#" class="waves-effect waves-block delete-PO" data-PO-id="@item.Id" data-PO-name="@item.OrderID"><i class="material-icons">delete_sweep</i>@L("Delete")</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+                <button type="button" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal" data-target="#POCreateModal">
+                    <i class="material-icons">add</i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="POCreateModal" tabindex="-1" role="dialog" aria-labelledby="POCreateModalLabel" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    <span>@L("CreatePO")</span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form name="POCreateForm" role="form" class="form-validation">
+                    <div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("OrderID")</label>
+                                    <input type="text" name="OrderID" class="form-control" required maxlength="50" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("OrderDate")</label>
+                                    <input type="text" name="OrderDate" class="form-control" required maxlength="150" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("CreateName")</label>
+                                    <input type="text" name="CreateName" class="form-control" required maxlength="150" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("CreateDate")</label>
+                                    <input type="text" name="CreateDate" class="form-control" required maxlength="200" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("CGNameID")</label>
+                                    <input type="text" name="CGNameID" class="form-control" required maxlength="50" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("CGName")</label>
+                                    <input type="text" name="CGName" class="form-control" required maxlength="50" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Sup_id")</label>
+                                    <input type="text" name="Sup_id" class="form-control" required maxlength="50" />
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("SupName")</label>
+                                    <input name="SupName" type="text" class="form-control" required maxlength="50" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                                <div class="form-line">
+                                    <label class="form-label">@L("BZ")</label>
+                                    <input name="BZ" type="text" class="form-control" required maxlength="200" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Status")</label>
+                                    <input name="Status" type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("SHStatus")</label>
+                                    <input name="SHStatus" type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("SHStatus")</label>
+                                    <input name="SHDate" type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("SHName")</label>
+                                    <input name="SHName" type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-sm-12">
+                            <div class="form-line">
+                                <label class="form-label">@L("PODetials")</label>
+                                <input name="PODetials" type="text" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">@L("Cancel")</button>
+                <button type="submit" class="btn btn-primary waves-effect">@L("Save")</button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="POEditModal" tabindex="-1" role="dialog" aria-labelledby="POEditModalLabel" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>

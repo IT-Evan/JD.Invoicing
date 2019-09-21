@@ -24,13 +24,13 @@ namespace JD.Invoicing.Web.Controllers
         // GET: /<controller>/
         public async Task<ActionResult> Index()
         {
-            var goodses = (await _goodsAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
+            var _goodses = (await _goodsAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
             //Paging not implemented yet
             //GoodsDto cuGoods = goods.FirstOrDefault();
             var model = new GoodsListViewModel
             {
                 //Goods = cuGoods,
-                Goodses = goodses
+                Goodses = _goodses
             };
             return View(model);
         }

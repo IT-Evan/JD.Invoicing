@@ -24,11 +24,11 @@ namespace JD.Invoicing.Web.Controllers
         // GET: /<controller>/
         public async Task<ActionResult> Index()
         {
-            var POs = (await _POAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
+            var _POs = (await _POAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
             //Paging not implemented yet
             var model = new POListViewModel
             {
-                POs = POs
+                POs = _POs
             };
             return View(model);
         }

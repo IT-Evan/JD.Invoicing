@@ -1,0 +1,115 @@
+﻿@using JD.Invoicing.Web.Models.Common.Modals
+@model JD.Invoicing.Web.Models.Purchase.EditPOModalViewModel
+@{
+    Layout = null;
+}
+@Html.Partial("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("EditPO")))
+<div class="modal-body">
+    <form name="POEditForm" role="form" novalidate class="form-validation">
+        <input type="hidden" name="Id" value="@Model.PO.Id" />
+        <div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("OrderID")</label>
+                        <input type="text" name="OrderID" value="@Model.PO.OrderID" class="form-control" required maxlength="50" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("OrderDate")</label>
+                        <input type="text" name="OrderDate" value="@Model.PO.OrderDate" class="form-control" required maxlength="150" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("CreateName")</label>
+                        <input type="text" name="CreateName" value="@Model.PO.CreateName" class="form-control" required maxlength="150" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("CreateDate")</label>
+                        <input type="text" name="CreateDate" value="@Model.PO.CreateDate" class="form-control" required maxlength="200" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("CGNameID")</label>
+                        <input type="text" name="CGNameID" value="@Model.PO.CGNameID" class="form-control" required maxlength="50" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("CGName")</label>
+                        <input type="text" name="CGName" value="@Model.PO.CGName" class="form-control" required maxlength="50" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("Sup_id")</label>
+                        <input type="text" name="Sup_id" value="@Model.PO.Sup_id" class="form-control" required maxlength="50" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("SupName")</label>
+                        <input name="SupName" type="text" value="@Model.PO.SupName" class="form-control" required maxlength="50" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("BZ")</label>
+                        <input name="BZ" type="text" value="@Model.PO.BZ" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("Status")</label>
+                        <input name="Status" type="text" value="@Model.PO.Status" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-12">
+                    <div class="form-line">
+                        <label class="form-label">@L("SHStatus")</label>
+                        <input name="SHStatus" type="text" value="@Model.PO.SHStatus" class="form-control" required maxlength="200" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("CreateDate")</label>
+                        <input name="CreateDate" type="text" value="@Model.PO.CreateDate" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("SHName")</label>
+                        <input name="SHName" type="text" value="@Model.PO.SHName" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-12">
+                    <div class="form-line">
+                        <label class="form-label">@L("PODetials")</label>
+                        <input name="PODetials" type="text" value="@Model.PO.PODetials" class="form-control" />
+                    </div>
+                </div>
+            </div>
+    </form>
+</div>
+@Html.Partial("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+
+<script src="~/view-resources/Views/PO/_EditPOModal.js" asp-append-version="true"></script>
