@@ -103,9 +103,9 @@
     <text name="Customer">Customer</text>
     <text name="Warehouse">Warehouse</text>
     <text name="Purchase">Purchase</text>
-    <text name="PurchaseOrder">Purchase Order</text>
-    <text name="PurchaseWarehousing">Purchase Warehousing</text>
-    <text name="PurchaseReturn">Purchase Return</text>
+    <text name="PO">Purchase Order</text>
+    <text name="InStore">In Store</text>
+    <text name="OutStore">Out Store</text>
     <text name="Sales">Sales</text>
     <text name="SalesOrder">Sales Order</text>
     <text name="SalesReturn">Sales Return</text>

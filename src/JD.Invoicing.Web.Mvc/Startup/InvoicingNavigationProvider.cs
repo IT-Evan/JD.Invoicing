@@ -61,22 +61,22 @@ namespace JD.Invoicing.Web.Startup
                             url: "Purchase"
                         ).AddItem(
                         new MenuItemDefinition(
-                            PageNames.PurchaseOrder,
-                            L("PurchaseOrder"),
-                            url: "PurchaseOrder",
-                            requiredPermissionName: PermissionNames.Pages_PurchaseOrder
+                            PageNames.PO,
+                            L("PO"),
+                            url: "PO",
+                            requiredPermissionName: PermissionNames.Pages_PO
                         )).AddItem(
                         new MenuItemDefinition(
-                            PageNames.PurchaseWarehousing,
-                            L("PurchaseWarehousing"),
-                            url: "PurchaseWarehousing",
-                            requiredPermissionName: PermissionNames.Pages_PurchaseWarehousing
+                            PageNames.InStore,
+                            L("InStore"),
+                            url: "InStore",
+                            requiredPermissionName: PermissionNames.Pages_InStore
                         )).AddItem(
                         new MenuItemDefinition(
-                            PageNames.PurchaseReturn,
-                            L("PurchaseReturn"),
-                            url: "PurchaseReturn",
-                            requiredPermissionName: PermissionNames.Pages_PurchaseReturn
+                            PageNames.OutStore,
+                            L("OutStore"),
+                            url: "OutStore",
+                            requiredPermissionName: PermissionNames.Pages_OutStore
                         ))
                     ).AddItem(
                         new MenuItemDefinition(

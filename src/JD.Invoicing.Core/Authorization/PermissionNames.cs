@@ -12,9 +12,9 @@
         public const string Pages_Customer = "Pages.Customer";
         public const string Pages_Warehouse = "Pages.Warehouse";
         public const string Pages_Purchase = "Menu.Purchase";
-        public const string Pages_PurchaseOrder = "Pages.PurchaseOrder";
-        public const string Pages_PurchaseWarehousing = "Pages.PurchaseWarehousing";
-        public const string Pages_PurchaseReturn = "Pages.PurchaseReturn";
+        public const string Pages_PO = "Pages.PO";
+        public const string Pages_InStore = "Pages.InStore";
+        public const string Pages_OutStore = "Pages.OutStore";
         public const string Pages_Sales = "Menu.Sales";
         public const string Pages_SalesOrder = "Pages.SalesOrder";
         public const string Pages_SalesReturn = "Pages.SalesReturn";

@@ -6,9 +6,9 @@
         public const string Goods = "Goods";
         public const string Customer = "Customer";
         public const string Warehouse = "Warehouse";
-        public const string PurchaseOrder = "PurchaseOrder";
-        public const string PurchaseWarehousing = "PurchaseWarehousing";
-        public const string PurchaseReturn = "PurchaseReturn";
+        public const string PO = "PurchaseOrder";
+        public const string InStore = "In Store";
+        public const string OutStore = "Out Store";
         public const string SalesOrder = "SalesOrder";
         public const string SalesReturn = "SalesReturn";
         public const string Loss = "Loss";

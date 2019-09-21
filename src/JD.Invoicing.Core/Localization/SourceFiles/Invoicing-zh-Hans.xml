@@ -108,9 +108,9 @@
     <text name="Warehouse">仓库信息</text>
     <text name="Gross">毛利信息</text>
     <text name="Purchase">采购管理</text>
-    <text name="PurchaseOrder">采购订单</text>
-    <text name="PurchaseWarehousing">采购入库</text>
-    <text name="PurchaseReturn">采购退货</text>
+    <text name="PO">采购订单</text>
+    <text name="InStore">采购入库</text>
+    <text name="OutStore">采购退货</text>
     <text name="Sales">销售管理</text>
     <text name="SalesOrder">销售开单</text>
     <text name="SalesReturn">销售退回</text>

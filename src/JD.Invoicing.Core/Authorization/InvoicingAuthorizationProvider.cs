@@ -42,9 +42,9 @@ namespace JD.Invoicing.Authorization
             context.GetPermissionOrNull(PermissionNames.Pages_Setting).CreateChildPermission(PermissionNames.Pages_Users, L("Users"));
             context.GetPermissionOrNull(PermissionNames.Pages_Setting).CreateChildPermission(PermissionNames.Pages_Roles, L("Roles"));
             //Level 3
-            context.GetPermissionOrNull(PermissionNames.Pages_Operation).Children[0].CreateChildPermission(PermissionNames.Pages_PurchaseOrder, L("PurchaseOrder"));
-            context.GetPermissionOrNull(PermissionNames.Pages_Operation).Children[0].CreateChildPermission(PermissionNames.Pages_PurchaseWarehousing, L("PurchaseWarehousing"));
-            context.GetPermissionOrNull(PermissionNames.Pages_Operation).Children[0].CreateChildPermission(PermissionNames.Pages_PurchaseReturn, L("PurchaseReturn"));
+            context.GetPermissionOrNull(PermissionNames.Pages_Operation).Children[0].CreateChildPermission(PermissionNames.Pages_PO, L("PO"));
+            context.GetPermissionOrNull(PermissionNames.Pages_Operation).Children[0].CreateChildPermission(PermissionNames.Pages_InStore, L("InStore"));
+            context.GetPermissionOrNull(PermissionNames.Pages_Operation).Children[0].CreateChildPermission(PermissionNames.Pages_OutStore, L("OutStore"));
 
             context.GetPermissionOrNull(PermissionNames.Pages_Operation).Children[1].CreateChildPermission(PermissionNames.Pages_SalesOrder, L("SalesOrder"));
             context.GetPermissionOrNull(PermissionNames.Pages_Operation).Children[1].CreateChildPermission(PermissionNames.Pages_SalesReturn, L("SalesReturn"));

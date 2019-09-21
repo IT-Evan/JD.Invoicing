@@ -20,9 +20,9 @@ namespace JD.Invoicing.EntityFrameworkCore
         public DbSet<Customer> Customer { get; set; }
         public DbSet<Warehouse> Warehouse { get; set; }
 
-        public DbSet<PurchaseOrder> PurchaseOrder { get; set; }
-        public DbSet<PurchaseOrderMX> PurchaseOrderMX { get; set; }
-        public DbSet<PurchaseWarehousing> PurchaseWarehousing { get; set; }
-        public DbSet<PurchaseWarehousingMX> PurchaseWarehousingMX { get; set; }
+        public DbSet<PO> PO { get; set; }
+        public DbSet<PODetial> PODetial { get; set; }
+        public DbSet<Store> Store { get; set; }
+        public DbSet<StoreDetial> StoreDetial { get; set; }
     }
 }
