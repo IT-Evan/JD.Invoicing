@@ -12,11 +12,11 @@ using System.Threading.Tasks;
 namespace JD.Invoicing.Web.Controllers
 {
     [AbpMvcAuthorize(PermissionNames.Pages_InStore)]
-    public class StoreController : InvoicingControllerBase
+    public class InStoreController : InvoicingControllerBase
     {
         private readonly IStoreAppService _storeAppService;
         const int MaxNum = 10;
-        public StoreController(IStoreAppService storeAppService)
+        public InStoreController(IStoreAppService storeAppService)
         {
             _storeAppService = storeAppService;
 
