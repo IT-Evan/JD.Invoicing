@@ -6,11 +6,34 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
+using Abp.Timing;
 
 namespace JD.Invoicing.Entitys
 {
     public class Store : Entity<int>, IHasCreationTime
     {
+        public Store()
+        {
+            this.OrderID = string.Empty;
+            this.OrderDate = null;
+            this.OrderType = string.Empty;
+            this.CreateDate = null;
+            this.CreateName = string.Empty;
+            this.YSNameID = 0;
+            this.YSName = string.Empty;
+            this.Sup_id = 0;
+            this.SupName = null;
+            this.StroeInfo_id = 0;
+            this.StoreName = null;
+            this.Sum = null;
+            this.BZ = string.Empty;
+            this.SHStatus = null;
+            this.SHDate = null;
+            this.SHName = string.Empty;
+            this.OrderOrder_id = null;
+            this.OrderOrderID = string.Empty;
+            this.CreationTime = Clock.Now;
+        }
         /// <summary>
         /// 单据编号
         /// </summary>

@@ -6,11 +6,31 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Abp.Domain.Entities.Auditing;
 using Abp.Domain.Entities;
+using Abp.Timing;
 
 namespace JD.Invoicing.Entitys
 {
     public class PO : Entity<int>, IHasCreationTime
     {
+        public PO()
+        {
+            this.OrderID = string.Empty;
+            this.OrderDate = null;
+            this.CreateDate = null;
+            this.CreateName = string.Empty;
+            this.CGNameID = 0;
+            this.CGName = string.Empty;
+            this.Sup_id = 0;
+            this.SupName = string.Empty;
+            this.BZ = string.Empty;
+            this.Status = null;
+            this.SHStatus = null;
+            this.SHDate = null;
+            this.SHName = string.Empty;
+            this.PODetials = null;
+            this.CreationTime = Clock.Now;
+        }
+
         //// <summary>
         /// 单据编号
         /// </summary>

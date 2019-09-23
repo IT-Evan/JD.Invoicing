@@ -14,32 +14,32 @@ namespace JD.Invoicing.Web.Controllers
     [AbpMvcAuthorize(PermissionNames.Pages_PO)]
     public class POController : InvoicingControllerBase
     {
-        private readonly IPOAppService _POAppService;
+        private readonly IPOAppService _poAppService;
         const int MaxNum = 10;
-        public POController(IPOAppService POAppService)
+        public POController(IPOAppService poAppService)
         {
-            _POAppService = POAppService;
+            _poAppService = poAppService;
 
         }
         // GET: /<controller>/
         public async Task<ActionResult> Index()
         {
-            var _POs = (await _POAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
+            var pos = (await _poAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
             //Paging not implemented yet
             var model = new POListViewModel
             {
-                POs = _POs
+                POs = pos
             };
             return View(model);
         }
 
-        public async Task<ActionResult> EditPOModal(int POId)
+        public async Task<ActionResult> EditPOModal(int poId)
         {
-            var PO = await _POAppService.Get(new EntityDto<int>(POId));
+            var po = await _poAppService.Get(new EntityDto<int>(poId));
             //PurchaseOrderDto cuPurchaseOrder = AutoMapper.Mapper.Map<PurchaseOrderDto>(purchaseOrder);
             var model = new EditPOModalViewModel
             {
-                PO = PO
+                PO = po
             };
             return View("_EditPOModal", model);
         }
