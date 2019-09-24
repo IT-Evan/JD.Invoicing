@@ -26,10 +26,8 @@ namespace JD.Invoicing.Web.Controllers
         {
             var _stores = (await _storeAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
             //Paging not implemented yet
-            //StoreDto cuStore = store.FirstOrDefault();
             var model = new StoreListViewModel
             {
-                //Store = cuStore,
                 Stores = _stores
             };
             return View(model);
@@ -38,7 +36,6 @@ namespace JD.Invoicing.Web.Controllers
         public async Task<ActionResult> EditStoreModal(int storeId)
         {
             var store = await _storeAppService.Get(new EntityDto<int>(storeId));
-            //StoreDto cuStore = AutoMapper.Mapper.Map<StoreDto>(store);
             var model = new EditStoreModalViewModel
             {
                 Store = store
