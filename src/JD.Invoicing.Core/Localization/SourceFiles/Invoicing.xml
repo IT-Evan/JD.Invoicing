@@ -22,6 +22,7 @@
     <text name="RememberMe" value="Remember me" />
     <text name="LogIn" value="Log in" />
     <text name="LoginFailed" value="Login failed!" />
+    <text name="AppName" >Invoicing System</text>
     <text name="NameSurname" value="Name surname" />
     <text name="UserName" value="User name" />
     <text name="Surname" value="Surname" />
