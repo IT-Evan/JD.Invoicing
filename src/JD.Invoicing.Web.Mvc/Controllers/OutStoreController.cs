@@ -26,7 +26,6 @@ namespace JD.Invoicing.Web.Controllers
         {
             var _stores = (await _storeAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
             //Paging not implemented yet
-
             var model = new StoreListViewModel
             {
                 Stores = _stores
