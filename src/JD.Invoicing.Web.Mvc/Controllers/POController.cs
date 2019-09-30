@@ -36,7 +36,7 @@ namespace JD.Invoicing.Web.Controllers
         public async Task<ActionResult> EditPOModal(int poId)
         {
             var po = await _poAppService.Get(new EntityDto<int>(poId));
-            //PurchaseOrderDto cuPurchaseOrder = AutoMapper.Mapper.Map<PurchaseOrderDto>(purchaseOrder);
+            //PurchaseOrderDto cuPurchaseOrder = AutoMapper.Mapper.Map<PurchaseOrderDto>(purchaseOrder);　
             var model = new EditPOModalViewModel
             {
                 PO = po

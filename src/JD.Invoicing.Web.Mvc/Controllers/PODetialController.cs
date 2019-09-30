@@ -26,10 +26,10 @@ namespace JD.Invoicing.Web.Controllers
         {
             var PODetials = (await _PODetialAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
             //Paging not implemented yet
-            //PODetialDto cuPODetial = PODetial.FirstOrDefault();
+            //PODetialDto cuPODetial = PODetial.FirstOrDefault();　
             var model = new PODetialListViewModel
             {
-                //PODetial = cuPODetial,
+                //PODetial = cuPODetial,　
                 PODetials = PODetials
             };
             return View(model);

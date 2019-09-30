@@ -25,7 +25,7 @@ namespace JD.Invoicing.Web.Controllers
         public async Task<ActionResult> Index()
         {
             var _stores = (await _storeAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
-            //Paging not implemented yet
+            //Paging not implemented yet 
             var model = new StoreListViewModel
             {
                 Stores = _stores
